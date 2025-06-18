@@ -1,0 +1,66 @@
+/* Ensure dark mode works properly */
+.dark {
+  color-scheme: dark;
+}
+
+/* Fix for Arabic RTL layout */
+html[dir="rtl"] .space-x-4 > * + * {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+html[dir="rtl"] .ml-2 {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+html[dir="rtl"] .ml-3 {
+  margin-left: 0;
+  margin-right: 0.75rem;
+}
+
+/* Ensure proper spacing for Arabic */
+html[dir="rtl"] .flex.items-center.space-x-4 {
+  flex-direction: row-reverse;
+}
+
+/* Force proper navbar colors */
+.navbar-light {
+  background-color: white !important;
+  color: #1f2937 !important;
+}
+
+.navbar-dark {
+  background-color: #111827 !important;
+  color: white !important;
+}
+
+.theme-toggle-container {
+  min-width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Force LTR for theme toggle to prevent RTL interference */
+button[style*="direction: ltr"] {
+  direction: ltr !important;
+}
+
+/* Ensure proper gap spacing in RTL */
+html[dir="rtl"] .gap-4 > :not([hidden]) ~ :not([hidden]) {
+  margin-right: 1rem;
+  margin-left: 0;
+}
+
+/* Override any unwanted flex-row-reverse effects on specific elements */
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+/* Ensure consistent spacing regardless of direction */
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

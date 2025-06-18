@@ -1,0 +1,33 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "features": "Features",
+    "faqs": "FAQs",
+    "pricing": "Pricing",
+    "contact": "Contact Us",
+    "register": "register now",
+    "language": "العربية"
+  },
+  "pages": {
+    "home": {
+      "title": "Home Page",
+      "welcome": "Welcome to Survey Infinity"
+    },
+    "about": {
+      "title": "About Us"
+    },
+    "features": {
+      "title": "Features"
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions"
+    },
+    "pricing": {
+      "title": "Pricing"
+    },
+    "contact": {
+      "title": "Contact Us"
+    }
+  }
+}
