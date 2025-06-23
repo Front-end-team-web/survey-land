@@ -15,7 +15,6 @@ const Home = () => {
       <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
         {t("pages.home.title")}
       </h1>
-      <h2>ssdddfsdf</h2>
     </motion.div>
   );
 };
