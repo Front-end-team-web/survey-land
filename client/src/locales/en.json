@@ -28,7 +28,39 @@
     },
     "contact": {
       "title": "Contact Us"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "backToHome": "Back to Home Page"
     }
   },
-  "TestAbout": "ahmed"
+  "TestAbout": "ahmed",
+  "footer": {
+    "desc": "create, distribute and analyze surveys with ease, Get valuable insights from your audience.",
+    "products": "Products",
+    "productsSurveyBuilder": "Survey Builder",
+    "productsQuizMaker": "Quiz Maker",
+    "productsFormCreator": "Form Creator",
+    "productsPoolSystem": "Pool System",
+    "productsAnalyticsDashboard": "Analytics Dashboard",
+    
+    "resources": "Resources",
+    "resourcesHelpCenter": "Help Center",
+    "resourcesBlog": "Blog",
+    "resourcesTutorials": "Tutorials",
+    "resourcesCaseStudies": "Case Studies",
+    "resourcesTemplates": "Templates",
+    
+    "stayUpdated": "Stay Updated",
+    "stayUpdatedDesc": "Subscribe to our newsletter for tips and updates.",
+    "stayUpdatedEntreEmail": "Enter your Email",
+    "stayUpdatedSubscribe": "Subscribe",
+    
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "security": "Security",
+    "cookies": "Cookies",
+    
+    "rights": "2025 SurveyPro. All rights reserved."
+  }
 }

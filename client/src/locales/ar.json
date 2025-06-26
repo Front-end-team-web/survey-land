@@ -28,7 +28,39 @@
     },
     "contact": {
       "title": "اتصل بنا"
+    },
+    "notFound": {
+      "title": "لم يتم العثور على الصفحة",
+      "backToHome": "العودة إلى الصفحة الرئيسية"
     }
   },
-  "Test": "أحمد"
+  "Test": "أحمد",
+  "footer": {
+    "desc": "إنشاء وتوزيع وتحليل الاستبيانات بسهولة، والحصول على رؤى قيمة من جمهورك",
+    "products": "المنتجات",
+    "productsSurveyBuilder": "منشئ الاستبيانات",
+    "productsQuizMaker": "منشئ الاختبارات",
+    "productsFormCreator": "منشئ النماذج",
+    "productsPoolSystem": "نظام التجمع",
+    "productsAnalyticsDashboard": "لوحة معلومات التحليلات",
+    
+    "resources": "الموارد",
+    "resourcesHelpCenter": "مركز المساعدة",
+    "resourcesBlog": "المدونة",
+    "resourcesTutorials": "البرامج التعليمية",
+    "resourcesCaseStudies": "دراسات الحالة",
+    "resourcesTemplates": "القوالب",
+    
+    "stayUpdated": "ابقَ على اطلاع",
+    "stayUpdatedDesc": "اشترك في النشرة الإخبارية لدينا للحصول على النصائح والتحديثات",
+    "stayUpdatedEntreEmail": "أدخل بريدك الالكتروني",
+    "stayUpdatedSubscribe": "اشترك",
+    
+    "terms": "الشروط",
+    "privacy": "الخصوصية",
+    "security": "الأمان",
+    "cookies": "ملفات تعريف الارتباط",
+    
+    "rights": "جميع الحقوق محفوظة لشركة SurveyPro لعام ٢٠٢٥."
+  }
 }
