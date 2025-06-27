@@ -85,7 +85,7 @@ const Footer = () => {
         <div className="flex flex-wrap gap-8 justify-between">
           {/* Logo & Social */}
           <div className="flex flex-col justify-between max-w-sm">
-            <div className="flex items-center">
+            {/* <div className="flex items-center"> */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -98,11 +98,11 @@ const Footer = () => {
                   className="w-12 h-12 object-contain"
                 />
                 <div className={`${marginDirection} flex items-center`}>
-                  <span className="text-xl font-bold text-purple-400">
+                  <span className="text-xl font-bold">
                     Survey
                   </span>
                   <span
-                    className={`text-xl font-normal text-white ${
+                    className={`text-xl font-normal text-gray-400 ${
                       isRTL ? "mr-2" : "ml-2"
                     }`}
                   >
@@ -110,8 +110,10 @@ const Footer = () => {
                   </span>
                 </div>
               </motion.div>
-            </div>
-            <p className="text-gray-400 mt-4">{t("footer.desc")}</p>
+            {/* </div> */}
+
+            <p className="text-gray-400 mt-4 w-3/4">{t("footer.desc")}</p>
+
             <ul className="flex gap-4 mt-4">
               <li>
                 <Link to="/twitter" aria-label="Twitter">
@@ -138,29 +140,29 @@ const Footer = () => {
 
           {/* Desktop Sections */}
           <FooterSection
-            className="hidden md:block"
+            className="hidden md:block md:pt-2"
             title={t("footer.products")}
             links={productLinks}
           />
           <FooterSection
-            className="hidden md:block"
+            className="hidden md:block md:pt-2"
             title={t("footer.resources")}
             links={resourceLinks}
           />
 
-          <div className="hidden md:block max-w-xs">
+          <div className="hidden md:block max-w-xs md:pt-2">
             <h1 className="text-white font-semibold">
               {t("footer.stayUpdated")}
             </h1>
             <p className="text-gray-400 mt-2">{t("footer.stayUpdatedDesc")}</p>
-            <div className="mt-3 flex flex-col gap-2">
+            <div className="mt-3 flex flex-col gap-4">
               <input
                 className="rounded py-1 px-2 focus:outline-none bg-[#271F37] text-white"
                 type="email"
                 name="email"
                 placeholder={t("footer.stayUpdatedEntreEmail")}
               />
-              <button className="bg-purple-600 hover:bg-purple-700 text-white py-1 rounded">
+              <button className="bg-purple-600 hover:bg-purple-700 text-white py- rounded">
                 {t("footer.stayUpdatedSubscribe")}
               </button>
             </div>
@@ -191,7 +193,7 @@ const Footer = () => {
               </label>
               <div className="peer-checked:p-3 max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-64">
                 <p className="text-gray-400">{t("footer.stayUpdatedDesc")}</p>
-                <div className="flex flex-col gap-2 mt-2">
+                <div className="flex flex-col gap-4 mt-2">
                   <input
                     className="rounded py-1 px-2 focus:outline-none bg-[#271F37] text-white"
                     type="email"
