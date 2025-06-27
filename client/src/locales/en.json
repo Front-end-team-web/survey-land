@@ -15,7 +15,29 @@
       "welcome": "Welcome to Survey Infinity"
     },
     "about": {
-      "title": "About Us"
+      "title": "About Us",
+      "contact": {
+        "title": "Get in Touch",
+        "desc": "Have questions about SurveyPro? Our team is here to help you find the right solution for your needs.",
+        "contactInfo":"Contact Information",
+        "contactInfoDesc":"Fill out the form or contact us directly using the information below.",
+        "ourHeadquarters":"Our Headquarters",
+        "phone":"Phone",
+        "email":"Email",
+        "followUs":"Follow Us",
+        "sendUsMessage":"Send us a message",
+        "name":"Name",
+        "subject":"Subject",
+        "message":"Message",
+        "sendMesssage":"Send Message",
+        "stayUpdated":"Stay Updated"
+      },
+      "stayUpdated":{
+        "title":"Stay Updated",
+        "desc":"Subscribe to our newsletter to receive product updates, industry insights, and helpful tips for creating effective surveys.",
+        "subscribe": "Subscribe",
+        "entreEmail": "Enter your Email"
+      }
     },
     "features": {
       "title": "Features"

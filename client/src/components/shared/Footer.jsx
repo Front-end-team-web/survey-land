@@ -98,7 +98,7 @@ const Footer = () => {
                   className="w-12 h-12 object-contain"
                 />
                 <div className={`${marginDirection} flex items-center`}>
-                  <span className="text-xl font-bold">
+                  <span className="text-xl font-bold text-white">
                     Survey
                   </span>
                   <span
