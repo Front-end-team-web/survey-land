@@ -29,7 +29,8 @@
         "name":"الاسم",
         "subject":"الموضوع",
         "message":"الرسالة",
-        "sendMesssage":"إرسال الرسالة"
+        "sendMesssage":"إرسال الرسالة",
+        "entreEmail": "أدخل بريدك الالكتروني"
       },
       "stayUpdated":{
         "title":"ابق على اطلاع",

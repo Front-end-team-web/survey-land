@@ -6,6 +6,7 @@ import { RiStarSFill } from "react-icons/ri";
 const CustomersSay = () => {
   const { t } = useTranslation();
   const { isDarkMode } = useSelector((state) => state.theme);
+  const { currentLanguage } = useSelector((state) => state.language);
 
   return (
     <div
@@ -92,7 +93,7 @@ const CustomersSay = () => {
           </button>
 
           <div class="flex items-center space-x-2">
-            <span class="w-6 h-1 rounded-full bg-purple-600"></span>
+            <span class={`w-6 h-1 rounded-full bg-purple-600 ${currentLanguage == 'ar' ? 'me-3' : ''}`}></span>
             <span class="w-1 h-1 rounded-full bg-gray-400"></span>
             <span class="w-1 h-1 rounded-full bg-gray-400"></span>
           </div>

@@ -155,14 +155,14 @@ const Footer = () => {
               {t("footer.stayUpdated")}
             </h1>
             <p className="text-gray-400 mt-2">{t("footer.stayUpdatedDesc")}</p>
-            <div className="mt-3 flex flex-col gap-4">
+            <div className="mt-3 flex flex-col gap-y-4">
               <input
                 className="rounded py-1 px-2 focus:outline-none bg-[#271F37] text-white"
                 type="email"
                 name="email"
                 placeholder={t("footer.stayUpdatedEntreEmail")}
               />
-              <button className="bg-purple-600 hover:bg-purple-700 text-white py- rounded">
+              <button className="bg-purple-600 hover:bg-purple-700 text-white py-1 rounded">
                 {t("footer.stayUpdatedSubscribe")}
               </button>
             </div>
@@ -193,7 +193,7 @@ const Footer = () => {
               </label>
               <div className="peer-checked:p-3 max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-64">
                 <p className="text-gray-400">{t("footer.stayUpdatedDesc")}</p>
-                <div className="flex flex-col gap-4 mt-2">
+                <div className="flex flex-col gap-y-4 mt-2">
                   <input
                     className="rounded py-1 px-2 focus:outline-none bg-[#271F37] text-white"
                     type="email"

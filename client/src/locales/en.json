@@ -30,7 +30,8 @@
         "subject":"Subject",
         "message":"Message",
         "sendMesssage":"Send Message",
-        "stayUpdated":"Stay Updated"
+        "stayUpdated":"Stay Updated",
+        "entreEmail": "Enter your Email"
       },
       "stayUpdated":{
         "title":"Stay Updated",

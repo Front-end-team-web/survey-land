@@ -4,6 +4,7 @@ import { useTranslation } from "../../hooks/useTranslation";
 const StayUpdated = () => {
   const { t } = useTranslation();
   const { isDarkMode } = useSelector((state) => state.theme);
+  const { currentLanguage } = useSelector((state) => state.language);
 
   return (
     <div className="my-8 py-8">
@@ -24,7 +25,7 @@ const StayUpdated = () => {
               type="text"
               id="name"
               placeholder={t("pages.about.stayUpdated.entreEmail")}
-              className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2 w-full md:w-5/6"
+              className={`bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2 w-full md:w-5/6 ${currentLanguage == 'ar' ? 'me-3' : ''}`}
             />
 
             <button className="bg-[#7616EC] text-white rounded-md py-2 px-8">

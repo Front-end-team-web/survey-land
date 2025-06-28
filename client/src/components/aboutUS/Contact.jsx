@@ -13,6 +13,7 @@ import StayUpdated from "./StayUpdated";
 const Contact = () => {
   const { t } = useTranslation();
   const { isDarkMode } = useSelector((state) => state.theme);
+  const { currentLanguage } = useSelector((state) => state.language);
 
   return (
     <>
@@ -27,13 +28,19 @@ const Contact = () => {
               {t("pages.about.contact.title")}
             </h1>
 
-            <p className={`text-[20px] ${isDarkMode ? "text-white" : "text-black"}`}>
+            <p
+              className={`text-[20px] ${
+                isDarkMode ? "text-white" : "text-black"
+              }`}
+            >
               {t("pages.about.contact.desc")}
             </p>
           </div>
 
           <div className="my-16 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className={`px-8 py-16 flex flex-col justify-between rounded-xl bg-gradient-to-br from-[#7616EC] to-[#490F8F] text-white`}>
+            <div
+              className={`px-8 py-16 flex flex-col justify-between rounded-xl bg-gradient-to-br from-[#7616EC] to-[#490F8F] text-white`}
+            >
               <div className="overflow-hidden">
                 <h1 className="font-semibold text-[28px]">
                   {t("pages.about.contact.contactInfo")}
@@ -44,9 +51,9 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="space-y-6">
+              <div className="my-6 space-y-6">
                 <div className="flex space-x-3">
-                  <FaMapMarkerAlt className="mt-1 text-xl" />
+                  <FaMapMarkerAlt className={`mt-1 text-xl ${currentLanguage === 'ar' ? 'me-3' :'' }`} />
                   <div>
                     <h3 className="font-semibold">
                       {t("pages.about.contact.ourHeadquarters")}
@@ -58,7 +65,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex space-x-3">
-                  <BsTelephone className="mt-1 text-xl" />
+                  <BsTelephone className={`mt-1 text-xl ${currentLanguage === 'ar' ? 'me-3' :'' }`} />
                   <div>
                     <h3 className="font-semibold">
                       {t("pages.about.contact.phone")}
@@ -68,7 +75,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex space-x-3">
-                  <FaEnvelope className="mt-1 text-xl" />
+                  <FaEnvelope className={`mt-1 text-xl ${currentLanguage === 'ar' ? 'me-3' :'' }`} />
                   <div>
                     <h3 className="font-semibold">
                       {t("pages.about.contact.email")}
@@ -83,7 +90,7 @@ const Contact = () => {
                   {t("pages.about.contact.followUs")}
                 </h1>
 
-                <ul className="flex space-x-4">
+                <ul className="mt-5 flex space-x-4">
                   <li>
                     <a href="/instagram">
                       <FaInstagram />
@@ -105,7 +112,11 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className={`flex flex-col justify-between px-8 py-6 rounded-xl text-black ${isDarkMode ? "bg-white text-black" : ""}`}>
+            <div
+              className={`flex flex-col justify-between px-8 py-6 rounded-xl text-black ${
+                isDarkMode ? "bg-white text-black" : ""
+              }`}
+            >
               <div className="overflow-hidden">
                 <h2 className="text-[32px]">
                   {t("pages.about.contact.sendUsMessage")}
@@ -123,6 +134,7 @@ const Contact = () => {
                       type="text"
                       id="name"
                       className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2 w-full"
+                      placeholder={t("pages.about.contact.name")}
                     />
                   </div>
 
@@ -135,6 +147,7 @@ const Contact = () => {
                       type="email"
                       id="email"
                       className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2 w-full"
+                      placeholder={t("pages.about.contact.entreEmail")}
                     />
                   </div>
                 </div>
@@ -148,6 +161,7 @@ const Contact = () => {
                     type="text"
                     id="subject"
                     className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2"
+                    placeholder={t("pages.about.contact.subject")}
                   />
                 </div>
 
@@ -161,6 +175,7 @@ const Contact = () => {
                     name="message"
                     id="message"
                     className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2"
+                    placeholder={t("pages.about.contact.message")}
                   ></textarea>
                 </div>
 
