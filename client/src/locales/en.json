@@ -37,6 +37,10 @@
         "desc":"Subscribe to our newsletter to receive product updates, industry insights, and helpful tips for creating effective surveys.",
         "subscribe": "Subscribe",
         "entreEmail": "Enter your Email"
+      },
+      "customersSay":{
+        "title": "What Our Customers Say",
+        "desc": "Discover how organizations are using Survey Infinity to transform feedback into meaningful insights and action."
       }
     },
     "features": {

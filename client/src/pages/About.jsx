@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import Contact from "../components/aboutUS/Contact";
 import Footer from "../components/shared/Footer";
 import StayUpdated from "../components/aboutUS/StayUpdated";
+import CustomersSay from "../components/aboutUS/CustomersSay";
 
 const About = () => {
   const { currentLanguage } = useSelector((state) => state.language);
@@ -19,6 +20,7 @@ const About = () => {
           {currentLanguage === "en" ? "About Us" : "من نحن"}
         </h1>
       </motion.div>
+      <CustomersSay />
       <Contact />
       <Footer />
     </>
