@@ -34,7 +34,9 @@ const FooterAccordion = ({ id, title, links }) => (
       className="cursor-pointer flex items-center justify-between"
     >
       <h1 className="text-white font-semibold">{title}</h1>
-      <FaPlus />
+      <span className="text-white">
+        <FaPlus />
+      </span>
     </label>
     <ul className="peer-checked:p-3 max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-64 space-y-2">
       {links.map(({ to, label }) => (
@@ -86,30 +88,28 @@ const Footer = () => {
           {/* Logo & Social */}
           <div className="flex flex-col justify-between max-w-sm">
             {/* <div className="flex items-center"> */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5 }}
-                className="flex items-center"
-              >
-                <img
-                  src={myLogo}
-                  alt="Survey Infinity Logo"
-                  className="w-12 h-12 object-contain"
-                />
-                <div className={`${marginDirection} flex items-center`}>
-                  <span className="text-xl font-bold text-white">
-                    Survey
-                  </span>
-                  <span
-                    className={`text-xl font-normal text-gray-400 ${
-                      isRTL ? "mr-2" : "ml-2"
-                    }`}
-                  >
-                    Infinity
-                  </span>
-                </div>
-              </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="flex items-center"
+            >
+              <img
+                src={myLogo}
+                alt="Survey Infinity Logo"
+                className="w-12 h-12 object-contain"
+              />
+              <div className={`${marginDirection} flex items-center`}>
+                <span className="text-xl font-bold text-white">Survey</span>
+                <span
+                  className={`text-xl font-normal text-gray-400 ${
+                    isRTL ? "mr-2" : "ml-2"
+                  }`}
+                >
+                  Infinity
+                </span>
+              </div>
+            </motion.div>
             {/* </div> */}
 
             <p className="text-gray-400 mt-4 w-3/4">{t("footer.desc")}</p>
@@ -189,7 +189,10 @@ const Footer = () => {
                 <h1 className="text-white font-semibold">
                   {t("footer.stayUpdated")}
                 </h1>
-                <FaPlus />
+
+                <span className="text-white">
+                  <FaPlus />
+                </span>
               </label>
               <div className="peer-checked:p-3 max-h-0 overflow-hidden transition-all duration-500 peer-checked:max-h-64">
                 <p className="text-gray-400">{t("footer.stayUpdatedDesc")}</p>
@@ -218,13 +221,13 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link className="text-gray-400 hover:text-white" to="/security">
-                {t("footer.security")}
+              <Link className="text-gray-400 hover:text-white" to="/privacy">
+                {t("footer.privacy")}
               </Link>
             </li>
             <li>
-              <Link className="text-gray-400 hover:text-white" to="/privacy">
-                {t("footer.privacy")}
+              <Link className="text-gray-400 hover:text-white" to="/security">
+                {t("footer.security")}
               </Link>
             </li>
             <li>

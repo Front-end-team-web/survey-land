@@ -10,7 +10,7 @@ const StayUpdated = () => {
     <div className="my-8 py-8">
       <div className="container mx-auto px-4">
         <div className="overflow-hidden text-center">
-          <h1 className="text-purple-600 font-semibold text-[38px] md:text-[52px]">
+          <h1 className="text-purple-600 font-semibold text-[32px] mb-6">
             {t("pages.about.stayUpdated.title")}
           </h1>
 

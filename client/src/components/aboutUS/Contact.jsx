@@ -24,7 +24,7 @@ const Contact = () => {
       >
         <div className="container mx-auto px-4">
           <div className="overflow-hidden text-center">
-            <h1 className="text-purple-600 font-semibold text-[28px]">
+            <h1 className="text-purple-600 font-semibold text-[32px] mb-6">
               {t("pages.about.contact.title")}
             </h1>
 
@@ -113,7 +113,7 @@ const Contact = () => {
             </div>
 
             <div
-              className={`flex flex-col justify-between px-8 py-6 rounded-xl text-black ${
+              className={`flex flex-col justify-between px-8 py-6 rounded-xl text-black border-2 border-gray-900 ${
                 isDarkMode ? "bg-white text-black" : ""
               }`}
             >

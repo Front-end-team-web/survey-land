@@ -16,7 +16,7 @@ const CustomersSay = () => {
     >
       <div className="container mx-auto px-4">
         <div className="overflow-hidden text-center">
-          <h1 className="text-purple-600 font-semibold text-[28px]">
+          <h1 className="text-purple-600 font-semibold text-[32px] mb-6">
             {t("pages.about.customersSay.title")}
           </h1>
 
@@ -39,7 +39,7 @@ const CustomersSay = () => {
           <div className="py-6 w-full md:w-3/4 mx-auto flex flex-col md:flex-row gap-8 items-center">
             <div className="w-full md:w-2/4 xl:w-1/4">
               <img
-                src="https://valoxy.org/blog/wp-content/uploads/2013/03/choisir-7-1.jpg"
+                src="https://media.istockphoto.com/id/1310533180/fr/photo/homme-adulte-%C3%A0-la-mode-gai-dans-le-cadre-de-ville.jpg?s=612x612&w=0&k=20&c=bcHVxsSAObt6h2R604K2btDMy-jSPyn2DeWLjI85lIE="
                 alt="image"
                 className="p-1 md:w-[200px] md:h-[200px] xl:w-[200px] xl:h-[200px] rounded-xl"
               />
