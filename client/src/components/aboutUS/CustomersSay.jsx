@@ -3,6 +3,7 @@ import { useTranslation } from "../../hooks/useTranslation";
 import { FaQuoteRight } from "react-icons/fa";
 import { RiStarSFill } from "react-icons/ri";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const CustomersSay = () => {
   const testimonials = [
@@ -63,124 +64,157 @@ const CustomersSay = () => {
       <div className="container mx-auto px-4">
         <div className="overflow-hidden text-center">
           <h1 className="text-purple-600 font-semibold text-[32px] mb-6">
-            {t("pages.about.customersSay.title")}
+            {t("pages.about.customersSay.title")
+              .split(" ")
+              .map((word, index) => {
+                return (
+                  <motion.span
+                    key={index}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: index * 0.3 }}
+                  >
+                    <span>
+                      {word}
+                      &nbsp;
+                    </span>
+                  </motion.span>
+                );
+              })}
           </h1>
 
-          <p
+          <motion.p
             className={`text-[20px] ${
               isDarkMode ? "text-white" : "text-black"
             }`}
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.3 }}
           >
             {t("pages.about.customersSay.desc")}
-          </p>
+          </motion.p>
         </div>
 
-        <div
-          className={`my-16 p-6 bg-[#E0E0E042] rounded-xl flex flex-col md:flex-row gap-8 md:gap-16`}
+        <motion.div
+          initial={{ y: -150, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.9 }}
         >
-          <span className={`text-4xl`}>
-            <FaQuoteRight />
-          </span>
+          <div
+            className={`my-16 p-6 bg-[#E0E0E042] rounded-xl flex flex-col md:flex-row gap-8 md:gap-16`}
+          >
+            <span className={`text-4xl`}>
+              <FaQuoteRight />
+            </span>
 
-          <div className="py-6 w-full md:w-3/4 mx-auto flex flex-col md:flex-row gap-8 items-center">
-            <div className="w-full md:w-2/4 xl:w-1/4">
-              <img
-                src={currentTestimonial.image}
-                alt={currentTestimonial.name}
-                className="p-1 md:w-[200px] md:h-[200px] xl:w-[200px] xl:h-[200px] rounded-xl"
-              />
-            </div>
-
-            <div className="w-full md:w-3/4 overflow-hidden">
-              <h1 className="font-medium text-[18px] w-full md:text-[16px] lg:text-[20px] xl:text-[24px]">
-                "{currentTestimonial.feedBack}"
-              </h1>
-
-              <div className="my-5 review flex items-center space-x-1">
-                <div className="stars flex space-x-1">
-                  {[1, 2, 3, 4, 5].map((i) => {
-                    return (
-                      <RiStarSFill
-                        key={i}
-                        className={`text-sm ${
-                          i <= Math.round(currentTestimonial.rating)
-                            ? "text-[#FFCC00]"
-                            : "text-[#000]"
-                        }`}
-                      />
-                    );
-                  })}
-                </div>
-
-                <span>{currentTestimonial.rating}</span>
+            <div className="py-6 w-full md:w-3/4 mx-auto flex flex-col md:flex-row gap-8 items-center">
+              <div className="w-full md:w-2/4 xl:w-1/4">
+                <motion.img
+                  src={currentTestimonial.image}
+                  alt={currentTestimonial.name}
+                  className="p-1 md:w-[200px] md:h-[200px] xl:w-[200px] xl:h-[200px] rounded-xl"
+                  initial={{ x: -150, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ delay: 1.2 }}
+                />
               </div>
 
-              <div className="md:flex md:justify-between">
-                <div></div>
-                <div>
-                  <h2>{currentTestimonial.name}</h2>
-                  <p>{currentTestimonial.position}</p>
+              <motion.div
+                className="w-full md:w-3/4 overflow-hidden"
+                initial={{ x: 150, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ delay: 1.2 }}
+              >
+                <h1 className="font-medium text-[18px] w-full md:text-[16px] lg:text-[20px] xl:text-[24px]">
+                  "{currentTestimonial.feedBack}"
+                </h1>
+
+                <div className="my-5 review flex items-center space-x-1">
+                  <div className="stars flex space-x-1">
+                    {[1, 2, 3, 4, 5].map((i) => {
+                      return (
+                        <RiStarSFill
+                          key={i}
+                          className={`text-sm ${
+                            i <= Math.round(currentTestimonial.rating)
+                              ? "text-[#FFCC00]"
+                              : "text-[#000]"
+                          }`}
+                        />
+                      );
+                    })}
+                  </div>
+
+                  <span>{currentTestimonial.rating}</span>
                 </div>
-              </div>
+
+                <div className="md:flex md:justify-between">
+                  <div></div>
+                  <div>
+                    <h2>{currentTestimonial.name}</h2>
+                    <p>{currentTestimonial.position}</p>
+                  </div>
+                </div>
+              </motion.div>
             </div>
           </div>
-        </div>
 
-        <div class="flex items-center justify-center space-x-4">
-          <button
-            onClick={handlePrev}
-            class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
-          >
-            <svg
-              class="w-4 h-4 text-black"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
+          <div class="flex items-center justify-center space-x-4">
+            <button
+              onClick={handlePrev}
+              class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
+              <svg
+                class="w-4 h-4 text-black"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
 
-          <div class="flex items-center space-x-2">
-            {testimonials.map((_, index) => {
-              return (
-                <span
-                  key={index}
-                  className={`rounded-full ${
-                    index === currentIndex
-                      ? "w-6 h-1 bg-purple-600"
-                      : "w-1 h-1 bg-gray-400"
-                  }
+            <div class="flex items-center space-x-2">
+              {testimonials.map((_, index) => {
+                return (
+                  <span
+                    key={index}
+                    className={`rounded-full ${
+                      index === currentIndex
+                        ? "w-6 h-1 bg-purple-600"
+                        : "w-1 h-1 bg-gray-400"
+                    }
                    ${currentLanguage == "ar" ? "me-3" : ""}`}
-                ></span>
-              );
-            })}
-          </div>
+                  ></span>
+                );
+              })}
+            </div>
 
-          <button
-            onClick={handleNext}
-            class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
-          >
-            <svg
-              class="w-4 h-4 text-black"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
+            <button
+              onClick={handleNext}
+              class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-        </div>
+              <svg
+                class="w-4 h-4 text-black"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

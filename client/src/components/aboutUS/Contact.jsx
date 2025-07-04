@@ -9,6 +9,7 @@ import {
 import { BsTelephone } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import StayUpdated from "./StayUpdated";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -25,21 +26,43 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="overflow-hidden text-center">
             <h1 className="text-purple-600 font-semibold text-[32px] mb-6">
-              {t("pages.about.contact.title")}
+              {t("pages.about.contact.title")
+                .split(" ")
+                .map((word, index) => {
+                  return (
+                    <motion.span
+                      key={index}
+                      initial={{ opacity: 0 }}
+                      whileInView={{ opacity: 1 }}
+                      transition={{ delay: index * 0.3 }}
+                    >
+                      <span>
+                        {word}
+                        &nbsp;
+                      </span>
+                    </motion.span>
+                  );
+                })}
             </h1>
 
-            <p
+            <motion.p
               className={`text-[20px] ${
                 isDarkMode ? "text-white" : "text-black"
               }`}
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.3 }}
             >
               {t("pages.about.contact.desc")}
-            </p>
+            </motion.p>
           </div>
 
           <div className="my-16 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div
+            <motion.div
               className={`px-8 py-16 flex flex-col justify-between rounded-xl bg-gradient-to-br from-[#7616EC] to-[#490F8F] text-white`}
+              initial={{ x: -150, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.9 }}
             >
               <div className="overflow-hidden">
                 <h1 className="font-semibold text-[28px]">
@@ -53,7 +76,11 @@ const Contact = () => {
 
               <div className="my-6 space-y-6">
                 <div className="flex space-x-3">
-                  <FaMapMarkerAlt className={`mt-1 text-xl ${currentLanguage === 'ar' ? 'me-3' :'' }`} />
+                  <FaMapMarkerAlt
+                    className={`mt-1 text-xl ${
+                      currentLanguage === "ar" ? "me-3" : ""
+                    }`}
+                  />
                   <div>
                     <h3 className="font-semibold">
                       {t("pages.about.contact.ourHeadquarters")}
@@ -65,7 +92,11 @@ const Contact = () => {
                 </div>
 
                 <div className="flex space-x-3">
-                  <BsTelephone className={`mt-1 text-xl ${currentLanguage === 'ar' ? 'me-3' :'' }`} />
+                  <BsTelephone
+                    className={`mt-1 text-xl ${
+                      currentLanguage === "ar" ? "me-3" : ""
+                    }`}
+                  />
                   <div>
                     <h3 className="font-semibold">
                       {t("pages.about.contact.phone")}
@@ -75,7 +106,11 @@ const Contact = () => {
                 </div>
 
                 <div className="flex space-x-3">
-                  <FaEnvelope className={`mt-1 text-xl ${currentLanguage === 'ar' ? 'me-3' :'' }`} />
+                  <FaEnvelope
+                    className={`mt-1 text-xl ${
+                      currentLanguage === "ar" ? "me-3" : ""
+                    }`}
+                  />
                   <div>
                     <h3 className="font-semibold">
                       {t("pages.about.contact.email")}
@@ -110,12 +145,15 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
 
-            <div
+            <motion.div
               className={`flex flex-col justify-between px-8 py-6 rounded-xl text-black border-2 border-gray-900 ${
                 isDarkMode ? "bg-white text-black" : ""
               }`}
+              initial={{ x: 150, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.9 }}
             >
               <div className="overflow-hidden">
                 <h2 className="text-[32px]">
@@ -183,7 +221,7 @@ const Contact = () => {
                   {t("pages.about.contact.sendMesssage")}
                 </button>
               </form>
-            </div>
+            </motion.div>
           </div>
 
           <StayUpdated />
