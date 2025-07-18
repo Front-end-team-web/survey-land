@@ -49,7 +49,7 @@ const Contact = () => {
               className={`text-[20px] ${
                 isDarkMode ? "text-white" : "text-black"
               }`}
-              initial={{ x: -50, opacity: 0 }}
+              initial={{ x: -20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
@@ -57,10 +57,10 @@ const Contact = () => {
             </motion.p>
           </div>
 
-          <div className="my-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="my-16 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-x-hidden">
             <motion.div
-              className={`px-8 py-16 flex flex-col justify-between rounded-xl bg-gradient-to-br from-[#7616EC] to-[#490F8F] text-white`}
-              initial={{ x: -150, opacity: 0 }}
+              className={`space-y-14 px-8 py-16 flex flex-col justify-between rounded-xl bg-gradient-to-br from-[#7616EC] to-[#490F8F] text-white`}
+              initial={{ x: -20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.9 }}
             >
@@ -74,7 +74,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="my-6 space-y-6">
+              <div className="space-y-6">
                 <div className="flex space-x-3">
                   <FaMapMarkerAlt
                     className={`mt-1 text-xl ${
@@ -148,10 +148,10 @@ const Contact = () => {
             </motion.div>
 
             <motion.div
-              className={`flex flex-col justify-between px-8 py-6 rounded-xl text-black border-2 border-gray-900 ${
+              className={`flex flex-col justify-between px-8 py-6 rounded-xl text-black border border-gray-900 ${
                 isDarkMode ? "bg-white text-black" : ""
               }`}
-              initial={{ x: 150, opacity: 0 }}
+              initial={{ x: 20, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.9 }}
             >

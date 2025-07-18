@@ -157,7 +157,7 @@ const Footer = () => {
             <p className="text-gray-400 mt-2">{t("footer.stayUpdatedDesc")}</p>
             <div className="mt-3 flex flex-col gap-y-4">
               <input
-                className="rounded py-1 px-2 focus:outline-none bg-[#271F37] text-white"
+                className="rounded py-1 px-2 focus:outline-none bg-purple-500/30 text-white"
                 type="email"
                 name="email"
                 placeholder={t("footer.stayUpdatedEntreEmail")}

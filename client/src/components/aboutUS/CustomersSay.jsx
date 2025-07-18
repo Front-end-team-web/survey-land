@@ -4,6 +4,7 @@ import { FaQuoteRight } from "react-icons/fa";
 import { RiStarSFill } from "react-icons/ri";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { TITLE_SM, TITLE_MD, DESC_MD, DESC_SM } from "../../design/SharedClasses";
 
 const CustomersSay = () => {
   const testimonials = [
@@ -63,7 +64,7 @@ const CustomersSay = () => {
     >
       <div className="container mx-auto px-4">
         <div className="overflow-hidden text-center">
-          <h1 className="text-purple-600 font-semibold text-[32px] mb-6">
+          <h1 className={`text-purple-600 font-semibold mb-6 ${TITLE_SM} md:${TITLE_MD}`}>
             {t("pages.about.customersSay.title")
               .split(" ")
               .map((word, index) => {
@@ -84,10 +85,10 @@ const CustomersSay = () => {
           </h1>
 
           <motion.p
-            className={`text-[20px] ${
+            className={`${DESC_SM} md:${DESC_MD} ${
               isDarkMode ? "text-white" : "text-black"
             }`}
-            initial={{ x: -50, opacity: 0 }}
+            initial={{ x: -20, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
@@ -99,6 +100,7 @@ const CustomersSay = () => {
           initial={{ y: -150, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.9 }}
+          className="overflow-x-hidden"
         >
           <div
             className={`my-16 p-6 bg-[#E0E0E042] rounded-xl flex flex-col md:flex-row gap-8 md:gap-16`}
@@ -113,7 +115,7 @@ const CustomersSay = () => {
                   src={currentTestimonial.image}
                   alt={currentTestimonial.name}
                   className="p-1 md:w-[200px] md:h-[200px] xl:w-[200px] xl:h-[200px] rounded-xl"
-                  initial={{ x: -150, opacity: 0 }}
+                  initial={{ x: -20, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1.2 }}
                 />
@@ -121,7 +123,7 @@ const CustomersSay = () => {
 
               <motion.div
                 className="w-full md:w-3/4 overflow-hidden"
-                initial={{ x: 150, opacity: 0 }}
+                initial={{ x: 20, opacity: 0 }}
                 whileInView={{ x: 0, opacity: 1 }}
                 transition={{ delay: 1.2 }}
               >
@@ -159,27 +161,27 @@ const CustomersSay = () => {
             </div>
           </div>
 
-          <div class="flex items-center justify-center space-x-4">
+          <div className="flex items-center justify-center space-x-4">
             <button
               onClick={handlePrev}
-              class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
+              className="w-5 h-5 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
             >
               <svg
-                class="w-4 h-4 text-black"
+                className="w-4 h-4 text-black"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
+                strokeWidth="2"
                 viewBox="0 0 24 24"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M15 19l-7-7 7-7"
                 />
               </svg>
             </button>
 
-            <div class="flex items-center space-x-2">
+            <div className="flex items-center space-x-2">
               {testimonials.map((_, index) => {
                 return (
                   <span
@@ -197,18 +199,18 @@ const CustomersSay = () => {
 
             <button
               onClick={handleNext}
-              class="w-5 h-5 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
+              className="w-5 h-5 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300"
             >
               <svg
-                class="w-4 h-4 text-black"
+                className="w-4 h-4 text-black"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
+                strokeWidth="2"
                 viewBox="0 0 24 24"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M9 5l7 7-7 7"
                 />
               </svg>
