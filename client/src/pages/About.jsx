@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
 import Contact from "../components/aboutUS/Contact";
-import Footer from "../components/shared/Footer";
-import StayUpdated from "../components/aboutUS/StayUpdated";
 import CustomersSay from "../components/aboutUS/CustomersSay";
 
 const About = () => {
@@ -22,7 +20,6 @@ const About = () => {
       </motion.div>
       <CustomersSay />
       <Contact />
-      <Footer />
     </>
   );
 };

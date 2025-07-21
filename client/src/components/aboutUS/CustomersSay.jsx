@@ -10,7 +10,7 @@ const CustomersSay = () => {
   const testimonials = [
     {
       image:
-        "https://media.istockphoto.com/id/1310533180/fr/photo/homme-adulte-%C3%A0-la-mode-gai-dans-le-cadre-de-ville.jpg?s=612x612&w=0&k=20&c=bcHVxsSAObt6h2R604K2btDMy-jSPyn2DeWLjI85lIE=",
+        "src/assets/aboutImages/img1.jpg",
       feedBack:
         "Survey infinity has transformed how we collect customer feedback. The insights we've gained have directly led to product improvements that our customers love.",
       rating: 4.1,
@@ -19,7 +19,7 @@ const CustomersSay = () => {
     },
     {
       image:
-        "https://media.istockphoto.com/id/613557584/photo/portrait-of-a-beautifull-smiling-man.jpg?s=612x612&w=0&k=20&c=hkCg5CrmTKOApePbPOyo1U9GexEfIJOJqoLXJIvcN8E=",
+        "src/assets/aboutImages/img2.jpg",
       feedBack:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatum nemo neque sed modi ipsum voluptate hic, nisi omnis commodi, rem beatae architecto. Consequatur, libero?",
       rating: 3.1,
@@ -28,7 +28,7 @@ const CustomersSay = () => {
     },
     {
       image:
-        "https://media.istockphoto.com/id/1644238002/photo/business-confidence-and-portrait-black-man-with-smile-in-office-startup-ceo-or-owner-at-hr.jpg?s=612x612&w=0&k=20&c=qv73OrrnOSfjzQuJiLOywdO2Ly7jsEmG6JhDXY1Qjc4=",
+        "src/assets/aboutImages/img3.jpg",
       feedBack:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatum nemo neque sed modi ipsum voluptate hic, nisi omnis commodi, rem beatae architecto. Consequatur, libero?",
       rating: 2.1,

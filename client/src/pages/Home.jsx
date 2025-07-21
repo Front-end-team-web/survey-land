@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "../hooks/useTranslation";
-import Footer from "../components/shared/Footer";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -17,7 +16,6 @@ const Home = () => {
           {t("pages.home.title")}
         </h1>
       </motion.div>
-      <Footer />
     </>
   );
 };

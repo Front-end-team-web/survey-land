@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import myLogo from "../../assets/logo.png";
+import myLogo from "../assets/logo.png";
 import { useSelector } from "react-redux";
-import { useTranslation } from "../../hooks/useTranslation";
+import { useTranslation } from "../hooks/useTranslation";
 import { Link } from "react-router-dom";
 import {
   FaTwitter,

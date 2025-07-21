@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
-import Footer from "../../components/shared/Footer";
 import { useTranslation } from "../../hooks/useTranslation";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   const { t } = useTranslation();
-  const {isDarkMode} = useSelector((state) => state.theme);
+  const { isDarkMode } = useSelector((state) => state.theme);
 
   return (
     <>
@@ -33,7 +33,8 @@ const NotFound = () => {
             {t("pages.notFound.title")}
           </h1>
 
-          <button
+          <Link
+            to={"/"}
             className="cursor-pointer"
             style={{
               backgroundColor: isDarkMode ? "#8b5cf6" : "#7c3aed",
@@ -45,10 +46,9 @@ const NotFound = () => {
             }}
           >
             {t("pages.notFound.backToHome")}
-          </button>
+          </Link>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
