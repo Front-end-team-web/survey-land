@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux";
-import { useTranslation } from "../../hooks/useTranslation";
+import { useTranslation } from "../../../hooks/useTranslation";
 import { FaQuoteRight } from "react-icons/fa";
 import { RiStarSFill } from "react-icons/ri";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { TITLE_SM, TITLE_MD, DESC_MD, DESC_SM } from "../../design/SharedClasses";
+import { TITLE_SM, TITLE_MD, DESC_MD, DESC_SM } from "../../../design/SharedClasses";
 
 const CustomersSay = () => {
   const testimonials = [

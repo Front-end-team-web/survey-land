@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { useTranslation } from "../../hooks/useTranslation";
+import { useTranslation } from "../../../hooks/useTranslation";
 import { motion } from "framer-motion";
 
 const StayUpdated = () => {

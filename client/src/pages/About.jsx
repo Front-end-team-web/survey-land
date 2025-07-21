@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
-import Contact from "../components/aboutUS/Contact";
-import CustomersSay from "../components/aboutUS/CustomersSay";
 
 const About = () => {
   const { currentLanguage } = useSelector((state) => state.language);
@@ -18,8 +16,6 @@ const About = () => {
           {currentLanguage === "en" ? "About Us" : "من نحن"}
         </h1>
       </motion.div>
-      <CustomersSay />
-      <Contact />
     </>
   );
 };
