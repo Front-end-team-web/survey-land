@@ -30,5 +30,146 @@
       "title": "Contact Us"
     }
   },
-  "Test": "ahmed"
+  "HeroSection": {
+    "title": {
+      "part1": "Create powerful surveys",
+      "part2": "in",
+      "part3": "minutes",
+      "part4": "not hours"
+    },
+    "subtitle": "Survey Infinity helps you gather actionable insights through beautifully designed interactive surveys with advanced analytics and seamless integration.",
+    "buttonOne": " Get started",
+    "buttonTwo": "Templates"
+  },
+  "featuresSection": {
+    "title": {
+      "part1": "Powerful",
+      "part2": " features to transform",
+      "part3": "your data",
+      "part4": "collection"
+    },
+    "subtitle": "Everything you need to create, distribute, and analyze surveys that deliver actionable insights."
+  },
+  "featuresList": [
+    {
+      "title": "Intuitive Survey Creation",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    },
+    {
+      "title": "Advanced Analytics",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    },
+    {
+      "title": "Multi-Device Support",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    },
+    {
+      "title": "Custom Branding",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    },
+    {
+      "title": "Easy Integration",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    },
+    {
+      "title": "Real-Time Notifications",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    }
+  ],
+  "workSection": {
+    "title": {
+      "part1": "How",
+      "part2": "it works"
+    }
+  },
+  "steps": [
+    {
+      "title": "Build your Survey",
+      "description": "Choose a ready-made template or start from scratch."
+    },
+    {
+      "title": "Collect Responses",
+      "description": "Share your survey link and start getting responses in real time."
+    },
+    {
+      "title": "Analyze Results",
+      "description": "Use our dashboard to view insights and generate reports."
+    }
+  ],
+  "enterprise": {
+    "title": "Enterprise solutions for teams of all sizes",
+    "description": "Scale your research capabilities with advanced features designed for teams and organizations.",
+    "features": [
+      "Team collaboration with shared templates and assets",
+      "Custom branding and white-labeling options",
+      "Advanced integrations with CRM and marketing tools",
+      "Dedicated account manager and priority support",
+      "Custom development for specialized survey needs"
+    ],
+    "button": "Learn about Enterprise solutions"
+  },
+  "featuresSectionSeeMore": {
+    "seeMore": "See More"
+  },
+  "featuresListDetails": [
+    {
+      "title": "Easy Sharing",
+      "description": "Share surveys effortlessly easy on social media platforms."
+    },
+    {
+      "title": "Drag and Drop",
+      "description": "Create surveys easily with drag-and-drop functionality using a user-friendly interface."
+    },
+    {
+      "title": "Multiple Question Types",
+      "description": "Multiple-choice, rating scales, text input, date selection, Likert scales, and much more."
+    },
+    {
+      "title": "Responsive Design",
+      "description": "Surveys that work perfectly on all devices and screens."
+    },
+    {
+      "title": "Full Arabic Support",
+      "description": "Fully Arabic interface with right-to-left writing support."
+    },
+    {
+      "title": "Instant Analytics",
+      "description": "Quickly analyze results in real-time and export reports."
+    }
+  ],
+
+  "FeatureAllNeeds": {
+    "title": {
+      "part1": "Diverse Uses for ",
+      "part2": "All Your Needs"
+    }
+  },
+  "FeatureAllNeedsSteps": [
+    {
+      "title": "Events",
+      "description": "Attendance registration, event feedback, post-event surveys. "
+    },
+    {
+      "title": "Human Resources",
+      "description": "Employee satisfaction, performance evaluations, workplace climate surveys.   "
+    },
+    {
+      "title": "Customer Feedback",
+      "description": "Customer satisfaction, product evaluations, service improvement."
+    },
+    {
+      "title": "Education",
+      "description": "Exams, student surveys, curriculum assessments."
+    }
+  ],
+  "featuresHeader": {
+    "sectionTitle": "FEATURES",
+    "headline": {
+      "part1": "Create",
+      "part2": "Easy professional",
+      "part3": "surveys"
+    },
+    "description": "An integrated platform for creating and managing surveys with advanced tools and detailed analytics. Designed specifically for Arabic users.",
+    "button": "Start For Free"
+  }
 }
