@@ -9,6 +9,7 @@
     "register": "سجل الآن",
     "language": "English"
   },
+
   "pages": {
     "home": {
       "title": "الصفحة الرئيسية",
@@ -27,9 +28,9 @@
         "followUs": "تابعنا",
         "sendUsMessage": "أرسل لنا رسالة",
         "name": "الاسم",
+        "sendMesssage": "إرسال الرسالة",
         "subject": "الموضوع",
         "message": "الرسالة",
-        "sendMesssage": "إرسال الرسالة",
         "entreEmail": "أدخل بريدك الالكتروني"
       },
       "stayUpdated": {
@@ -50,7 +51,102 @@
       "title": "الأسئلة الشائعة"
     },
     "pricing": {
-      "title": "الأسعار"
+      "ChoosePlan": {
+        "Choose": "اختر",
+        "your Plan": "خطتك",
+        "Choose your perfect plan": "اختر الخطة المثالية لك",
+        "Choose the perfect": "اختر الخطة المثالية حسب احتياجاتك. سواء كنت في البداية أو تدير مؤسسة كبيرة، نحن نوفر لك كل ما تحتاجه.",
+        "Monthly": "شهري",
+        "Annual (save 20%)": "سنوي (وفر 20%)",
+        "Most popular": "الأكثر شيوعًا",
+        "Basic": "الأساسية",
+        "Professional": "الاحترافية",
+        "Enterprise": "المؤسسية",
+        "PlanDescriptions": {
+          "Basic": "مثالية للأفراد والفرق الصغيرة التي تبدأ مشوارها.",
+          "Professional": "مناسبة للأعمال المتنامية التي تحتاج إلى مزيد من القوة والمزايا.",
+          "Enterprise": "مخصصة للمؤسسات الكبيرة التي تحتاج إلى ميزات متقدمة ودعم مخصص."
+        },
+        "PlanFeatures": {
+          "Up to 10 surveys per month": "حتى 10 استبيانات شهريًا",
+          "100 responses per survey": "100 رد لكل استبيان",
+          "Basic survey templates": "قوالب استبيانات أساسية",
+          "Email support": "دعم عبر البريد الإلكتروني",
+          "Export to PDF & CSV": "تصدير إلى PDF وCSV",
+          "Basic analytics": "تحليلات أساسية",
+          "Unlimited surveys": "عدد غير محدود من الاستبيانات",
+          "1000 responses per survey": "1000 رد لكل استبيان",
+          "Advanced survey templates": "قوالب استبيانات متقدمة",
+          "Priority email support": "دعم بريد إلكتروني أولوية",
+          "Advanced analytics": "تحليلات متقدمة",
+          "Custom branding": "العلامة التجارية المخصصة",
+          "Team collaboration": "تعاون الفريق",
+          "API access": "وصول إلى واجهة برمجة التطبيقات (API)",
+          "Unlimited everything": "كل شيء غير محدود",
+          "Dedicated account manager": "مدير حساب مخصص",
+          "Custom integration support": "دعم تكامل مخصص",
+          "Advanced security features": "ميزات أمان متقدمة",
+          "SLA guarantees": "ضمانات اتفاقية مستوى الخدمة (SLA)",
+          "Training sessions": "جلسات تدريبية",
+          "Custom contract terms": "شروط عقد مخصصة",
+          "Phone support": "دعم عبر الهاتف"
+        },
+        "PlanActions": {
+          "Start free trial": "ابدأ النسخة التجريبية المجانية",
+          "Contact sales": "تواصل مع قسم المبيعات"
+        },
+        "30-day money-back guarantee": "ضمان استرجاع الأموال خلال 30 يومًا"
+      },
+      "ComparePlans": {
+        "Compare Plans": "قارن الخطط",
+        "Find the plan": "ابحث عن الخطة المناسبة لك",
+        "Features": "الميزات",
+        "Basic": "الأساسية",
+        "Professional": "الاحترافية",
+        "Enterprise": "المؤسسية",
+        "Survey Creation": "إنشاء الاستبيانات",
+        "Custom survey themes": "سمات استبيانات مخصصة",
+        "Question logic & branching": "منطق الأسئلة والتفرعات",
+        "Custom branding": "العلامة التجارية المخصصة",
+        "Data Collection": "جمع البيانات",
+        "Analysis & Reporting": "التحليل والتقارير",
+        "Responses per survey": "عدد الردود لكل استبيان",
+        "Unlimited": "غير محدود",
+        "File uploads": "رفع الملفات",
+        "Offline data collection": "جمع البيانات دون اتصال",
+        "Basic analytics": "تحليلات أساسية",
+        "Advanced analytics": "تحليلات متقدمة",
+        "Custom reports": "تقارير مخصصة"
+      },
+      "Testimonial": {
+        "Trusted by thousands": "موثوق به من قبل الآلاف",
+        "See what our customers have to say about their experience": "اطّلع على آراء عملائنا حول تجربتهم",
+        "text1": "خطة الاحتراف تحتوي على كل ما نحتاجه لجمع تعليقات العملاء بفعالية. أدوات التحليل كانت لا تقدر بثمن في تطوير منتجاتنا.",
+        "Michael Rodriguez": "مايكل رودريغيز",
+        "role1": "مدير الأبحاث في شركة Global Research Ltd.",
+        "Sarah Johnson": "سارة جونسون",
+        "role2": "مديرة المنتج في شركة Tech Innovations Inc.",
+        "David Kim": "ديفيد كيم",
+        "role3": "مؤسس شركة Local Startup Co."
+      },
+      "Questions": {
+        "Frequently Asked Questions": "الأسئلة الشائعة",
+        "Everything you need to know about our pricing and products": "كل ما تحتاج معرفته حول خطط الأسعار والمنتجات",
+        "What happens after my trial ends?": "ماذا يحدث بعد انتهاء الفترة التجريبية؟",
+        "Yes": "نعم، يمكنك الترقية أو التخفيض أو إلغاء خطتك في أي وقت. إذا قمت بالترقية، ستكون الميزات الجديدة متاحة فورًا. وإذا قمت بالتخفيض، سيتم تطبيق التغييرات في بداية دورة الفوترة التالية.",
+        "Can I change plans at any time?": "هل يمكنني تغيير الخطة في أي وقت؟",
+        "Do you offer discounts for nonprofits?": "هل تقدمون خصومات للمنظمات غير الربحية؟",
+        "What payment methods do you accept?": "ما هي طرق الدفع التي تقبلونها؟",
+        "Is there a limit on survey responses? ": " هل هناك حد لعدد الردود على الاستبيانات؟",
+        "Still have questions?": "ما زلت تملك أسئلة؟",
+        "Contact our support team": "تواصل مع فريق الدعم لدينا"
+      },
+      "GetStarted": {
+        "Ready to get started?": "هل أنت مستعد للبدء؟",
+        "Join": "انضم إلى آلاف المؤسسات التي تثق بـ Survey Infinity لجمع آراء قيّمة واتخاذ قرارات مستندة إلى البيانات.",
+        "Start free trial": "ابدأ النسخة التجريبية المجانية",
+        "Contact sales": "تواصل مع فريق المبيعات"
+      }
     },
     "contact": {
       "title": "اتصل بنا"
@@ -68,24 +164,20 @@
     "productsFormCreator": "منشئ النماذج",
     "productsPoolSystem": "نظام التجمع",
     "productsAnalyticsDashboard": "لوحة معلومات التحليلات",
-
     "resources": "الموارد",
     "resourcesHelpCenter": "مركز المساعدة",
     "resourcesBlog": "المدونة",
     "resourcesTutorials": "البرامج التعليمية",
     "resourcesCaseStudies": "دراسات الحالة",
     "resourcesTemplates": "القوالب",
-
     "stayUpdated": "ابقَ على اطلاع",
     "stayUpdatedDesc": "اشترك في النشرة الإخبارية لدينا للحصول على النصائح والتحديثات",
     "stayUpdatedEntreEmail": "أدخل بريدك الالكتروني",
     "stayUpdatedSubscribe": "اشترك",
-
     "terms": "الشروط",
     "privacy": "الخصوصية",
     "security": "الأمان",
     "cookies": "ملفات تعريف الارتباط",
-
     "rights": "جميع الحقوق محفوظة لشركة SurveyPro لعام ٢٠٢٥."
   },
   "HeroSection": {
@@ -166,7 +258,6 @@
     ],
     "button": "تعرّف على حلول المؤسسات"
   },
-
   "featuresSectionSeeMore": {
     "seeMore": "عرض المزيد"
   },
@@ -220,7 +311,6 @@
       "description": "الاختبارات، استبيانات الطلاب، تقييم المناهج الدراسية."
     }
   ],
-
   "featuresHeader": {
     "sectionTitle": "الميزات",
     "headline": {
