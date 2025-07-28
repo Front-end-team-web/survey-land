@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
+import Index from "../components/home/Index";
 
 const Home = () => {
   // const { t } = useTranslation();
@@ -17,6 +18,7 @@ const Home = () => {
       {/* <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
         {t("pages.home.title")}
       </h1> */}
+      <Index />
     </motion.div>
   );
 };

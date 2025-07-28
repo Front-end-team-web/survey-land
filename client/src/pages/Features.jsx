@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
+import Index from "../components/feature/Index";
 
 const Features = () => {
   // const { currentLanguage } = useSelector((state) => state.language);
@@ -16,6 +17,7 @@ const Features = () => {
       {/* <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
         {currentLanguage === "en" ? "Features" : "المميزات"}
       </h1> */}
+      <Index />
     </motion.div>
   );
 };
