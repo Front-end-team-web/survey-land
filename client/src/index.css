@@ -1,5 +1,5 @@
 /* Custom styles for RTL support */
-[dir="rtl"] .space-x-4 > * + * {
+[dir="rtl"] .space-x-4>*+* {
   margin-right: 1rem;
   margin-left: 0;
 }
@@ -14,4 +14,10 @@
   transition-property: background-color, border-color, color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+:root {
+  --main-color: #6614CB;
+  --main-opacity-color: #E2D3E499;
+  --color-primary-dark: #2563eb;
 }

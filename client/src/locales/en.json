@@ -24,7 +24,103 @@
       "title": "Frequently Asked Questions"
     },
     "pricing": {
-      "title": "Pricing"
+      "ChoosePlan": {
+        "Choose": "Choose",
+        "your Plan": "your Plan",
+        "Choose your perfect plan": "Choose your perfect plan",
+        "Choose the perfect": "Choose the perfect plan for your needs. Whether you're just starting out or running a large organization, we've got you covered.",
+        "Monthly": "Monthly",
+        "Annual (save 20%)": "Annual (save 20%)",
+        "Most popular": "Most popular",
+        "Basic": "Basic",
+        "Professional": "Professional",
+        "Enterprise": "Enterprise",
+        "PlanDescriptions": {
+          "Basic": "Perfect for individuals and small teams just getting started.",
+          "Professional": "Ideal for growing businesses that need more power and features.",
+          "Enterprise": "For large organizations requiring advanced features and support."
+        },
+        "PlanFeatures": {
+          "Up to 10 surveys per month": "Up to 10 surveys per month",
+          "100 responses per survey": "100 responses per survey",
+          "Basic survey templates": "Basic survey templates",
+          "Email support": "Email support",
+          "Export to PDF & CSV": "Export to PDF & CSV",
+          "Basic analytics": "Basic analytics",
+          "Unlimited surveys": "Unlimited surveys",
+          "1000 responses per survey": "1000 responses per survey",
+          "Advanced survey templates": "Advanced survey templates",
+          "Priority email support": "Priority email support",
+          "Advanced analytics": "Advanced analytics",
+          "Custom branding": "Custom branding",
+          "Team collaboration": "Team collaboration",
+          "API access": "API access",
+          "Unlimited everything": "Unlimited everything",
+          "Dedicated account manager": "Dedicated account manager",
+          "Custom integration support": "Custom integration support",
+          "Advanced security features": "Advanced security features",
+          "SLA guarantees": "SLA guarantees",
+          "Training sessions": "Training sessions",
+          "Custom contract terms": "Custom contract terms",
+          "Phone support": "Phone support"
+        },
+        "PlanActions": {
+          "Start free trial": "Start free trial",
+          "Contact sales": "Contact sales"
+        },
+        "30-day money-back guarantee": "30-day money-back guarantee"
+      },
+      "ComparePlans": {
+        "Compare Plans": "Compare Plans",
+        "Find the plan": "Find the plan that's right for you",
+        "Features": "Features",
+        "Basic": "Basic",
+        "Professional": "Professional",
+        "Enterprise": "Enterprise",
+        "Survey Creation": "Survey Creation",
+        "Custom survey themes": "Custom survey themes",
+        "Question logic & branching": "Question logic & branching",
+        "Custom branding": "Custom branding",
+        "Data Collection": "Data Collection",
+        "Analysis & Reporting": "Analysis & Reporting",
+        "Responses per survey": "Responses per survey",
+        "Unlimited": "Unlimited",
+        "File uploads": "File uploads",
+        "Offline data collection": "Offline data collection",
+        "Basic analytics": "Basic analytics",
+        "Advanced analytics": "Advanced analytics",
+        "Custom reports": "Custom reports"
+      },
+      "Testimonial": {
+        "Trusted by thousands": "Trusted by thousands",
+        "See what our customers have to say about their experience": "See what our customers have to say about their experience",
+        "text1": "The Professional plan has everything we need to gather customer feedback effectively. The analytics tools have been invaluable for our product development.",
+        "Michael Rodriguez": "Michael Rodriguez",
+        "role1": "Research Director at Global Research Ltd.",
+        "Sarah Johnson": "Sarah Johnson",
+        "role2": "Product Manager at Tech Innovations Inc.",
+        "David Kim": "David Kim",
+        "role3": "Founder of Local Startup Co."
+      },
+      "Questions": {
+        "Frequently Asked Questions": "Frequently Asked Questions",
+        "Everything you need to know about our pricing and products": "Everything you need to know about our pricing and products",
+        "What happens after my trial ends?": "What happens after my trial ends?",
+        "Yes": "Yes, you can upgrade, downgrade, or cancel your plan at any time. If you upgrade, the new features will be available immediately. If you downgrade, the changes will take effect at the start of your next billing cycle.",
+        "Can I change plans at any time?": "Can I change plans at any time?",
+        "Do you offer discounts for nonprofits?": "Do you offer discounts for nonprofits?",
+        "What payment methods do you accept?": "What payment methods do you accept?",
+        "Is there a limit on survey responses?": "Is there a limit on survey responses?",
+        "Still have questions? ": "Still have questions? ",
+        "Contact our support team": "Contact our support team",
+        "Yes, you can upgrade, downgrade, or cancel your plan at any time. If you upgrade, the new features will be available immediately. If you downgrade, the changes will take effect at the start of your next billing cycle.": "Yes, you can upgrade, downgrade, or cancel your plan at any time. If you upgrade, the new features will be available immediately. If you downgrade, the changes will take effect at the start of your next billing cycle."
+      },
+      "GetStarted": {
+        "Ready to get started?": "Ready to get started?",
+        "Join": "Join thousands of organizations that trust Survey Infinity to collect valuable feedback and make data-driven decisions.",
+        "Start free trial": "Start free trial",
+        "Contact sales": "Contact sales"
+      }
     },
     "contact": {
       "title": "Contact Us"
