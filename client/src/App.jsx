@@ -5,6 +5,7 @@ import { setTheme } from "./store/slices/themeSlice";
 import { setLanguage } from "./store/slices/languageSlice";
 import Navbar from "./shared/Navbar";
 import AppRoutes from "./routes/AppRoutes";
+import Footer from "./shared/Footer";
 
 function App() {
   const dispatch = useDispatch();
@@ -49,6 +50,7 @@ function App() {
         <main className="pt-20">
           <AppRoutes />
         </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );
