@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setTheme } from "./store/slices/themeSlice";
 import { setLanguage } from "./store/slices/languageSlice";
-import Navbar from "./components/Navbar";
+import Navbar from "./shared/Navbar";
 import AppRoutes from "./routes/AppRoutes";
 import Footer from "./shared/Footer";
 
