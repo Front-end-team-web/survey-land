@@ -15,7 +15,34 @@
       "welcome": "Welcome to Survey Infinity"
     },
     "about": {
-      "title": "About Us"
+      "title": "About Us",
+      "contact": {
+        "title": "Get in Touch",
+        "desc": "Have questions about SurveyPro? Our team is here to help you find the right solution for your needs.",
+        "contactInfo":"Contact Information",
+        "contactInfoDesc":"Fill out the form or contact us directly using the information below.",
+        "ourHeadquarters":"Our Headquarters",
+        "phone":"Phone",
+        "email":"Email",
+        "followUs":"Follow Us",
+        "sendUsMessage":"Send us a message",
+        "name":"Name",
+        "subject":"Subject",
+        "message":"Message",
+        "sendMesssage":"Send Message",
+        "stayUpdated":"Stay Updated",
+        "entreEmail": "Enter your Email"
+      },
+      "stayUpdated":{
+        "title":"Stay Updated",
+        "desc":"Subscribe to our newsletter to receive product updates, industry insights, and helpful tips for creating effective surveys.",
+        "subscribe": "Subscribe",
+        "entreEmail": "Enter your Email"
+      },
+      "customersSay":{
+        "title": "What Our Customers Say",
+        "desc": "Discover how organizations are using Survey Infinity to transform feedback into meaningful insights and action."
+      }
     },
     "features": {
       "title": "Features"
@@ -28,8 +55,39 @@
     },
     "contact": {
       "title": "Contact Us"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "backToHome": "Back to Home Page"
     }
   },
+  "footer": {
+    "desc": "create, distribute and analyze surveys with ease, Get valuable insights from your audience.",
+    "products": "Products",
+    "productsSurveyBuilder": "Survey Builder",
+    "productsQuizMaker": "Quiz Maker",
+    "productsFormCreator": "Form Creator",
+    "productsPoolSystem": "Pool System",
+    "productsAnalyticsDashboard": "Analytics Dashboard",
+    
+    "resources": "Resources",
+    "resourcesHelpCenter": "Help Center",
+    "resourcesBlog": "Blog",
+    "resourcesTutorials": "Tutorials",
+    "resourcesCaseStudies": "Case Studies",
+    "resourcesTemplates": "Templates",
+    
+    "stayUpdated": "Stay Updated",
+    "stayUpdatedDesc": "Subscribe to our newsletter for tips and updates.",
+    "stayUpdatedEntreEmail": "Enter your Email",
+    "stayUpdatedSubscribe": "Subscribe",
+    
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "security": "Security",
+    "cookies": "Cookies",
+    
+    "rights": "2025 SurveyPro. All rights reserved."
   "HeroSection": {
     "title": {
       "part1": "Create powerful surveys",

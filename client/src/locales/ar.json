@@ -15,7 +15,33 @@
       "welcome": "مرحباً بك في Survey Infinity"
     },
     "about": {
-      "title": "من نحن"
+      "title": "من نحن",
+      "contact": {
+        "title": "تواصل على اتصال",
+        "desc": "هل لديك أسئلة حول SurveyPro؟ فريقنا هنا لمساعدتك في العثور على الحل الصحيح لاحتياجاتك.",
+        "contactInfo":"معلومات الاتصال",
+        "contactInfoDesc":"املأ النموذج أو اتصل بنا مباشرة باستخدام المعلومات أدناه.",
+        "ourHeadquarters":"مقرنا",
+        "phone":"هاتف",
+        "email":"بريد إلكتروني",
+        "followUs":"تابعنا",
+        "sendUsMessage":"أرسل لنا رسالة",
+        "name":"الاسم",
+        "subject":"الموضوع",
+        "message":"الرسالة",
+        "sendMesssage":"إرسال الرسالة",
+        "entreEmail": "أدخل بريدك الالكتروني"
+      },
+      "stayUpdated":{
+        "title":"ابق على اطلاع",
+        "desc":"اشترك في النشرة الإخبارية الخاصة بنا لتلقي تحديثات المنتج ورؤى الصناعة ونصائح مفيدة لإنشاء استطلاعات فعالة.",
+        "subscribe": "اشتراك",
+        "entreEmail": "أدخل بريدك الالكتروني"
+      },
+      "customersSay":{
+        "title": "ماذا يقول عملاؤنا؟",
+        "desc": "اكتشف كيف تستخدم المؤسسات Survey Infinity لتحويل الملاحظات إلى رؤى وخطوات عملية هادفة."
+      }
     },
     "features": {
       "title": "المميزات"
@@ -28,8 +54,40 @@
     },
     "contact": {
       "title": "اتصل بنا"
+    },
+    "notFound": {
+      "title": "لم يتم العثور على الصفحة",
+      "backToHome": "العودة إلى الصفحة الرئيسية"
     }
   },
+  "footer": {
+    "desc": "إنشاء وتوزيع وتحليل الاستبيانات بسهولة، والحصول على رؤى قيمة من جمهورك",
+    "products": "المنتجات",
+    "productsSurveyBuilder": "منشئ الاستبيانات",
+    "productsQuizMaker": "منشئ الاختبارات",
+    "productsFormCreator": "منشئ النماذج",
+    "productsPoolSystem": "نظام التجمع",
+    "productsAnalyticsDashboard": "لوحة معلومات التحليلات",
+    
+    "resources": "الموارد",
+    "resourcesHelpCenter": "مركز المساعدة",
+    "resourcesBlog": "المدونة",
+    "resourcesTutorials": "البرامج التعليمية",
+    "resourcesCaseStudies": "دراسات الحالة",
+    "resourcesTemplates": "القوالب",
+    
+    "stayUpdated": "ابقَ على اطلاع",
+    "stayUpdatedDesc": "اشترك في النشرة الإخبارية لدينا للحصول على النصائح والتحديثات",
+    "stayUpdatedEntreEmail": "أدخل بريدك الالكتروني",
+    "stayUpdatedSubscribe": "اشترك",
+    
+    "terms": "الشروط",
+    "privacy": "الخصوصية",
+    "security": "الأمان",
+    "cookies": "ملفات تعريف الارتباط",
+    
+    "rights": "جميع الحقوق محفوظة لشركة SurveyPro لعام ٢٠٢٥."
+=======
   "HeroSection": {
     "title": {
       "part1": "أنشئ استطلاعات قوية",
