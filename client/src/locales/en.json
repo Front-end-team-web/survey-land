@@ -322,5 +322,55 @@
     },
     "description": "An integrated platform for creating and managing surveys with advanced tools and detailed analytics. Designed specifically for Arabic users.",
     "button": "Start For Free"
+  },
+  "faqs": {
+    "faqsParagraph": "Have questions about creating surveys, quizzes, or collecting responses? We’ve got answers! Below are some common questions and helpful responses to get you started with Survey Infinity.",
+    "howItWorks": {
+      "title": "How Survey Infinity Works",
+      "q1": "How can I create a new survey or quiz?",
+      "a1": "You can create a new survey or quiz by clicking the 'Create Survey' button on your dashboard and following the simple step-by-step builder.",
+      "q2": "Can I collect anonymous responses?",
+      "a2": "Yes, Survey Infinity allows you to enable anonymous responses in the survey settings, so participant identities are not recorded.",
+      "q3": "Is it possible to add logic or conditional questions?",
+      "a3": "Absolutely! You can use our question logic feature to show or skip questions based on previous answers."
+    },
+    "account": {
+      "title": "Account & Access",
+      "q1": "Do I need to create an account to use Survey Infinity?",
+      "a1": "Yes, you’ll need to sign up for a free account to create and manage your surveys.",
+      "q2": "Can I collaborate with my team on a survey?",
+      "a2": "Yes, you can invite team members to collaborate, edit, and manage surveys together in real-time."
+    },
+    "customization": {
+      "title": "Customization & Design",
+      "q1": "Can I use my own branding?",
+      "a1": "Yes! You can customize your surveys with your logo, colors, and even custom domain settings.",
+      "q2": "Is it mobile-friendly?",
+      "a2": "Absolutely. All surveys are responsive and optimized for both mobile and desktop devices."
+    },
+    "results": {
+      "title": "Results & Reporting",
+      "q1": "How do I view survey results?",
+      "a1": "You can view results in real-time through the analytics dashboard, which provides charts, graphs, and individual responses.",
+      "q2": "Can I share the results with others?",
+      "a2": "Yes, you can export your results or share a live results link with stakeholders."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch with Us",
+    "description": "Have a question, suggestion, or need help? We're here to support you",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "subjectLabel": "Select Subject",
+    "subjects": {
+      "general": "General Inquiry",
+      "technical": "Technical Issue",
+      "results": "Results Help",
+      "pricing": "Pricing Question"
+    },
+    "message": "Write your message..",
+    "send": "Send Message"
   }
 }

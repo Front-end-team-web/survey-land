@@ -1,11 +1,17 @@
 import React, { lazy } from "react";
 // import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
-const ChoosePlan = lazy(() => import('./components/ChoosePlan'));
-const ComparePlans = lazy(() => import('./components/ComparePlans'));
-const Testimonial = lazy(() => import('./components/Testimonial'));
-const Questions = lazy(() => import('./components/Questions'));
-const GetStarted = lazy(() => import('./components/GetStarted'));
+// const ChoosePlan = lazy(() => import('./components/ChoosePlan'));
+// const ComparePlans = lazy(() => import('./components/ComparePlans'));
+// const Testimonial = lazy(() => import('./components/Testimonial'));
+// const Questions = lazy(() => import('./components/Questions'));
+// const GetStarted = lazy(() => import('./components/GetStarted'));
+import ChoosePlan from './components/ChoosePlan';
+import ComparePlans from './components/ComparePlans';
+import Testimonial from './components/Testimonial';
+import Questions from './components/Questions';
+import GetStarted from './components/GetStarted';
+
 
 const Index = () => {
     // const { currentLanguage } = useSelector((state) => state.language);
