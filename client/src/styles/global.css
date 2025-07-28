@@ -4,9 +4,9 @@
 }
 
 /* Fix for Arabic RTL layout */
-html[dir="rtl"] .space-x-4 > * + * {
+html[dir="rtl"] .space-x-4>*+* {
   margin-left: 0;
-  margin-right: 1rem;
+  margin-right: 0;
 }
 
 html[dir="rtl"] .ml-2 {
@@ -48,8 +48,8 @@ button[style*="direction: ltr"] {
 }
 
 /* Ensure proper gap spacing in RTL */
-html[dir="rtl"] .gap-4 > :not([hidden]) ~ :not([hidden]) {
-  margin-right: 1rem;
+html[dir="rtl"] .gap-4> :not([hidden])~ :not([hidden]) {
+  margin-right: 0;
   margin-left: 0;
 }
 
