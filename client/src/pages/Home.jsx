@@ -1,20 +1,22 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "../hooks/useTranslation";
+import { useSelector } from "react-redux";
 
 const Home = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
+  const { isDarkMode } = useSelector((state) => state.theme);
 
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-800"
+      className={`min-h-[calc(100vh-80px)] w-full
+        ${isDarkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}
+        `}
     >
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+      {/* <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
         {t("pages.home.title")}
-      </h1>
+      </h1> */}
     </motion.div>
   );
 };
