@@ -23,7 +23,7 @@ const About = () => {
         style={{ backgroundColor: isDarkMode ? "#111827" : "white" }}
         className="tracking-[.8px] w-full overflow-hidden"
       >
-        {/* <Index /> */}
+        <Index />
       </motion.div>
     </>
   );
