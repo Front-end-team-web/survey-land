@@ -7,10 +7,12 @@ import FAQs from "../pages/FAQs";
 import Pricing from "../pages/Pricing";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/Exception/NotFound";
+import Auth from "../pages/Auth";
 
 const AppRoutes = () => {
   return (
     <Routes>
+      <Route path="/auth" element={<Auth />} />
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/features" element={<Features />} />

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { motion } from "framer-motion";
 import { toggleTheme } from "../store/slices/themeSlice";
@@ -12,6 +12,7 @@ import myLogo from "../assets/logo.png";
 const Navbar = () => {
   const dispatch = useDispatch();
   const location = useLocation();
+  const navigate = useNavigate();
   const { isDarkMode } = useSelector((state) => state.theme);
   const { currentLanguage } = useSelector((state) => state.language);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -202,6 +203,7 @@ const Navbar = () => {
 
               {/* Register button */}
               <motion.button
+                onClick={() => navigate("/auth")}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className={`px-6 py-2.5 rounded-lg font-medium transition-all duration-200 shadow-md hover:shadow-lg whitespace-nowrap flex-shrink-0 ${isDarkMode
@@ -299,6 +301,7 @@ const Navbar = () => {
 
                 {/* Register button - Mobile */}
                 <button
+                  onClick={() => navigate("/auth")}
                   className={`w-full px-6 py-3 rounded-lg font-medium transition-all duration-200 shadow-md hover:shadow-lg ${isDarkMode
                       ? "bg-purple-600 text-white hover:bg-purple-700"
                       : "bg-purple-600 text-white hover:bg-purple-700"
