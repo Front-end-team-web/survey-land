@@ -7,7 +7,6 @@ const Home = () => {
   const { isDarkMode } = useSelector((state) => state.theme);
   const { currentLanguage } = useSelector((state) => state.language);
   const { t } = useTranslation();
-
   return (
     <div
       style={{
@@ -41,6 +40,7 @@ const Home = () => {
           }}
         >
           {/* {currentLanguage === "ar" ? "مرحباً بك" : "Welcome to Home Page"} */}
+          
           {t("Test")}
         </h1>
 
@@ -75,7 +75,7 @@ const Home = () => {
       </div>
     </div>
   );
-  );
+  
 };
 
 export default Home;
