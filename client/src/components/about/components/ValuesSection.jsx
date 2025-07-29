@@ -3,12 +3,12 @@ import { useSelector } from "react-redux";
 import { useTranslation } from "../../../hooks/useTranslation";
 // Import Motion
 import { motion } from "framer-motion";
-import SplitTextMotion from "./SplitTextMotion";
-import SlideUpSplitTextMotion from "./SlideUpSplitTextMotion";
 import GetX from "./GetX";
+import SlideUpSplitTextMotion from "./SlideUpSplitTextMotion";
+import SplitTextMotion from "./SplitTextMotion";
 // Import Icon
-import { FaRegLightbulb } from "react-icons/fa"; //Lamp
 import { CiHeart } from "react-icons/ci"; //Heart
+import { FaRegLightbulb } from "react-icons/fa"; //Lamp
 import { FiUsers } from "react-icons/fi"; //User
 // Export Component
 export default function ValuesSection() {
@@ -40,9 +40,8 @@ export default function ValuesSection() {
             <div className={`w-full h-full flex-1`}>
               <div
                 className={`flex flex-col p-5 h-full items-stretch
-                ${
-                  isDarkMode ? "bg-gray-800" : "bg-[rgba(253,226,243,0.2)]"
-                } rounded-lg `}
+                ${isDarkMode ? "bg-gray-800" : "bg-[rgba(253,226,243,0.2)]"
+                  } rounded-lg `}
               >
                 {/* ICON */}
                 <span className="text-xl">{<FaRegLightbulb />}</span>
@@ -78,9 +77,8 @@ export default function ValuesSection() {
             <div className={`w-full h-full flex-1 `}>
               <div
                 className={`flex flex-col p-5 h-full items-stretch 
-                ${
-                  isDarkMode ? "bg-gray-800" : "bg-[rgba(253,226,243,0.2)]"
-                } rounded-lg `}
+                ${isDarkMode ? "bg-gray-800" : "bg-[rgba(253,226,243,0.2)]"
+                  } rounded-lg `}
               >
                 {/* ICON */}
                 <span className="text-xl">{<CiHeart />}</span>
@@ -117,9 +115,8 @@ export default function ValuesSection() {
             <div className={`w-full h-full flex-1`}>
               <div
                 className={`flex flex-col p-5 h-full items-stretch 
-                ${
-                  isDarkMode ? "bg-gray-800" : "bg-[rgba(253,226,243,0.2)]"
-                } rounded-lg `}
+                ${isDarkMode ? "bg-gray-800" : "bg-[rgba(253,226,243,0.2)]"
+                  } rounded-lg `}
               >
                 {/* ICON */}
                 <span className="text-xl">{<FiUsers />}</span>

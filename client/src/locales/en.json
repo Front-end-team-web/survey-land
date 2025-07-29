@@ -68,8 +68,7 @@
           "name": "Oliver",
           "job": "Chief Technology Officer",
           "description": "Oliver oversees all technology initiatives and ensures our platform stays innovative"
-        }
-
+        },
       "contact": {
         "title": "Get in Touch",
         "desc": "Have questions about SurveyPro? Our team is here to help you find the right solution for your needs.",
@@ -225,7 +224,6 @@
       "backToHome": "Back to Home Page"
     }
   },
-  "TestAbout": "ahmed",
   "footer": {
     "desc": "create, distribute and analyze surveys with ease, Get valuable insights from your audience.",
     "products": "Products",
@@ -328,10 +326,8 @@
     ],
     "button": "Learn about Enterprise solutions"
   },
-
   "TestAbout": "ahmed"
-}
-
+},
   "featuresSectionSeeMore": {
     "seeMore": "See More"
   },
