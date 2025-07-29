@@ -4,7 +4,6 @@ import { useTranslation } from "../hooks/useTranslation";
 
 const Home = () => {
   const { t } = useTranslation();
-
   return (
     <div
       style={{
@@ -38,6 +37,7 @@ const Home = () => {
           }}
         >
           {/* {currentLanguage === "ar" ? "مرحباً بك" : "Welcome to Home Page"} */}
+          
           {t("Test")}
         </h1>
 
@@ -72,7 +72,7 @@ const Home = () => {
       </div>
     </div>
   );
-  );
+  
 };
 
 export default Home;

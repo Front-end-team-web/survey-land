@@ -15,10 +15,78 @@
       "welcome": "Welcome to Survey Infinity"
     },
     "about": {
-      "title": "About Us"
+      "title": "About Us",
+      "titleSecEn": "We power the curious",
+      "discretionEn": "At Survey Infinity, we believe that curiosity and under standing drive progress. We're on a mission to help organizations turn feedback into transformative action.",
+      "buttonStartEn": "Get Started",
+      "buttonViewEn": "Watch Demo",
+      "sections": {
+        "sec1": {
+          "title": "Our Vision",
+          "paragraph": "At Survey Infinity, we envision a world where asking the right questions leads to limitless growth, innovation, and connection."
+        },
+        "sec2": {
+          "title": "Our Mission",
+          "paragraph": "To make it easy for everyone — from small businesses to global enterprises — to create surveys, collect feedback, and act on real data with confidence and clarity."
+        }
+      },
+      "ValuesSection": {
+        "sec1": {
+          "title": "Purpose-driven",
+          "description": "We believe that understanding people is the key to creating positive change in organizations, communities, and around the world"
+        },
+        "sec2": {
+          "title": "Inclusive",
+          "description": "We're committed to building products and a company culture that are accessible and equitable for everyone, "
+        },
+        "sec3": {
+          "title": "Collaborative",
+          "description": "We believe the best outcomes happen when teams work together, sharing insights and expertise to solve complex "
+        }
+      },
+      "secStory": {
+        "title": "Our Story",
+        "description": "Founded in 2010, Survey Infinity began with a simple idea: to make it easy for anyone to collect and learn from feedback. Today, we've grown into a global leader in  survey software, helping millions of customers across 190+ countries turn curiosity into action.Our platform is designed to give everyone—from individuals to large enterprises—the tools they need to ask questions, analyze responses, and make better decisions."
+      },
+      "endSection": {
+        "subSec": {
+          "title": "Meet Our Leadership",
+          "description": "The talented people behind Survey Infinity who are passionate about helping organizations harness the power of feedback"
+        },
+        "michael": {
+          "name": "Michael Chen",
+          "job": "Chief Technology Officer",
+          "description": "Michael oversees all technology initiatives and ensures our platform stays innovative"
+        },
+        "noah": {
+          "name": "Noah Patel",
+          "job": "Front End Developer",
+          "description": "Aisha leads our product strategy, focusing on creating intuitive user experiences."
+        },
+        "oliver": {
+          "name": "Oliver",
+          "job": "Chief Technology Officer",
+          "description": "Oliver oversees all technology initiatives and ensures our platform stays innovative"
+        }
+      }
     },
     "features": {
-      "title": "Features"
+      "title": "Features",
+      "sectionFeature": {
+        "mainTitle": "Create Engaging Surveys in Minutes",
+        "titleOne": "40+ Question Types",
+        "descriptionOne": "From multiple choice to matrix questions, we have everything you need",
+        "titleTow": "Logic Branching",
+        "descriptionTow": "Create dynamic surveys that adapt based on respondent answers.",
+        "titleThree": "Mobile Responsive",
+        "descriptionThree": "Surveys look great on any device, increasing completion rates."
+      },
+      "section2": {
+        "title": "Ready to Create Your First Survey?",
+        "description": "Join thousands of professionals who trust SurveyPro for their research needs",
+        "btnStart": "Start Free Trial",
+        "btnContent": "Contact Sales"
+      }
     },
     "faqs": {
       "title": "Frequently Asked Questions"
