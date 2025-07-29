@@ -16,6 +16,7 @@
     },
     "about": {
       "title": "About Us",
+
       "titleSecEn": "We power the curious",
       "discretionEn": "At Survey Infinity, we believe that curiosity and under standing drive progress. We're on a mission to help organizations turn feedback into transformative action.",
       "buttonStartEn": "Get Started",
@@ -68,6 +69,33 @@
           "job": "Chief Technology Officer",
           "description": "Oliver oversees all technology initiatives and ensures our platform stays innovative"
         }
+
+      "contact": {
+        "title": "Get in Touch",
+        "desc": "Have questions about SurveyPro? Our team is here to help you find the right solution for your needs.",
+        "contactInfo": "Contact Information",
+        "contactInfoDesc": "Fill out the form or contact us directly using the information below.",
+        "ourHeadquarters": "Our Headquarters",
+        "phone": "Phone",
+        "email": "Email",
+        "followUs": "Follow Us",
+        "sendUsMessage": "Send us a message",
+        "name": "Name",
+        "subject": "Subject",
+        "message": "Message",
+        "sendMesssage": "Send Message",
+        "entreEmail": "Enter your Email"
+      },
+      "stayUpdated": {
+        "title": "Stay Updated",
+        "desc": "Subscribe to our newsletter to receive product updates, industry insights, and helpful tips for creating effective surveys.",
+        "subscribe": "Subscribe",
+        "entreEmail": "Enter your Email"
+      },
+      "customersSay": {
+        "title": "What Our Customers Say",
+        "desc": "Discover how organizations are using Survey Infinity to transform feedback into meaningful insights and action."
+
       }
     },
     "features": {
@@ -92,11 +120,330 @@
       "title": "Frequently Asked Questions"
     },
     "pricing": {
-      "title": "Pricing"
+      "ChoosePlan": {
+        "Choose": "Choose",
+        "your Plan": "your Plan",
+        "Choose your perfect plan": "Choose your perfect plan",
+        "Choose the perfect": "Choose the perfect plan for your needs. Whether you're just starting out or running a large organization, we've got you covered.",
+        "Monthly": "Monthly",
+        "Annual (save 20%)": "Annual (save 20%)",
+        "Most popular": "Most popular",
+        "Basic": "Basic",
+        "Professional": "Professional",
+        "Enterprise": "Enterprise",
+        "PlanDescriptions": {
+          "Basic": "Perfect for individuals and small teams just getting started.",
+          "Professional": "Ideal for growing businesses that need more power and features.",
+          "Enterprise": "For large organizations requiring advanced features and support."
+        },
+        "PlanFeatures": {
+          "Up to 10 surveys per month": "Up to 10 surveys per month",
+          "100 responses per survey": "100 responses per survey",
+          "Basic survey templates": "Basic survey templates",
+          "Email support": "Email support",
+          "Export to PDF & CSV": "Export to PDF & CSV",
+          "Basic analytics": "Basic analytics",
+          "Unlimited surveys": "Unlimited surveys",
+          "1000 responses per survey": "1000 responses per survey",
+          "Advanced survey templates": "Advanced survey templates",
+          "Priority email support": "Priority email support",
+          "Advanced analytics": "Advanced analytics",
+          "Custom branding": "Custom branding",
+          "Team collaboration": "Team collaboration",
+          "API access": "API access",
+          "Unlimited everything": "Unlimited everything",
+          "Dedicated account manager": "Dedicated account manager",
+          "Custom integration support": "Custom integration support",
+          "Advanced security features": "Advanced security features",
+          "SLA guarantees": "SLA guarantees",
+          "Training sessions": "Training sessions",
+          "Custom contract terms": "Custom contract terms",
+          "Phone support": "Phone support"
+        },
+        "PlanActions": {
+          "Start free trial": "Start free trial",
+          "Contact sales": "Contact sales"
+        },
+        "30-day money-back guarantee": "30-day money-back guarantee"
+      },
+      "ComparePlans": {
+        "Compare Plans": "Compare Plans",
+        "Find the plan": "Find the plan that's right for you",
+        "Features": "Features",
+        "Basic": "Basic",
+        "Professional": "Professional",
+        "Enterprise": "Enterprise",
+        "Survey Creation": "Survey Creation",
+        "Custom survey themes": "Custom survey themes",
+        "Question logic & branching": "Question logic & branching",
+        "Custom branding": "Custom branding",
+        "Data Collection": "Data Collection",
+        "Analysis & Reporting": "Analysis & Reporting",
+        "Responses per survey": "Responses per survey",
+        "Unlimited": "Unlimited",
+        "File uploads": "File uploads",
+        "Offline data collection": "Offline data collection",
+        "Basic analytics": "Basic analytics",
+        "Advanced analytics": "Advanced analytics",
+        "Custom reports": "Custom reports"
+      },
+      "Testimonial": {
+        "Trusted by thousands": "Trusted by thousands",
+        "See what our customers have to say about their experience": "See what our customers have to say about their experience",
+        "text1": "The Professional plan has everything we need to gather customer feedback effectively. The analytics tools have been invaluable for our product development.",
+        "Michael Rodriguez": "Michael Rodriguez",
+        "role1": "Research Director at Global Research Ltd.",
+        "Sarah Johnson": "Sarah Johnson",
+        "role2": "Product Manager at Tech Innovations Inc.",
+        "David Kim": "David Kim",
+        "role3": "Founder of Local Startup Co."
+      },
+      "Questions": {
+        "Frequently Asked Questions": "Frequently Asked Questions",
+        "Everything you need to know about our pricing and products": "Everything you need to know about our pricing and products",
+        "What happens after my trial ends?": "What happens after my trial ends?",
+        "Can I change plans at any time?": "Can I change plans at any time?",
+        "Do you offer discounts for nonprofits?": "Do you offer discounts for nonprofits?",
+        "What payment methods do you accept?": "What payment methods do you accept?",
+        "Is there a limit on survey responses?": "Is there a limit on survey responses?",
+        "Still have questions? ": "Still have questions? ",
+        "Contact our support team": "Contact our support team",
+        "Yes": "Yes, you can upgrade, downgrade, or cancel your plan at any time. If you upgrade, the new features will be available immediately. If you downgrade, the changes will take effect at the start of your next billing cycle."
+      },
+      "GetStarted": {
+        "Ready to get started?": "Ready to get started?",
+        "Join": "Join thousands of organizations that trust Survey Infinity to collect valuable feedback and make data-driven decisions.",
+        "Start free trial": "Start free trial",
+        "Contact sales": "Contact sales"
+      }
     },
     "contact": {
       "title": "Contact Us"
+    },
+    "notFound": {
+      "title": "Page not found",
+      "backToHome": "Back to Home Page"
     }
   },
+  "TestAbout": "ahmed",
+  "footer": {
+    "desc": "create, distribute and analyze surveys with ease, Get valuable insights from your audience.",
+    "products": "Products",
+    "productsSurveyBuilder": "Survey Builder",
+    "productsQuizMaker": "Quiz Maker",
+    "productsFormCreator": "Form Creator",
+    "productsPoolSystem": "Pool System",
+    "productsAnalyticsDashboard": "Analytics Dashboard",
+    "resources": "Resources",
+    "resourcesHelpCenter": "Help Center",
+    "resourcesBlog": "Blog",
+    "resourcesTutorials": "Tutorials",
+    "resourcesCaseStudies": "Case Studies",
+    "resourcesTemplates": "Templates",
+    "stayUpdated": "Stay Updated",
+    "stayUpdatedDesc": "Subscribe to our newsletter for tips and updates.",
+    "stayUpdatedEntreEmail": "Enter your Email",
+    "stayUpdatedSubscribe": "Subscribe",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "security": "Security",
+    "cookies": "Cookies",
+    "rights": "2025 SurveyPro. All rights reserved."
+  },
+  "HeroSection": {
+    "title": {
+      "part1": "Create powerful surveys",
+      "part2": "in",
+      "part3": "minutes",
+      "part4": "not hours"
+    },
+    "subtitle": "Survey Infinity helps you gather actionable insights through beautifully designed interactive surveys with advanced analytics and seamless integration.",
+    "buttonOne": " Get started",
+    "buttonTwo": "Templates"
+  },
+  "featuresSection": {
+    "title": {
+      "part1": "Powerful",
+      "part2": " features to transform",
+      "part3": "your data",
+      "part4": "collection"
+    },
+    "subtitle": "Everything you need to create, distribute, and analyze surveys that deliver actionable insights."
+  },
+  "featuresList": [
+    {
+      "title": "Intuitive Survey Creation",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    },
+    {
+      "title": "Advanced Analytics",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    },
+    {
+      "title": "Multi-Device Support",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    },
+    {
+      "title": "Custom Branding",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    },
+    {
+      "title": "Easy Integration",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    },
+    {
+      "title": "Real-Time Notifications",
+      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+    }
+  ],
+  "workSection": {
+    "title": {
+      "part1": "How",
+      "part2": "it works"
+    }
+  },
+  "steps": [
+    {
+      "title": "Build your Survey",
+      "description": "Choose a ready-made template or start from scratch."
+    },
+    {
+      "title": "Collect Responses",
+      "description": "Share your survey link and start getting responses in real time."
+    },
+    {
+      "title": "Analyze Results",
+      "description": "Use our dashboard to view insights and generate reports."
+    }
+  ],
+  "enterprise": {
+    "title": "Enterprise solutions for teams of all sizes",
+    "description": "Scale your research capabilities with advanced features designed for teams and organizations.",
+    "features": [
+      "Team collaboration with shared templates and assets",
+      "Custom branding and white-labeling options",
+      "Advanced integrations with CRM and marketing tools",
+      "Dedicated account manager and priority support",
+      "Custom development for specialized survey needs"
+    ],
+    "button": "Learn about Enterprise solutions"
+  },
+
   "TestAbout": "ahmed"
 }
+
+  "featuresSectionSeeMore": {
+    "seeMore": "See More"
+  },
+  "featuresListDetails": [
+    {
+      "title": "Easy Sharing",
+      "description": "Share surveys effortlessly easy on social media platforms."
+    },
+    {
+      "title": "Drag and Drop",
+      "description": "Create surveys easily with drag-and-drop functionality using a user-friendly interface."
+    },
+    {
+      "title": "Multiple Question Types",
+      "description": "Multiple-choice, rating scales, text input, date selection, Likert scales, and much more."
+    },
+    {
+      "title": "Responsive Design",
+      "description": "Surveys that work perfectly on all devices and screens."
+    },
+    {
+      "title": "Full Arabic Support",
+      "description": "Fully Arabic interface with right-to-left writing support."
+    },
+    {
+      "title": "Instant Analytics",
+      "description": "Quickly analyze results in real-time and export reports."
+    }
+  ],
+  "FeatureAllNeeds": {
+    "title": {
+      "part1": "Diverse Uses for ",
+      "part2": "All Your Needs"
+    }
+  },
+  "FeatureAllNeedsSteps": [
+    {
+      "title": "Events",
+      "description": "Attendance registration, event feedback, post-event surveys. "
+    },
+    {
+      "title": "Human Resources",
+      "description": "Employee satisfaction, performance evaluations, workplace climate surveys.   "
+    },
+    {
+      "title": "Customer Feedback",
+      "description": "Customer satisfaction, product evaluations, service improvement."
+    },
+    {
+      "title": "Education",
+      "description": "Exams, student surveys, curriculum assessments."
+    }
+  ],
+  "featuresHeader": {
+    "sectionTitle": "FEATURES",
+    "headline": {
+      "part1": "Create",
+      "part2": "Easy professional",
+      "part3": "surveys"
+    },
+    "description": "An integrated platform for creating and managing surveys with advanced tools and detailed analytics. Designed specifically for Arabic users.",
+    "button": "Start For Free"
+  },
+  "faqs": {
+    "faqsParagraph": "Have questions about creating surveys, quizzes, or collecting responses? We've got answers! Below are some common questions and helpful responses to get you started with Survey Infinity.",
+    "howItWorks": {
+      "title": "How Survey Infinity Works",
+      "q1": "How can I create a new survey or quiz?",
+      "a1": "You can create a new survey or quiz by clicking the 'Create Survey' button on your dashboard and following the simple step-by-step builder.",
+      "q2": "Can I collect anonymous responses?",
+      "a2": "Yes, Survey Infinity allows you to enable anonymous responses in the survey settings, so participant identities are not recorded.",
+      "q3": "Is it possible to add logic or conditional questions?",
+      "a3": "Absolutely! You can use our question logic feature to show or skip questions based on previous answers."
+    },
+    "account": {
+      "title": "Account & Access",
+      "q1": "Do I need to create an account to use Survey Infinity?",
+      "a1": "Yes, you'll need to sign up for a free account to create and manage your surveys.",
+      "q2": "Can I collaborate with my team on a survey?",
+      "a2": "Yes, you can invite team members to collaborate, edit, and manage surveys together in real-time."
+    },
+    "customization": {
+      "title": "Customization & Design",
+      "q1": "Can I use my own branding?",
+      "a1": "Yes! You can customize your surveys with your logo, colors, and even custom domain settings.",
+      "q2": "Is it mobile-friendly?",
+      "a2": "Absolutely. All surveys are responsive and optimized for both mobile and desktop devices."
+    },
+    "results": {
+      "title": "Results & Reporting",
+      "q1": "How do I view survey results?",
+      "a1": "You can view results in real-time through the analytics dashboard, which provides charts, graphs, and individual responses.",
+      "q2": "Can I share the results with others?",
+      "a2": "Yes, you can export your results or share a live results link with stakeholders."
+    }
+  },
+  "contact": {
+    "title": "Get in Touch with Us",
+    "description": "Have a question, suggestion, or need help? We're here to support you",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "subjectLabel": "Select Subject",
+    "subjects": {
+      "general": "General Inquiry",
+      "technical": "Technical Issue",
+      "results": "Results Help",
+      "pricing": "Pricing Question"
+    },
+    "message": "Write your message..",
+    "send": "Send Message"
+  }
+}
+

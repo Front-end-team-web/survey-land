@@ -6,6 +6,7 @@ import Features from "../pages/Features";
 import FAQs from "../pages/FAQs";
 import Pricing from "../pages/Pricing";
 import Contact from "../pages/Contact";
+import NotFound from "../pages/Exception/NotFound";
 
 const AppRoutes = () => {
   return (
@@ -16,6 +17,9 @@ const AppRoutes = () => {
       <Route path="/faqs" element={<FAQs />} />
       <Route path="/pricing" element={<Pricing />} />
       <Route path="/contact" element={<Contact />} />
+
+
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

@@ -1,8 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "../hooks/useTranslation";
+import { useSelector } from "react-redux";
 
 const Home = () => {
+  const { isDarkMode } = useSelector((state) => state.theme);
+  const { currentLanguage } = useSelector((state) => state.language);
   const { t } = useTranslation();
   return (
     <div

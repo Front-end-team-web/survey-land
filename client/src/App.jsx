@@ -3,8 +3,9 @@ import { BrowserRouter } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setTheme } from "./store/slices/themeSlice";
 import { setLanguage } from "./store/slices/languageSlice";
-import Navbar from "./components/Navbar";
+import Navbar from "./shared/Navbar";
 import AppRoutes from "./routes/AppRoutes";
+import Footer from "./shared/Footer";
 
 function App() {
   const dispatch = useDispatch();
@@ -44,11 +45,12 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors duration-300 ">
         <Navbar />
         <main className="pt-20">
           <AppRoutes />
         </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );
