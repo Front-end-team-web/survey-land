@@ -42,6 +42,42 @@ const Index = () => {
       >
         <WorkSection />
       </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        <SurveyTemplates />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        <WhyChooseUs />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        <StatsSection />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        <FAQSection />
+      </motion.div>
     </div>
   );
 };

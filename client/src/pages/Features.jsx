@@ -4,6 +4,8 @@ import { useSelector } from "react-redux";
 //import { useTranslation } from "../hooks/useTranslation";
 // iMPORT ANIMATION
 import Index from "../components/features/Index";
+
+
 const Features = () => {
   //const { currentLanguage } = useSelector((state) => state.language);
   //const { t } = useTranslation();
@@ -23,4 +25,4 @@ const Features = () => {
     // </motion.div>
   );
 };
-export default Features;
+export default Features
