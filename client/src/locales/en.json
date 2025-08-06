@@ -436,6 +436,16 @@
     "message": "Write your message..",
     "send": "Send Message"
   },
+  "whyChooseUs": {
+    "title1": "Why Choose Our",
+    "title2": "Templates?",
+    "cardTitle1": "Professional Design",
+    "cardTitle2": "Customizable",
+    "cardTitle3": "Advanced Analytics",
+    "cardDescription1": "Expertly templates that look great on any device",
+    "cardDescription2": "Easily modify templates to match your needs",
+    "cardDescription3": "Get powerful insights from your survey responses"
+  },
   "serveyTemplates": {
     "title1": "Professional Survey",
     "title2": "Templates",
