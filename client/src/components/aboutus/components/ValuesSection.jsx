@@ -10,6 +10,7 @@ import GetX from "./GetX";
 import { FaRegLightbulb } from "react-icons/fa"; //Lamp
 import { CiHeart } from "react-icons/ci"; //Heart
 import { FiUsers } from "react-icons/fi"; //User
+
 // Export Component
 export default function ValuesSection() {
   // Theme
@@ -18,6 +19,7 @@ export default function ValuesSection() {
   const { currentLanguage } = useSelector((state) => state.language);
   // Variable JSON
   const { t } = useTranslation();
+
   return (
     <>
       {/* Parent Dev */}
@@ -29,14 +31,13 @@ export default function ValuesSection() {
           </SplitTextMotion>
         </h1>
         {/* ========= Main Title ===== */}
+
         {/* Div Parent Component  */}
         <div
-          // تم تعديل الكلاسات هنا
           className={` flex flex-col md:flex-row md:justify-between md:gap-8 lg:gap-10 container mx-auto p-8 md:px-10 px-3 w-full gap-3 h-full `}
         >
           {/* Div Component One */}
           <GetX direction={`${currentLanguage == "en" ? "left" : "right"}`}>
-            {/* أضف flex-1 هنا لجعل الكرت يتمدد */}
             <div className={`w-full h-full flex-1`}>
               <div
                 className={`flex flex-col p-5 h-full items-stretch
@@ -50,18 +51,14 @@ export default function ValuesSection() {
                 {/* Title */}
                 <h2 className={`font-bold text-[#7616EC] mt-6 mb-2 md:text-xl`}>
                   <SplitTextMotion>
-                    {currentLanguage === "en"
-                      ? t("pages.about.ValuesSection.sec1.title")
-                      : t("pages.about.ValuesSectionAr.sec1.title")}
+                    {t("pages.about.ValuesSection.sec1.title")}
                   </SplitTextMotion>
                 </h2>
                 {/*====== Title =====*/}
                 {/* Description */}
                 <motion.p className=" text-base/8 font-[400] ">
                   <SlideUpSplitTextMotion>
-                    {currentLanguage === "en"
-                      ? t("pages.about.ValuesSection.sec1.description")
-                      : t("pages.about.ValuesSectionAr.sec1.description")}
+                    {t("pages.about.ValuesSection.sec1.description")}
                   </SlideUpSplitTextMotion>
                 </motion.p>
                 {/*==== Description =====*/}
@@ -70,11 +67,8 @@ export default function ValuesSection() {
           </GetX>
           {/* =====  Div Component One ==== */}
 
-          {/* ========================= */}
-
-          {/* Div Component Tow */}
+          {/* Div Component Two */}
           <GetX direction="top">
-            {/* أضف flex-1 هنا لجعل الكرت يتمدد */}
             <div className={`w-full h-full flex-1 `}>
               <div
                 className={`flex flex-col p-5 h-full items-stretch 
@@ -88,9 +82,7 @@ export default function ValuesSection() {
                 {/* Title */}
                 <h2 className={`font-bold text-[#7616EC] mt-6 mb-2 md:text-xl`}>
                   <SplitTextMotion>
-                    {currentLanguage === "en"
-                      ? t("pages.about.ValuesSection.sec2.title")
-                      : t("pages.about.ValuesSectionAr.sec2.title")}
+                    {t("pages.about.ValuesSection.sec2.title")}
                   </SplitTextMotion>
                 </h2>
                 {/*====== Title =====*/}
@@ -98,9 +90,7 @@ export default function ValuesSection() {
                 {/* Description */}
                 <p className=" text-base/8 font-[400] ">
                   <SlideUpSplitTextMotion>
-                    {currentLanguage === "en"
-                      ? t("pages.about.ValuesSection.sec3.description")
-                      : t("pages.about.ValuesSectionAr.sec3.description")}
+                    {t("pages.about.ValuesSection.sec2.description")}
                   </SlideUpSplitTextMotion>
                 </p>
                 {/*==== Description =====*/}
@@ -109,11 +99,8 @@ export default function ValuesSection() {
           </GetX>
           {/* =====  Div Component Two ==== */}
 
-          {/* ============================== */}
-
           {/* Div Component Three */}
           <GetX direction={`${currentLanguage == "en" ? "right" : "left"}`}>
-            {/* أضف flex-1 هنا لجعل الكرت يتمدد */}
             <div className={`w-full h-full flex-1`}>
               <div
                 className={`flex flex-col p-5 h-full items-stretch 
@@ -127,18 +114,14 @@ export default function ValuesSection() {
                 {/* Title */}
                 <h2 className={`font-bold text-[#7616EC] mt-6 mb-2 md:text-xl`}>
                   <SplitTextMotion>
-                    {currentLanguage === "en"
-                      ? t("pages.about.ValuesSection.sec3.title")
-                      : t("pages.about.ValuesSectionAr.sec3.title")}
+                    {t("pages.about.ValuesSection.sec3.title")}
                   </SplitTextMotion>
                 </h2>
                 {/*====== Title =====*/}
                 {/* Description */}
                 <p className=" text-base/8 font-[400] ">
                   <SlideUpSplitTextMotion>
-                    {currentLanguage === "en"
-                      ? t("pages.about.ValuesSection.sec3.description")
-                      : t("pages.about.ValuesSectionAr.sec3.description")}
+                    {t("pages.about.ValuesSection.sec3.description")}
                   </SlideUpSplitTextMotion>
                 </p>
                 {/*==== Description =====*/}
@@ -147,7 +130,6 @@ export default function ValuesSection() {
           </GetX>
           {/* =====  Div Component Three ==== */}
         </div>
-
         {/* Div Parent Component  */}
       </div>
     </>

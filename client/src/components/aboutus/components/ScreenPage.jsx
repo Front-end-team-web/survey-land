@@ -10,6 +10,7 @@ import SplitTextMotion from "./SplitTextMotion";
 export default function ScreenPage() {
   const { currentLanguage } = useSelector((state) => state.language);
   const { t } = useTranslation();
+
   return (
     <>
       {/*  first Section  */}
@@ -25,11 +26,7 @@ export default function ScreenPage() {
 
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white p-4">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center text-[#7616EC] text-shadow-lg/30 tracking-[2px] ">
-            <SplitTextMotion>
-              {currentLanguage === "en"
-                ? t("pages.about.titleSecEn")
-                : t("pages.about.titleSec1")}
-            </SplitTextMotion>
+            <SplitTextMotion>{t("pages.about.titleSecEn")}</SplitTextMotion>
           </h1>
           <p
             style={{ lineHeight: "40px" }}
@@ -38,22 +35,16 @@ export default function ScreenPage() {
             "
           >
             <SlideUpSplitTextMotion>
-              {currentLanguage === "en"
-                ? t("pages.about.discretionEn")
-                : t("pages.about.discretion")}
+              {t("pages.about.discretionEn")}
             </SlideUpSplitTextMotion>
           </p>
           {/* Div Button */}
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <button className="bg-[#7616EC]  hover:border-2 border-solid border-purple-400  hover:bg-[#7616EC]  text-white font-bold py-3 px-6 rounded-lg">
-              {currentLanguage === "en"
-                ? t("pages.about.buttonStartEn")
-                : t("pages.about.buttonStart")}
+              {t("pages.about.buttonStartEn")}
             </button>
             <button className="  hover:border-2 border-solid border-purple-400  text-white font-bold py-3 px-6 rounded-lg">
-              {currentLanguage === "en"
-                ? t("pages.about.buttonViewEn")
-                : t("pages.about.buttonView")}
+              {t("pages.about.buttonViewEn")}
             </button>
           </div>
         </div>

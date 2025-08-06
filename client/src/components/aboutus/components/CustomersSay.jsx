@@ -4,13 +4,17 @@ import { FaQuoteRight } from "react-icons/fa";
 import { RiStarSFill } from "react-icons/ri";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { TITLE_SM, TITLE_MD, DESC_MD, DESC_SM } from "../../../design/SharedClasses";
+import {
+  TITLE_SM,
+  TITLE_MD,
+  DESC_MD,
+  DESC_SM,
+} from "../../../design/SharedClasses";
 
 const CustomersSay = () => {
   const testimonials = [
     {
-      image:
-        "src/assets/aboutImages/img1.jpg",
+      image: "src/assets/aboutImages/img1.jpg",
       feedBack:
         "Survey infinity has transformed how we collect customer feedback. The insights we've gained have directly led to product improvements that our customers love.",
       rating: 4.1,
@@ -18,8 +22,7 @@ const CustomersSay = () => {
       position: "product designer",
     },
     {
-      image:
-        "src/assets/aboutImages/img2.jpg",
+      image: "src/assets/aboutImages/img2.jpg",
       feedBack:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatum nemo neque sed modi ipsum voluptate hic, nisi omnis commodi, rem beatae architecto. Consequatur, libero?",
       rating: 3.1,
@@ -27,8 +30,7 @@ const CustomersSay = () => {
       position: "designer graphique",
     },
     {
-      image:
-        "src/assets/aboutImages/img3.jpg",
+      image: "src/assets/aboutImages/img3.jpg",
       feedBack:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatum nemo neque sed modi ipsum voluptate hic, nisi omnis commodi, rem beatae architecto. Consequatur, libero?",
       rating: 2.1,
@@ -64,7 +66,9 @@ const CustomersSay = () => {
     >
       <div className="container mx-auto px-4">
         <div className="overflow-hidden text-center">
-          <h1 className={`text-purple-600 font-semibold mb-6 ${TITLE_SM} md:${TITLE_MD}`}>
+          <h1
+            className={`text-purple-600 font-semibold mb-6 ${TITLE_SM} md:${TITLE_MD}`}
+          >
             {t("pages.about.customersSay.title")
               .split(" ")
               .map((word, index) => {

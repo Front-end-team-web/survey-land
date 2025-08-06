@@ -7,11 +7,13 @@ import { BsChatDotsFill } from "react-icons/bs"; // Chat
 import GetX from "./GetX";
 import SplitTextMotion from "./SplitTextMotion";
 import SlideUpSplitTextMotion from "./SlideUpSplitTextMotion";
+
 export default function Slide() {
   // Theme
   const { isDarkMode } = useSelector((state) => state.theme);
   const { currentLanguage } = useSelector((state) => state.language);
   const { t } = useTranslation();
+
   return (
     <>
       <GetX>
@@ -34,11 +36,7 @@ export default function Slide() {
               isDarkMode ? "text-[#7616EC]" : ""
             }`}
           >
-            <SplitTextMotion>
-              {currentLanguage === "en"
-                ? t("pages.about.secStory.title")
-                : t("pages.about.secStoryAr.title")}
-            </SplitTextMotion>
+            <SplitTextMotion>{t("pages.about.secStory.title")}</SplitTextMotion>
           </h1>
           {/* ===== Title ==== */}
 
@@ -48,9 +46,7 @@ export default function Slide() {
             style={{ letterSpacing: "1px" }}
           >
             <SlideUpSplitTextMotion>
-              {currentLanguage === "en"
-                ? t("pages.about.secStory.description")
-                : t("pages.about.secStoryAr.description")}
+              {t("pages.about.secStory.description")}
             </SlideUpSplitTextMotion>
           </p>
           {/* ====== Paragraph ==== */}

@@ -1,58 +1,58 @@
-import icon1 from "../../../assets/homeImages/icon1.png";
-import icon2 from "../../../assets/homeImages/icon2.png";
-import icon3 from "../../../assets/homeImages/icon3.png";
-import icon4 from "../../../assets/homeImages/icon4.png";
-import icon5 from "../../../assets/homeImages/icon5.png";
-import icon6 from "../../../assets/homeImages/icon6.png";
-import { motion } from "framer-motion";
+import React from "react";
 import { useTranslation } from "../../../hooks/useTranslation";
-import CardFeature from "./CardFeature";
+import { useSelector } from "react-redux";
 
-const icons = [icon1, icon2, icon3, icon6, icon5, icon4];
-
-const FeaturesSection = () => {
+export default function FeaturesSection() {
   const { t } = useTranslation();
-  const features = t("featuresList", { returnObjects: true });
+  const { currentLanguage } = useSelector((state) => state.language);
+  const { isDarkMode } = useSelector((state) => state.theme);
+
+  // المسارات الصحيحة بـ pages.
+  const featuresData = t("pages.featuresList") || [];
+  const features = Array.isArray(featuresData) ? featuresData : [];
+
+  const sectionTitle =
+    t("pages.featuresSection.title.part1") +
+    " " +
+    t("pages.featuresSection.title.part2");
+  const sectionSubtitle = t("pages.featuresSection.subtitle");
+
+  if (features.length === 0) {
+    return (
+      <div className="py-16 text-center">
+        <p>No features available</p>
+      </div>
+    );
+  }
 
   return (
-    <>
-      <div className="mt-5 mb-24">
-        <div className="text-center px-2">
-          <h2 className="text-xl md:text-4xl/[1.5] font-bold mb-4">
-            <span className="text-[#7616EC]">
-              {t("featuresSection.title.part1")}
-            </span>{" "}
-            {t("featuresSection.title.part2")}
-            <br />
-            {t("featuresSection.title.part3")}
-            <span className="text-[#7616EC] px-2">
-              {t("featuresSection.title.part4")}
-            </span>
+    <div className={`py-16 ${isDarkMode ? "bg-gray-900" : "bg-gray-50"}`}>
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            {sectionTitle}
           </h2>
-          <p className="mt-5">{t("featuresSection.subtitle")}</p>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            {sectionSubtitle}
+          </p>
         </div>
 
-        <div>
-          <div className="grid lg:grid-cols-3 grid-cols-1 items-center justify-items-center gap-10 px-4 py-8 lg:px-20 lg:py-16">
-            {features.map((feature, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
-              >
-                <CardFeature
-                  image={icons[index]}
-                  title={feature.title}
-                  description={feature.description}
-                />
-              </motion.div>
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            >
+              <h3 className="text-xl font-semibold mb-4 text-purple-600">
+                {feature.title}
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                {feature.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
-};
-
-export default FeaturesSection;
+}

@@ -3,6 +3,7 @@ import HeroSection from "./heroSection/HeroSection";
 import FeaturesSection from "./featureSection/FeaturesSection";
 import Enterprise from "./enterPriceSection/Enterprise";
 import WorkSection from "./workSection/WorkSection";
+import DebugTranslation from "./DebugTranslation"; // أضف السطر ده
 const Index = () => {
   return (
     <div>

@@ -10,37 +10,36 @@ import GetX from "./GetX";
 import Michael from "../../../assets/aboutImages/Michael.jpg";
 import Oliver from "../../../assets/aboutImages/oliver.jpg";
 import Noah from "../../../assets/aboutImages/Noah.jpg";
+
 // Main Function
-export default function MeetOur() {
+export default function EndSection() {
   // Theme
   const { isDarkMode } = useSelector((state) => state.theme);
   // Variable Language
   const { currentLanguage } = useSelector((state) => state.language);
   // Variable JSON
   const { t } = useTranslation();
+
   return (
     <>
       {/* End Task */}
       <div className={`md:p-10 p-3 mt-16`}>
         <div className={` text-center `}>
-            <h1
-              className={`my-3 text-2xl md:text-4xl font-bold tracking-wide text-[#7616EC]
+          <h1
+            className={`my-3 text-2xl md:text-4xl font-bold tracking-wide text-[#7616EC]
                 `}
-                >
-              <SplitTextMotion>
-              {currentLanguage === "en"
-                ? t("pages.about.endSection.subSec.title")
-                : t("pages.about.endSectionAr.subSec.title")}
-          </SplitTextMotion>
-            </h1>
+          >
+            <SplitTextMotion>
+              {t("pages.about.endSection.subSec.title")}
+            </SplitTextMotion>
+          </h1>
           <p style={{ letterSpacing: "1px" }}>
             <SlideUpSplitTextMotion>
-              {currentLanguage === "en"
-                ? t("pages.about.endSection.subSec.description")
-                : t("pages.about.endSectionAr.subSec.description")}
+              {t("pages.about.endSection.subSec.description")}
             </SlideUpSplitTextMotion>
           </p>
         </div>
+
         {/* Parent Card */}
         <div className={` flex flex-col md:flex-row md:gap-4 mt-20`}>
           {/* Card ONE Michael*/}
@@ -56,15 +55,11 @@ export default function MeetOur() {
               className={`text-[#7616EC] font-bold text-lg tracking-wide px-3 py-1`}
             >
               <SlideUpSplitTextMotion>
-                {currentLanguage === "en"
-                  ? t("pages.about.endSection.michael.name")
-                  : t("pages.about.endSectionAr.michael.name")}
+                {t("pages.about.endSection.michael.name")}
               </SlideUpSplitTextMotion>
             </h2>
             <span className={` px-3 text-gray-500`}>
-              {currentLanguage === "en"
-                ? t("pages.about.endSection.michael.job")
-                : t("pages.about.endSectionAr.michael.job")}
+              {t("pages.about.endSection.michael.job")}
             </span>
 
             <p
@@ -73,16 +68,12 @@ export default function MeetOur() {
               }`}
             >
               <SplitTextMotion>
-                {currentLanguage === "en"
-                  ? t("pages.about.endSection.michael.description")
-                  : t("pages.about.endSectionAr.michael.description")}
+                {t("pages.about.endSection.michael.description")}
               </SplitTextMotion>
             </p>
           </div>
 
-          {/* === Card One ==== */}
-
-          {/* Card TOW  Oliver*/}
+          {/* Card TWO  Oliver*/}
           <div className={`md:w-1/3 py-3 `}>
             <GetX direction="top">
               <img
@@ -95,15 +86,11 @@ export default function MeetOur() {
               className={`text-[#7616EC] font-bold text-lg tracking-wide px-3 py-1`}
             >
               <SlideUpSplitTextMotion>
-                {currentLanguage === "en"
-                  ? t("pages.about.endSection.oliver.name")
-                  : t("pages.about.endSectionAr.oliver.name")}
+                {t("pages.about.endSection.oliver.name")}
               </SlideUpSplitTextMotion>
             </h2>
             <span className={` px-3 text-gray-500`}>
-              {currentLanguage === "en"
-                ? t("pages.about.endSection.oliver.job")
-                : t("pages.about.endSectionAr.oliver.job")}
+              {t("pages.about.endSection.oliver.job")}
             </span>
 
             <p
@@ -112,14 +99,10 @@ export default function MeetOur() {
               }`}
             >
               <SplitTextMotion>
-                {currentLanguage === "en"
-                  ? t("pages.about.endSection.oliver.description")
-                  : t("pages.about.endSectionAr.oliver.description")}
+                {t("pages.about.endSection.oliver.description")}
               </SplitTextMotion>
             </p>
           </div>
-
-          {/* === Card Tow ==== */}
 
           {/* Card Three Noah*/}
           <div className={`md:w-1/3 py-3 `}>
@@ -134,15 +117,11 @@ export default function MeetOur() {
               className={`text-[#7616EC] font-bold text-lg tracking-wide px-3 py-1`}
             >
               <SlideUpSplitTextMotion>
-                {currentLanguage === "en"
-                  ? t("pages.about.endSection.noah.name")
-                  : t("pages.about.endSectionAr.noah.name")}
+                {t("pages.about.endSection.noah.name")}
               </SlideUpSplitTextMotion>
             </h2>
             <span className={` px-3 text-gray-500`}>
-              {currentLanguage === "en"
-                ? t("pages.about.endSection.noah.job")
-                : t("pages.about.endSectionAr.noah.job")}
+              {t("pages.about.endSection.noah.job")}
             </span>
 
             <p
@@ -151,15 +130,11 @@ export default function MeetOur() {
               }`}
             >
               <SplitTextMotion>
-                {currentLanguage === "en"
-                  ? t("pages.about.endSection.noah.description")
-                  : t("pages.about.endSectionAr.noah.description")}
+                {t("pages.about.endSection.noah.description")}
               </SplitTextMotion>
             </p>
           </div>
-          {/* === Card Three ==== */}
         </div>
-        {/* === Parent Card ==== */}
       </div>
     </>
   );

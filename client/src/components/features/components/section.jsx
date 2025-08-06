@@ -2,11 +2,11 @@ import { useSelector } from "react-redux";
 import { useTranslation } from "../../../hooks/useTranslation";
 import Icon from "../../../assets/featuresImages/icon.png";
 import card from "../../../assets/featuresImages/card.png";
-// IMPORT ANIMATION
-import GetX from "../../about/components/GetX";
-import SplitTextMotion from "../../about/components/SplitTextMotion";
-import SlideUpSplitTextMotion from "../../about/components/SlideUpSplitTextMotion";
-export default function CompFeature() {
+import GetX from "../../aboutus/components/GetX";
+import SplitTextMotion from "../../aboutus/components/SplitTextMotion";
+import SlideUpSplitTextMotion from "../../aboutus/components/SlideUpSplitTextMotion";
+
+export default function Section() {
   const { currentLanguage } = useSelector((state) => state.language);
   const { t } = useTranslation();
 
@@ -20,9 +20,7 @@ export default function CompFeature() {
     <div className="overflow-hidden">
       <h1 className="py-10 px-8 text-2xl md:text-3xl font-bold text-[#7616EC]">
         <SplitTextMotion>
-          {currentLanguage === "en"
-            ? t("pages.features.sectionFeature.mainTitle")
-            : t("pages.features.sectionFeatureAr.mainTitle")}
+          {t("pages.about.features.sectionFeature.mainTitle")}
         </SplitTextMotion>
       </h1>
       <div className={`md:flex items-center content-between lg:gap-16 px-2 `}>
@@ -37,23 +35,18 @@ export default function CompFeature() {
                 </GetX>
                 <h1 className="md:text-lg font-bold py-2 text-[#7616EC]">
                   <SplitTextMotion>
-                    {currentLanguage === "en"
-                      ? t(`pages.features.sectionFeature.${item.titleKey}`)
-                      : t(`pages.features.sectionFeatureAr.${item.titleKey}`)}
+                    {t(`pages.about.features.sectionFeature.${item.titleKey}`)}
                   </SplitTextMotion>
                 </h1>
               </div>
               <p className="text-gray-500 mx-10 text-wrap md:w-[350px]">
                 <SlideUpSplitTextMotion>
-                  {currentLanguage === "en"
-                    ? t(`pages.features.sectionFeature.${item.descKey}`)
-                    : t(`pages.features.sectionFeatureAr.${item.descKey}`)}
+                  {t(`pages.about.features.sectionFeature.${item.descKey}`)}
                 </SlideUpSplitTextMotion>
               </p>
             </section>
           ))}
         </div>
-        {/* IMAGE */}
         <img
           src={card}
           alt=""
