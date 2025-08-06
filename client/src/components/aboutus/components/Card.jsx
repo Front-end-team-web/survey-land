@@ -15,7 +15,7 @@ export default function Card() {
   const { isDarkMode } = useSelector((state) => state.theme);
   const { currentLanguage } = useSelector((state) => state.language);
   const { t } = useTranslation();
-  // Main return
+
   return (
     <>
       {/* // parent Div  */}
@@ -47,10 +47,7 @@ export default function Card() {
             {/* Heading */}
             <h1 className="text-2xl md:text-4xl font-bold text-[#7616EC] my-4">
               <SplitTextMotion>
-                {" "}
-                {currentLanguage == "en"
-                  ? t("pages.about.sections.sec1.title")
-                  : t("pages.about.sectionsAr.secAr1.titleAr")}
+                {t("pages.about.sections.sec1.title")}
               </SplitTextMotion>
             </h1>
             {/* paragraph */}
@@ -59,16 +56,15 @@ export default function Card() {
                 className="font-[500] lg:w-[500px] md:w-[320px] text-base/6 mt-1 text-base/8  text-wrap break-all max-w-sm  "
                 style={{ color: isDarkMode ? "white" : "#111827" }}
               >
-                {currentLanguage === "en"
-                  ? t("pages.about.sections.sec1.paragraph")
-                  : t("pages.about.sectionsAr.secAr1.paragraphAr")}
+                {t("pages.about.sections.sec1.paragraph")}
               </p>
             </GetX>
           </div>
           {/* ===== Parent Heading And Paragraph ==== */}
         </div>
         {/* ======= Card One ==== */}
-        {/*  Card Tow */}
+
+        {/*  Card Two */}
         <div
           className={`flex flex-col md:flex-row mx-auto px-3 md:mb-16
         ${
@@ -77,7 +73,6 @@ export default function Card() {
         >
           {/* DIV IMAGE */}
           <div className={`w-full md:w-1/2 md:order-2 `}>
-            {/* <CiHeart/> */}
             <GetX direction={`${currentLanguage !== "en" ? "left" : "right"}`}>
               <img
                 src={card2}
@@ -99,9 +94,7 @@ export default function Card() {
             {/* Heading */}
             <h1 className="text-2xl md:text-4xl font-bold text-[#7616EC] my-4">
               <SplitTextMotion>
-                {currentLanguage === "en"
-                  ? t("pages.about.sections.sec2.title")
-                  : t("pages.about.sectionsAr.secAr2.title")}
+                {t("pages.about.sections.sec2.title")}
               </SplitTextMotion>
             </h1>
 
@@ -111,15 +104,13 @@ export default function Card() {
                 className="font-[500] lg:w-[500px] md:w-[320px] text-base/6 mt-1 text-base/8  text-wrap break-all max-w-sm "
                 style={{ color: isDarkMode ? "white" : "#111827" }}
               >
-                {currentLanguage === "en"
-                  ? t("pages.about.sections.sec2.paragraph")
-                  : t("pages.about.sectionsAr.secAr2.paragraph")}
+                {t("pages.about.sections.sec2.paragraph")}
               </p>
             </GetX>
           </div>
           {/* ======= Parent Heading And Paragraph ========= */}
         </div>
-        {/*======  Card Tow===== */}
+        {/*======  Card Two===== */}
       </div>
     </>
   );

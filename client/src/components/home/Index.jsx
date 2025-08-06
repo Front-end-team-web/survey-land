@@ -3,10 +3,7 @@ import HeroSection from "./heroSection/HeroSection";
 import FeaturesSection from "./featureSection/FeaturesSection";
 import Enterprise from "./enterPriceSection/Enterprise";
 import WorkSection from "./workSection/WorkSection";
-import SurveyTemplates from './surveyTemplates/SurveyTemplates';
-import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
-import StatsSection from './statsSection/StatsSection';
-import FAQSection from './faqSection/FAQSection';
+import DebugTranslation from "./DebugTranslation"; // أضف السطر ده
 const Index = () => {
   return (
     <div>

@@ -16,22 +16,21 @@
     },
     "about": {
       "title": "من نحن",
-
-      "titleSec1": " نحن نزود الفضوليين بالطاقة  ",
-      "discretion": "في Survey Infinity، نؤمن بأن الفضول والفهم يُحفّزان التقدم. رسالتنا هي مساعدة المؤسسات على تحويل الملاحظات إلى إجراءات تحويلية.",
-      "buttonStart": "ابدأ",
-      "buttonView": "شاهد العرض التوضيحي",
-      "sectionsAr": {
-        "secAr1": {
-          "titleAr": "رؤيتنا",
-          "paragraphAr": "في Survey Infinity، نتخيل عالمًا حيث يؤدي طرح الأسئلة الصحيحة إلى نمو وابتكار واتصال لا حدود له"
+      "titleSecEn": "نحن نزود الفضوليين بالطاقة",
+      "discretionEn": "في Survey Infinity، نؤمن بأن الفضول والفهم يُحفّزان التقدم. رسالتنا هي مساعدة المؤسسات على تحويل الملاحظات إلى إجراءات تحويلية.",
+      "buttonStartEn": "ابدأ",
+      "buttonViewEn": "شاهد العرض التوضيحي",
+      "sections": {
+        "sec1": {
+          "title": "رؤيتنا",
+          "paragraph": "في Survey Infinity، نتخيل عالمًا حيث يؤدي طرح الأسئلة الصحيحة إلى نمو وابتكار واتصال لا حدود له."
         },
-        "secAr2": {
+        "sec2": {
           "title": "مهمتنا",
           "paragraph": "لتسهيل الأمر على الجميع - من الشركات الصغيرة إلى الشركات العالمية - لإنشاء الاستطلاعات وجمع التعليقات والتصرف بناءً على البيانات الحقيقية بثقة ووضوح."
         }
       },
-      "ValuesSectionAr": {
+      "ValuesSection": {
         "sec1": {
           "title": "مدفوع بالغرض",
           "description": "نحن نؤمن بأن فهم الناس هو المفتاح لإحداث تغيير إيجابي في المنظمات والمجتمعات وفي جميع أنحاء العالم"
@@ -45,11 +44,11 @@
           "description": "نحن نؤمن بأن أفضل النتائج تحدث عندما تعمل الفرق معًا، وتتبادل الأفكار والخبرات لحل المشكلات المعقدة"
         }
       },
-      "secStoryAr": {
-        "title": "إلى عمل",
-        "description": "تأسست شركة Survey Infinity  عام ٢٠١٠، وبدأت بفكرة بسيطة: تسهيل جمع الملاحظات والتعلم منها على أي شخص. واليوم، أصبحنا شركة رائدة عالميًا في مجال برامج الاستطلاعات، حيث نساعد ملايين العملاء في أكثر من ١٩٠ دولة على تحويل فضولهم إلى عمل.صُممت منصتنا لتزويد الجميع، من الأفراد إلى الشركات الكبيرة، بالأدوات اللازمة لطرح أسئلة وتحليل الردود واتخاذ قرارات أفضل."
+      "secStory": {
+        "title": "قصتنا",
+        "description": "تأسست شركة Survey Infinity عام 2010، وبدأت بفكرة بسيطة: تسهيل جمع الملاحظات والتعلم منها على أي شخص. واليوم، أصبحنا شركة رائدة عالميًا في مجال برامج الاستطلاعات، حيث نساعد ملايين العملاء في أكثر من 190 دولة على تحويل فضولهم إلى عمل. صُممت منصتنا لتزويد الجميع، من الأفراد إلى الشركات الكبيرة، بالأدوات اللازمة لطرح أسئلة وتحليل الردود واتخاذ قرارات أفضل."
       },
-      "endSectionAr": {
+      "endSection": {
         "subSec": {
           "title": "تعرف على قيادتنا",
           "description": "الأشخاص الموهوبون وراء Survey Infinity والذين لديهم شغف بمساعدة المؤسسات على الاستفادة من قوة ردود الفعل"
@@ -62,44 +61,43 @@
         "noah": {
           "name": "نوح باتيل",
           "job": "مطور واجهة أمامية",
-          "description": "تتولى عائشة قيادة استراتيجية منتجاتنا، مع التركيز على خلق تجارب مستخدم بديهية."
+          "description": "عائشة تتولى قيادة استراتيجية منتجاتنا، مع التركيز على خلق تجارب مستخدم بديهية."
         },
         "oliver": {
-          "name": " أوليفر",
+          "name": "أوليفر",
           "job": "مدير التكنولوجيا الرئيسي",
           "description": "يشرف أوليفر على جميع المبادرات التكنولوجية ويضمن بقاء منصتنا مبتكرة"
-        },
-
-        "contact": {
-          "title": "تواصل على اتصال",
-          "desc": "هل لديك أسئلة حول SurveyPro؟ فريقنا هنا لمساعدتك في العثور على الحل الصحيح لاحتياجاتك.",
-          "contactInfo": "معلومات الاتصال",
-          "contactInfoDesc": "املأ النموذج أو اتصل بنا مباشرة باستخدام المعلومات أدناه.",
-          "ourHeadquarters": "مقرنا",
-          "phone": "هاتف",
-          "email": "بريد إلكتروني",
-          "followUs": "تابعنا",
-          "sendUsMessage": "أرسل لنا رسالة",
-          "name": "الاسم",
-          "sendMesssage": "إرسال الرسالة",
-          "subject": "الموضوع",
-          "message": "الرسالة",
-          "entreEmail": "أدخل بريدك الالكتروني"
-        },
-        "stayUpdated": {
-          "title": "ابق على اطلاع",
-          "desc": "اشترك في النشرة الإخبارية الخاصة بنا لتلقي تحديثات المنتج ورؤى الصناعة ونصائح مفيدة لإنشاء استطلاعات فعالة.",
-          "subscribe": "اشتراك",
-          "entreEmail": "أدخل بريدك الالكتروني"
-        },
-        "customersSay": {
-          "title": "ماذا يقول عملاؤنا؟",
-          "desc": "اكتشف كيف تستخدم المؤسسات Survey Infinity لتحويل الملاحظات إلى رؤى وخطوات عملية هادفة."
         }
+      },
+      "contact": {
+        "title": "تواصل معنا",
+        "desc": "هل لديك أسئلة حول SurveyPro؟ فريقنا هنا لمساعدتك في العثور على الحل الصحيح لاحتياجاتك.",
+        "contactInfo": "معلومات الاتصال",
+        "contactInfoDesc": "املأ النموذج أو اتصل بنا مباشرة باستخدام المعلومات أدناه.",
+        "ourHeadquarters": "مقرنا الرئيسي",
+        "phone": "الهاتف",
+        "email": "البريد الإلكتروني",
+        "followUs": "تابعنا",
+        "sendUsMessage": "أرسل لنا رسالة",
+        "name": "الاسم",
+        "subject": "الموضوع",
+        "message": "الرسالة",
+        "sendMesssage": "إرسال الرسالة",
+        "entreEmail": "أدخل بريدك الإلكتروني"
+      },
+      "stayUpdated": {
+        "title": "ابق على اطلاع",
+        "desc": "اشترك في النشرة الإخبارية الخاصة بنا لتلقي تحديثات المنتج ورؤى الصناعة ونصائح مفيدة لإنشاء استطلاعات فعالة.",
+        "subscribe": "اشترك",
+        "entreEmail": "أدخل بريدك الإلكتروني"
+      },
+      "customersSay": {
+        "title": "ماذا يقول عملاؤنا",
+        "desc": "اكتشف كيف تستخدم المؤسسات Survey Infinity لتحويل الملاحظات إلى رؤى وخطوات عملية هادفة."
       },
       "features": {
         "title": "المميزات",
-        "sectionFeatureAr": {
+        "sectionFeature": {
           "mainTitle": "إنشاء استبيانات جذابة في دقائق",
           "titleOne": "أكثر من 40 نوعًا من الأسئلة",
           "descriptionOne": "من أسئلة الاختيار من متعدد إلى أسئلة المصفوفة، لدينا كل ما تحتاجه",
@@ -108,9 +106,9 @@
           "titleThree": "متجاوب مع الجوال",
           "descriptionThree": "تبدو الاستطلاعات رائعة على أي جهاز، مما يزيد من معدلات الإكمال."
         },
-        "sectionAr": {
+        "section2": {
           "title": "هل أنت مستعد لإنشاء الاستبيان الأول الخاص بك؟",
-          "description": "انضم إلى آلاف المحترفين الذين يثقون في SurveyPro لتلبية احتياجاتهم البحثيةs",
+          "description": "انضم إلى آلاف المحترفين الذين يثقون في SurveyPro لتلبية احتياجاتهم البحثية",
           "btnStart": "ابدأ التجربة المجانية",
           "btnContent": "اتصل بالمبيعات"
         }
@@ -118,114 +116,111 @@
       "faqs": {
         "title": "الأسئلة الشائعة"
       },
-      "pricing": {
-        "ChoosePlan": {
-          "Choose": "اختر",
-          "your Plan": "خطتك",
-          "Choose your perfect plan": "اختر الخطة المثالية لك",
-          "Choose the perfect": "اختر الخطة المثالية حسب احتياجاتك. سواء كنت في البداية أو تدير مؤسسة كبيرة، نحن نوفر لك كل ما تحتاجه.",
-          "Monthly": "شهري",
-          "Annual (save 20%)": "سنوي (وفر 20%)",
-          "Most popular": "الأكثر شيوعًا",
-          "Basic": "الأساسية",
-          "Professional": "الاحترافية",
-          "Enterprise": "المؤسسية",
-          "PlanDescriptions": {
-            "Basic": "مثالية للأفراد والفرق الصغيرة التي تبدأ مشوارها.",
-            "Professional": "مناسبة للأعمال المتنامية التي تحتاج إلى مزيد من القوة والمزايا.",
-            "Enterprise": "مخصصة للمؤسسات الكبيرة التي تحتاج إلى ميزات متقدمة ودعم مخصص."
-          },
-          "PlanFeatures": {
-            "Up to 10 surveys per month": "حتى 10 استبيانات شهريًا",
-            "100 responses per survey": "100 رد لكل استبيان",
-            "Basic survey templates": "قوالب استبيانات أساسية",
-            "Email support": "دعم عبر البريد الإلكتروني",
-            "Export to PDF & CSV": "تصدير إلى PDF وCSV",
-            "Basic analytics": "تحليلات أساسية",
-            "Unlimited surveys": "عدد غير محدود من الاستبيانات",
-            "1000 responses per survey": "1000 رد لكل استبيان",
-            "Advanced survey templates": "قوالب استبيانات متقدمة",
-            "Priority email support": "دعم بريد إلكتروني أولوية",
-            "Advanced analytics": "تحليلات متقدمة",
-            "Custom branding": "العلامة التجارية المخصصة",
-            "Team collaboration": "تعاون الفريق",
-            "API access": "وصول إلى واجهة برمجة التطبيقات (API)",
-            "Unlimited everything": "كل شيء غير محدود",
-            "Dedicated account manager": "مدير حساب مخصص",
-            "Custom integration support": "دعم تكامل مخصص",
-            "Advanced security features": "ميزات أمان متقدمة",
-            "SLA guarantees": "ضمانات اتفاقية مستوى الخدمة (SLA)",
-            "Training sessions": "جلسات تدريبية",
-            "Custom contract terms": "شروط عقد مخصصة",
-            "Phone support": "دعم عبر الهاتف"
-          },
-          "PlanActions": {
-            "Start free trial": "ابدأ النسخة التجريبية المجانية",
-            "Contact sales": "تواصل مع قسم المبيعات"
-          },
-          "30-day money-back guarantee": "ضمان استرجاع الأموال خلال 30 يومًا"
-        },
-        "ComparePlans": {
-          "Compare Plans": "قارن الخطط",
-          "Find the plan": "ابحث عن الخطة المناسبة لك",
-          "Features": "الميزات",
-          "Basic": "الأساسية",
-          "Professional": "الاحترافية",
-          "Enterprise": "المؤسسية",
-          "Survey Creation": "إنشاء الاستبيانات",
-          "Custom survey themes": "سمات استبيانات مخصصة",
-          "Question logic & branching": "منطق الأسئلة والتفرعات",
-          "Custom branding": "العلامة التجارية المخصصة",
-          "Data Collection": "جمع البيانات",
-          "Analysis & Reporting": "التحليل والتقارير",
-          "Responses per survey": "عدد الردود لكل استبيان",
-          "Unlimited": "غير محدود",
-          "File uploads": "رفع الملفات",
-          "Offline data collection": "جمع البيانات دون اتصال",
-          "Basic analytics": "تحليلات أساسية",
-          "Advanced analytics": "تحليلات متقدمة",
-          "Custom reports": "تقارير مخصصة"
-        },
-        "Testimonial": {
-          "Trusted by thousands": "موثوق به من قبل الآلاف",
-          "See what our customers have to say about their experience": "اطّلع على آراء عملائنا حول تجربتهم",
-          "text1": "خطة الاحتراف تحتوي على كل ما نحتاجه لجمع تعليقات العملاء بفعالية. أدوات التحليل كانت لا تقدر بثمن في تطوير منتجاتنا.",
-          "Michael Rodriguez": "مايكل رودريغيز",
-          "role1": "مدير الأبحاث في شركة Global Research Ltd.",
-          "Sarah Johnson": "سارة جونسون",
-          "role2": "مديرة المنتج في شركة Tech Innovations Inc.",
-          "David Kim": "ديفيد كيم",
-          "role3": "مؤسس شركة Local Startup Co."
-        },
-        "Questions": {
-          "Frequently Asked Questions": "الأسئلة الشائعة",
-          "Everything you need to know about our pricing and products": "كل ما تحتاج معرفته حول خطط الأسعار والمنتجات",
-          "What happens after my trial ends?": "ماذا يحدث بعد انتهاء الفترة التجريبية؟",
-          "Yes": "نعم، يمكنك الترقية أو التخفيض أو إلغاء خطتك في أي وقت. إذا قمت بالترقية، ستكون الميزات الجديدة متاحة فورًا. وإذا قمت بالتخفيض، سيتم تطبيق التغييرات في بداية دورة الفوترة التالية.",
-          "Can I change plans at any time?": "هل يمكنني تغيير الخطة في أي وقت؟",
-          "Do you offer discounts for nonprofits?": "هل تقدمون خصومات للمنظمات غير الربحية؟",
-          "What payment methods do you accept?": "ما هي طرق الدفع التي تقبلونها؟",
-          "Is there a limit on survey responses? ": " هل هناك حد لعدد الردود على الاستبيانات؟",
-          "Still have questions?": "ما زلت تملك أسئلة؟",
-          "Contact our support team": "تواصل مع فريق الدعم لدينا"
-        },
-        "GetStarted": {
-          "Ready to get started?": "هل أنت مستعد للبدء؟",
-          "Join": "انضم إلى آلاف المؤسسات التي تثق بـ Survey Infinity لجمع آراء قيّمة واتخاذ قرارات مستندة إلى البيانات.",
-          "Start free trial": "ابدأ النسخة التجريبية المجانية",
-          "Contact sales": "تواصل مع فريق المبيعات"
-        }
-      },
-      "contact": {
-        "title": "اتصل بنا"
-      },
       "notFound": {
         "title": "لم يتم العثور على الصفحة",
         "backToHome": "العودة إلى الصفحة الرئيسية"
       }
     },
+    "pricing": {
+      "ChoosePlan": {
+        "Choose": "اختر",
+        "your Plan": "خطتك",
+        "Choose your perfect plan": "اختر الخطة المثالية لك",
+        "Choose the perfect": "اختر الخطة المثالية حسب احتياجاتك. سواء كنت في البداية أو تدير مؤسسة كبيرة، نحن نوفر لك كل ما تحتاجه.",
+        "Monthly": "شهري",
+        "Annual (save 20%)": "سنوي (وفر 20%)",
+        "Most popular": "الأكثر شيوعًا",
+        "Basic": "الأساسية",
+        "Professional": "الاحترافية",
+        "Enterprise": "المؤسسية",
+        "PlanDescriptions": {
+          "Basic": "مثالية للأفراد والفرق الصغيرة التي تبدأ مشوارها.",
+          "Professional": "مناسبة للأعمال المتنامية التي تحتاج إلى مزيد من القوة والمزايا.",
+          "Enterprise": "مخصصة للمؤسسات الكبيرة التي تحتاج إلى ميزات متقدمة ودعم مخصص."
+        },
+        "PlanFeatures": {
+          "Up to 10 surveys per month": "حتى 10 استبيانات شهريًا",
+          "100 responses per survey": "100 رد لكل استبيان",
+          "Basic survey templates": "قوالب استبيانات أساسية",
+          "Email support": "دعم عبر البريد الإلكتروني",
+          "Export to PDF & CSV": "تصدير إلى PDF وCSV",
+          "Basic analytics": "تحليلات أساسية",
+          "Unlimited surveys": "عدد غير محدود من الاستبيانات",
+          "1000 responses per survey": "1000 رد لكل استبيان",
+          "Advanced survey templates": "قوالب استبيانات متقدمة",
+          "Priority email support": "دعم بريد إلكتروني أولوية",
+          "Advanced analytics": "تحليلات متقدمة",
+          "Custom branding": "العلامة التجارية المخصصة",
+          "Team collaboration": "تعاون الفريق",
+          "API access": "وصول إلى واجهة برمجة التطبيقات (API)",
+          "Unlimited everything": "كل شيء غير محدود",
+          "Dedicated account manager": "مدير حساب مخصص",
+          "Custom integration support": "دعم تكامل مخصص",
+          "Advanced security features": "ميزات أمان متقدمة",
+          "SLA guarantees": "ضمانات اتفاقية مستوى الخدمة (SLA)",
+          "Training sessions": "جلسات تدريبية",
+          "Custom contract terms": "شروط عقد مخصصة",
+          "Phone support": "دعم عبر الهاتف"
+        },
+        "PlanActions": {
+          "Start free trial": "ابدأ النسخة التجريبية المجانية",
+          "Contact sales": "تواصل مع قسم المبيعات"
+        },
+        "30-day money-back guarantee": "ضمان استرجاع الأموال خلال 30 يومًا"
+      },
+      "ComparePlans": {
+        "Compare Plans": "قارن الخطط",
+        "Find the plan": "ابحث عن الخطة المناسبة لك",
+        "Features": "الميزات",
+        "Basic": "الأساسية",
+        "Professional": "الاحترافية",
+        "Enterprise": "المؤسسية",
+        "Survey Creation": "إنشاء الاستبيانات",
+        "Custom survey themes": "سمات استبيانات مخصصة",
+        "Question logic & branching": "منطق الأسئلة والتفرعات",
+        "Custom branding": "العلامة التجارية المخصصة",
+        "Data Collection": "جمع البيانات",
+        "Analysis & Reporting": "التحليل والتقارير",
+        "Responses per survey": "عدد الردود لكل استبيان",
+        "Unlimited": "غير محدود",
+        "File uploads": "رفع الملفات",
+        "Offline data collection": "جمع البيانات دون اتصال",
+        "Basic analytics": "تحليلات أساسية",
+        "Advanced analytics": "تحليلات متقدمة",
+        "Custom reports": "تقارير مخصصة"
+      },
+      "Testimonial": {
+        "Trusted by thousands": "موثوق به من قبل الآلاف",
+        "See what our customers have to say about their experience": "اطّلع على آراء عملائنا حول تجربتهم",
+        "text1": "خطة الاحتراف تحتوي على كل ما نحتاجه لجمع تعليقات العملاء بفعالية. أدوات التحليل كانت لا تقدر بثمن في تطوير منتجاتنا.",
+        "Michael Rodriguez": "مايكل رودريغيز",
+        "role1": "مدير الأبحاث في شركة Global Research Ltd.",
+        "Sarah Johnson": "سارة جونسون",
+        "role2": "مديرة المنتج في شركة Tech Innovations Inc.",
+        "David Kim": "ديفيد كيم",
+        "role3": "مؤسس شركة Local Startup Co."
+      },
+      "Questions": {
+        "Frequently Asked Questions": "الأسئلة الشائعة",
+        "Everything you need to know about our pricing and products": "كل ما تحتاج معرفته حول خطط الأسعار والمنتجات",
+        "What happens after my trial ends?": "ماذا يحدث بعد انتهاء الفترة التجريبية؟",
+        "Can I change plans at any time?": "هل يمكنني تغيير الخطة في أي وقت؟",
+        "Do you offer discounts for nonprofits?": "هل تقدمون خصومات للمنظمات غير الربحية؟",
+        "What payment methods do you accept?": "ما هي طرق الدفع التي تقبلونها؟",
+        "Is there a limit on survey responses?": "هل هناك حد لعدد الردود على الاستبيانات؟",
+        "Still have questions?": "ما زلت تملك أسئلة؟",
+        "Contact our support team": "تواصل مع فريق الدعم لدينا",
+        "Yes": "نعم، يمكنك الترقية أو التخفيض أو إلغاء خطتك في أي وقت. إذا قمت بالترقية، ستكون الميزات الجديدة متاحة فورًا. وإذا قمت بالتخفيض، سيتم تطبيق التغييرات في بداية دورة الفوترة التالية."
+      },
+      "GetStarted": {
+        "Ready to get started?": "هل أنت مستعد للبدء؟",
+        "Join": "انضم إلى آلاف المؤسسات التي تثق بـ Survey Infinity لجمع آراء قيّمة واتخاذ قرارات مستندة إلى البيانات.",
+        "Start free trial": "ابدأ النسخة التجريبية المجانية",
+        "Contact sales": "تواصل مع فريق المبيعات"
+      }
+    },
     "footer": {
-      "desc": "إنشاء وتوزيع وتحليل الاستبيانات بسهولة، والحصول على رؤى قيمة من جمهورك",
+      "desc": "إنشاء وتوزيع وتحليل الاستبيانات بسهولة، والحصول على رؤى قيمة من جمهورك.",
       "products": "المنتجات",
       "productsSurveyBuilder": "منشئ الاستبيانات",
       "productsQuizMaker": "منشئ الاختبارات",
@@ -239,14 +234,14 @@
       "resourcesCaseStudies": "دراسات الحالة",
       "resourcesTemplates": "القوالب",
       "stayUpdated": "ابقَ على اطلاع",
-      "stayUpdatedDesc": "اشترك في النشرة الإخبارية لدينا للحصول على النصائح والتحديثات",
-      "stayUpdatedEntreEmail": "أدخل بريدك الالكتروني",
+      "stayUpdatedDesc": "اشترك في النشرة الإخبارية لدينا للحصول على النصائح والتحديثات.",
+      "stayUpdatedEntreEmail": "أدخل بريدك الإلكتروني",
       "stayUpdatedSubscribe": "اشترك",
       "terms": "الشروط",
       "privacy": "الخصوصية",
       "security": "الأمان",
       "cookies": "ملفات تعريف الارتباط",
-      "rights": "جميع الحقوق محفوظة لشركة SurveyPro لعام ٢٠٢٥."
+      "rights": "© 2025 SurveyPro. جميع الحقوق محفوظة."
     },
     "HeroSection": {
       "title": {
@@ -256,21 +251,21 @@
         "part4": "وليس ساعات"
       },
       "subtitle": "يساعدك Survey Infinity على جمع رؤى قابلة للتنفيذ من خلال استطلاعات تفاعلية مصممة بشكل جميل مع تحليلات متقدمة وتكامل سلس.",
-      "buttonOne": "هيا نبدأ",
+      "buttonOne": "ابدأ الآن",
       "buttonTwo": "القوالب"
     },
     "featuresSection": {
       "title": {
-        "part1": " ميزات",
-        "part2": "فعالة ",
-        "part3": "تُحسّن عملية جمع ",
+        "part1": "ميزات",
+        "part2": "قوية لتحويل",
+        "part3": "جمع",
         "part4": "بياناتك"
       },
-      "subtitle": "كل ما تحتاجه لإنشاء وتوزيع وتحليل استبيانات تُقدّم رؤى عملية"
+      "subtitle": "كل ما تحتاجه لإنشاء وتوزيع وتحليل استبيانات تقدم رؤى قابلة للتنفيذ."
     },
     "featuresList": [
       {
-        "title": "إنشاء استبيانات بسهولة",
+        "title": "إنشاء استبيانات بديهي",
         "description": "محرر بالسحب والإفلات مع قوالب قابلة للتخصيص لإنشاء استبيانات احترافية في دقائق دون الحاجة لأي مهارات تقنية."
       },
       {
@@ -302,12 +297,12 @@
     },
     "steps": [
       {
-        "title": "أنشئ استبيانك",
+        "title": "ابن استبيانك",
         "description": "اختر قالباً جاهزاً أو ابدأ من الصفر."
       },
       {
         "title": "اجمع الردود",
-        "description": "شارك رابط الاستبيان وابدأ في تلقي الردود فوراً."
+        "description": "شارك رابط الاستبيان وابدأ في تلقي الردود في الوقت الفعلي."
       },
       {
         "title": "حلّل النتائج",
@@ -326,7 +321,7 @@
       ],
       "button": "تعرّف على حلول المؤسسات"
     },
-    "Test": "أحمد"
+    "TestAbout": "أحمد"
   },
   "featuresSectionSeeMore": {
     "seeMore": "عرض المزيد"
@@ -385,8 +380,8 @@
     "sectionTitle": "الميزات",
     "headline": {
       "part1": "أنشئ",
-      "part2": "استبيانات احترافية ",
-      "part3": " وسهلة"
+      "part2": "استبيانات احترافية",
+      "part3": "سهلة"
     },
     "description": "منصة متكاملة لإنشاء وإدارة الاستبيانات باستخدام أدوات متقدمة وتحليلات مفصلة. مصممة خصيصًا للمستخدمين العرب.",
     "button": "ابدأ مجانًا"
@@ -427,10 +422,10 @@
   "contact": {
     "title": "تواصل معنا",
     "description": "هل لديك سؤال أو اقتراح أو تحتاج إلى مساعدة؟ نحن هنا لدعمك",
-    "phone": "رقم الهاتف",
-    "email": "البريد الإلكتروني",
     "firstName": "الاسم الأول",
     "lastName": "اسم العائلة",
+    "email": "عنوان البريد الإلكتروني",
+    "phone": "رقم الهاتف",
     "subjectLabel": "اختر الموضوع",
     "subjects": {
       "general": "استفسار عام",
@@ -469,7 +464,7 @@
     "useTemplate": "استخدم القالب",
     "loadMore": "تحميل المزيد"
   },
-  "whyChooseUs": {
+  "featuresSection": {
     "title1": "لماذا تختار",
     "title2": "قوالبنا؟",
     "cardTitle1": "تصميم احترافي",

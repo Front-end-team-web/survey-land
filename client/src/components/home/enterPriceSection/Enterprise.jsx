@@ -1,84 +1,56 @@
-import HeroImage from "../../../assets/homeImages/Enterprice.png";
-import iconEnterprice from "../../../assets/homeImages/iconEnterprice.png";
+import React from "react";
 import { useTranslation } from "../../../hooks/useTranslation";
-const Enterprise = () => {
-  const { t, currentLanguage } = useTranslation();
-  const isRTL = currentLanguage === "ar";
-  return (
-    <>
-      <div className="grid lg:grid-cols-2 grid-cols-1 items-center justify-items-center gap-8 px-4 py-8 lg:px-20 lg:py-16 bg-gradient-to-br from-[#490F8F] to-[#7616EC]">
-        <div className="w-full flex flex-col items-center  md:items-start order-2 md:order-1">
-          <h1
-            className={`text-3xl/tight text-white lg:text-5xl/tight font-bold mb-6 md:mb-3 mt-3 md:mt-0 ${
-              isRTL ? "text-center  md:text-right " : "text-center md:text-left"
-            }`}
-          >
-            {t("enterprise.title")}
-          </h1>
-          <p
-            className={`mt-4 text-content-secondary text-white text-[18px]/relaxed max-w-full lg:max-w-[70%] ${
-              isRTL ? "md:text-right text-center" : "text-center md:text-left"
-            } leading-7 mb-6 md:mb-4`}
-          >
-            {t("enterprise.description")}
-          </p>
+import { useSelector } from "react-redux";
 
-          <div className="mt-4 flex flex-col gap-2 text-[25px] mb-5 text-white font-semibold">
-            {t("enterprise.features", { returnObjects: true }).map(
-              (feature, index) => (
-                <div key={index} className="flex items-center gap-2">
-                  <img src={iconEnterprice} alt="hero" className="w-6" />
-                  <span>{feature}</span>
-                </div>
-              )
-            )}
+export default function Enterprise() {
+  const { t } = useTranslation();
+  const { currentLanguage } = useSelector((state) => state.language);
+  const { isDarkMode } = useSelector((state) => state.theme);
+
+  // المسار الصحيح بـ pages.
+  const enterpriseData = t("pages.enterprise") || {};
+
+  const title = enterpriseData.title || "Enterprise Solutions";
+  const description =
+    enterpriseData.description || "Scale your research capabilities";
+  const features = enterpriseData.features || [];
+  const buttonText = enterpriseData.button || "Learn More";
+
+  const safeFeatures = Array.isArray(features) ? features : [];
+
+  return (
+    <div className={`py-16 ${isDarkMode ? "bg-gray-800" : "bg-gray-50"}`}>
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+            {title}
+          </h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            {description}
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <ul className="space-y-4">
+              {safeFeatures.map((feature, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-green-500 mr-3 text-xl">✓</span>
+                  <span className="text-gray-700 dark:text-gray-300">
+                    {feature}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
-          <div className="mt-4 flex flex-col md:flex-row gap-4 justify-center md:justify-start">
-            <button className="bg-white flex items-center flex-row px-16 py-2 font-medium   text-base rounded-md text-[#7616EC] ">
-              {t("enterprise.button")}
-              {isRTL ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-arrow-left-icon lucide-arrow-left mr-1 mt-1"
-                >
-                  <path d="m12 19-7-7 7-7" />
-                  <path d="M19 12H5" />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-arrow-left-icon lucide-arrow-left ml-1 mt-1"
-                >
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              )}
+
+          <div className="text-center">
+            <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+              {buttonText}
             </button>
           </div>
         </div>
-
-        <div className=" w-full order-1 md:order-2 ">
-          <img src={HeroImage} alt="hero" className="w-full" />
-        </div>
       </div>
-    </>
+    </div>
   );
-};
-
-export default Enterprise;
+}

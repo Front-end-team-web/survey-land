@@ -1,3 +1,238 @@
+// import { useSelector } from "react-redux";
+// import { useTranslation } from "../../../hooks/useTranslation";
+// import {
+//   FaMapMarkerAlt,
+//   FaEnvelope,
+//   FaInstagram,
+//   FaFacebookF,
+// } from "react-icons/fa";
+// import { BsTelephone } from "react-icons/bs";
+// import { FaXTwitter } from "react-icons/fa6";
+// import StayUpdated from "./StayUpdated";
+// import { motion } from "framer-motion";
+
+// const Contact = () => {
+//   const { t } = useTranslation();
+//   const { isDarkMode } = useSelector((state) => state.theme);
+//   const { currentLanguage } = useSelector((state) => state.language);
+
+//   return (
+//     <>
+//       <div
+//         className={`py-16 flex flex-col items-center justify-center min-h-screen ${
+//           isDarkMode ? "bg-[#1F2937] text-white" : "bg-white text-gray-900"
+//         }`}
+//       >
+//         <div className="container mx-auto px-4">
+//           <div className="overflow-hidden text-center">
+//             <h1 className="text-purple-600 font-semibold text-[32px] mb-6">
+//               {t("pages.about.contact.title")
+//                 .split(" ")
+//                 .map((word, index) => {
+//                   return (
+//                     <motion.span
+//                       key={index}
+//                       initial={{ opacity: 0 }}
+//                       whileInView={{ opacity: 1 }}
+//                       transition={{ delay: index * 0.3 }}
+//                     >
+//                       <span>
+//                         {word}
+//                         &nbsp;
+//                       </span>
+//                     </motion.span>
+//                   );
+//                 })}
+//             </h1>
+
+//             <motion.p
+//               className={`text-[20px] ${
+//                 isDarkMode ? "text-white" : "text-black"
+//               }`}
+//               initial={{ x: -20, opacity: 0 }}
+//               whileInView={{ x: 0, opacity: 1 }}
+//               transition={{ delay: 0.3 }}
+//             >
+//               {t("pages.about.contact.desc")}
+//             </motion.p>
+//           </div>
+
+//           <div className="my-16 grid grid-cols-1 md:grid-cols-2 gap-6 overflow-x-hidden">
+//             <motion.div
+//               className={`space-y-14 px-8 py-16 flex flex-col justify-between rounded-xl bg-gradient-to-br from-[#7616EC] to-[#490F8F] text-white`}
+//               initial={{ x: -20, opacity: 0 }}
+//               whileInView={{ x: 0, opacity: 1 }}
+//               transition={{ delay: 0.9 }}
+//             >
+//               <div className="overflow-hidden">
+//                 <h1 className="font-semibold text-[28px]">
+//                   {t("pages.about.contact.contactInfo")}
+//                 </h1>
+
+//                 <p className="text-[20px]">
+//                   {t("pages.about.contact.contactInfoDesc")}
+//                 </p>
+//               </div>
+
+//               <div className="space-y-6">
+//                 <div className="flex space-x-3">
+//                   <FaMapMarkerAlt
+//                     className={`mt-1 text-xl ${
+//                       currentLanguage === "ar" ? "me-3" : ""
+//                     }`}
+//                   />
+//                   <div>
+//                     <h3 className="font-semibold">
+//                       {t("pages.about.contact.ourHeadquarters")}
+//                     </h3>
+//                     <p>
+//                       123 Survey Street, San Francisco, CA 94103, United States
+//                     </p>
+//                   </div>
+//                 </div>
+
+//                 <div className="flex space-x-3">
+//                   <BsTelephone
+//                     className={`mt-1 text-xl ${
+//                       currentLanguage === "ar" ? "me-3" : ""
+//                     }`}
+//                   />
+//                   <div>
+//                     <h3 className="font-semibold">
+//                       {t("pages.about.contact.phone")}
+//                     </h3>
+//                     <p>+1 (555) 123-4567</p>
+//                   </div>
+//                 </div>
+
+//                 <div className="flex space-x-3">
+//                   <FaEnvelope
+//                     className={`mt-1 text-xl ${
+//                       currentLanguage === "ar" ? "me-3" : ""
+//                     }`}
+//                   />
+//                   <div>
+//                     <h3 className="font-semibold">
+//                       {t("pages.about.contact.email")}
+//                     </h3>
+//                     <p>info@surveypro.example</p>
+//                   </div>
+//                 </div>
+//               </div>
+
+//               <div className="flex flex-col space-x-7">
+//                 <h1 className="text-[28px]">
+//                   {t("pages.about.contact.followUs")}
+//                 </h1>
+
+//                 <ul className="mt-5 flex space-x-4">
+//                   <li>
+//                     <a href="/instagram">
+//                       <FaInstagram />
+//                     </a>
+//                   </li>
+
+//                   <li>
+//                     <a href="/twitter">
+//                       <FaXTwitter />
+//                     </a>
+//                   </li>
+
+//                   <li>
+//                     <a href="/facebook">
+//                       <FaFacebookF />
+//                     </a>
+//                   </li>
+//                 </ul>
+//               </div>
+//             </motion.div>
+
+//             <motion.div
+//               className={`flex flex-col justify-between px-8 py-6 rounded-xl text-black border border-gray-900 ${
+//                 isDarkMode ? "bg-white text-black" : ""
+//               }`}
+//               initial={{ x: 20, opacity: 0 }}
+//               whileInView={{ x: 0, opacity: 1 }}
+//               transition={{ delay: 0.9 }}
+//             >
+//               <div className="overflow-hidden">
+//                 <h2 className="text-[32px]">
+//                   {t("pages.about.contact.sendUsMessage")}
+//                 </h2>
+//               </div>
+
+//               <form>
+//                 <div className="flex flex-col md:flex-row my-4 gap-6">
+//                   <div className="md:w-1/2 flex flex-col">
+//                     <label htmlFor="name" className="mb-3">
+//                       {t("pages.about.contact.name")}
+//                     </label>
+
+//                     <input
+//                       type="text"
+//                       id="name"
+//                       className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2 w-full"
+//                       placeholder={t("pages.about.contact.name")}
+//                     />
+//                   </div>
+
+//                   <div className="md:w-1/2 flex flex-col">
+//                     <label htmlFor="name" className="mb-3">
+//                       {t("pages.about.contact.email")}
+//                     </label>
+
+//                     <input
+//                       type="email"
+//                       id="email"
+//                       className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2 w-full"
+//                       placeholder={t("pages.about.contact.entreEmail")}
+//                     />
+//                   </div>
+//                 </div>
+
+//                 <div className="flex flex-col my-4 ">
+//                   <label htmlFor="subject" className="mb-3">
+//                     {t("pages.about.contact.subject")}
+//                   </label>
+
+//                   <input
+//                     type="text"
+//                     id="subject"
+//                     className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2"
+//                     placeholder={t("pages.about.contact.subject")}
+//                   />
+//                 </div>
+
+//                 <div className="flex flex-col my-4">
+//                   <label htmlFor="message" className="mb-3">
+//                     {t("pages.about.contact.message")}
+//                   </label>
+
+//                   <textarea
+//                     rows="5"
+//                     name="message"
+//                     id="message"
+//                     className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2"
+//                     placeholder={t("pages.about.contact.message")}
+//                   ></textarea>
+//                 </div>
+
+//                 <button className="py-2 px-8 w-full md:w-auto bg-[#7616EC] text-white rounded-md">
+//                   {t("pages.about.contact.sendMesssage")}
+//                 </button>
+//               </form>
+//             </motion.div>
+//           </div>
+
+//           <StayUpdated />
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Contact;
+
 import { useSelector } from "react-redux";
 import { useTranslation } from "../../../hooks/useTranslation";
 import {
@@ -16,6 +251,10 @@ const Contact = () => {
   const { isDarkMode } = useSelector((state) => state.theme);
   const { currentLanguage } = useSelector((state) => state.language);
 
+  // Debug logging
+  console.log("Contact component - Current language:", currentLanguage);
+  console.log("Contact title test:", t("pages.about.contact.title"));
+
   return (
     <>
       <div
@@ -26,23 +265,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="overflow-hidden text-center">
             <h1 className="text-purple-600 font-semibold text-[32px] mb-6">
-              {t("pages.about.contact.title")
-                .split(" ")
-                .map((word, index) => {
-                  return (
-                    <motion.span
-                      key={index}
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{ delay: index * 0.3 }}
-                    >
-                      <span>
-                        {word}
-                        &nbsp;
-                      </span>
-                    </motion.span>
-                  );
-                })}
+              {t("pages.about.contact.title") || "اتصل بنا"}
             </h1>
 
             <motion.p
@@ -53,7 +276,8 @@ const Contact = () => {
               whileInView={{ x: 0, opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
-              {t("pages.about.contact.desc")}
+              {t("pages.about.contact.desc") ||
+                "هل لديك سؤال أو اقتراح أو تحتاج إلى مساعدة؟ نحن هنا لدعمك"}
             </motion.p>
           </div>
 
@@ -66,11 +290,12 @@ const Contact = () => {
             >
               <div className="overflow-hidden">
                 <h1 className="font-semibold text-[28px]">
-                  {t("pages.about.contact.contactInfo")}
+                  {t("pages.about.contact.contactInfo") || "معلومات الاتصال"}
                 </h1>
 
                 <p className="text-[20px]">
-                  {t("pages.about.contact.contactInfoDesc")}
+                  {t("pages.about.contact.contactInfoDesc") ||
+                    "املأ النموذج أو اتصل بنا مباشرة باستخدام المعلومات أدناه."}
                 </p>
               </div>
 
@@ -83,7 +308,7 @@ const Contact = () => {
                   />
                   <div>
                     <h3 className="font-semibold">
-                      {t("pages.about.contact.ourHeadquarters")}
+                      {t("pages.about.contact.ourHeadquarters") || "مقرنا"}
                     </h3>
                     <p>
                       123 Survey Street, San Francisco, CA 94103, United States
@@ -99,7 +324,7 @@ const Contact = () => {
                   />
                   <div>
                     <h3 className="font-semibold">
-                      {t("pages.about.contact.phone")}
+                      {t("pages.about.contact.phone") || "هاتف"}
                     </h3>
                     <p>+1 (555) 123-4567</p>
                   </div>
@@ -113,7 +338,7 @@ const Contact = () => {
                   />
                   <div>
                     <h3 className="font-semibold">
-                      {t("pages.about.contact.email")}
+                      {t("pages.about.contact.email") || "بريد إلكتروني"}
                     </h3>
                     <p>info@surveypro.example</p>
                   </div>
@@ -122,7 +347,7 @@ const Contact = () => {
 
               <div className="flex flex-col space-x-7">
                 <h1 className="text-[28px]">
-                  {t("pages.about.contact.followUs")}
+                  {t("pages.about.contact.followUs") || "تابعنا"}
                 </h1>
 
                 <ul className="mt-5 flex space-x-4">
@@ -157,7 +382,7 @@ const Contact = () => {
             >
               <div className="overflow-hidden">
                 <h2 className="text-[32px]">
-                  {t("pages.about.contact.sendUsMessage")}
+                  {t("pages.about.contact.sendUsMessage") || "أرسل لنا رسالة"}
                 </h2>
               </div>
 
@@ -165,47 +390,50 @@ const Contact = () => {
                 <div className="flex flex-col md:flex-row my-4 gap-6">
                   <div className="md:w-1/2 flex flex-col">
                     <label htmlFor="name" className="mb-3">
-                      {t("pages.about.contact.name")}
+                      {t("pages.about.contact.name") || "الاسم"}
                     </label>
 
                     <input
                       type="text"
                       id="name"
                       className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2 w-full"
-                      placeholder={t("pages.about.contact.name")}
+                      placeholder={t("pages.about.contact.name") || "الاسم"}
                     />
                   </div>
 
                   <div className="md:w-1/2 flex flex-col">
-                    <label htmlFor="name" className="mb-3">
-                      {t("pages.about.contact.email")}
+                    <label htmlFor="email" className="mb-3">
+                      {t("pages.about.contact.email") || "البريد الإلكتروني"}
                     </label>
 
                     <input
                       type="email"
                       id="email"
                       className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2 w-full"
-                      placeholder={t("pages.about.contact.entreEmail")}
+                      placeholder={
+                        t("pages.about.contact.entreEmail") ||
+                        "أدخل بريدك الالكتروني"
+                      }
                     />
                   </div>
                 </div>
 
                 <div className="flex flex-col my-4 ">
                   <label htmlFor="subject" className="mb-3">
-                    {t("pages.about.contact.subject")}
+                    {t("pages.about.contact.subject") || "الموضوع"}
                   </label>
 
                   <input
                     type="text"
                     id="subject"
                     className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2"
-                    placeholder={t("pages.about.contact.subject")}
+                    placeholder={t("pages.about.contact.subject") || "الموضوع"}
                   />
                 </div>
 
                 <div className="flex flex-col my-4">
                   <label htmlFor="message" className="mb-3">
-                    {t("pages.about.contact.message")}
+                    {t("pages.about.contact.message") || "الرسالة"}
                   </label>
 
                   <textarea
@@ -213,12 +441,12 @@ const Contact = () => {
                     name="message"
                     id="message"
                     className="bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2"
-                    placeholder={t("pages.about.contact.message")}
+                    placeholder={t("pages.about.contact.message") || "الرسالة"}
                   ></textarea>
                 </div>
 
                 <button className="py-2 px-8 w-full md:w-auto bg-[#7616EC] text-white rounded-md">
-                  {t("pages.about.contact.sendMesssage")}
+                  {t("pages.about.contact.sendMesssage") || "إرسال الرسالة"}
                 </button>
               </form>
             </motion.div>

@@ -16,7 +16,6 @@
     },
     "about": {
       "title": "About Us",
-
       "titleSecEn": "We power the curious",
       "discretionEn": "At Survey Infinity, we believe that curiosity and under standing drive progress. We're on a mission to help organizations turn feedback into transformative action.",
       "buttonStartEn": "Get Started",
@@ -68,7 +67,8 @@
           "name": "Oliver",
           "job": "Chief Technology Officer",
           "description": "Oliver oversees all technology initiatives and ensures our platform stays innovative"
-        },
+        }
+      },
       "contact": {
         "title": "Get in Touch",
         "desc": "Have questions about SurveyPro? Our team is here to help you find the right solution for your needs.",
@@ -94,29 +94,32 @@
       "customersSay": {
         "title": "What Our Customers Say",
         "desc": "Discover how organizations are using Survey Infinity to transform feedback into meaningful insights and action."
-
-      }
-    },
-    "features": {
-      "title": "Features",
-      "sectionFeature": {
-        "mainTitle": "Create Engaging Surveys in Minutes",
-        "titleOne": "40+ Question Types",
-        "descriptionOne": "From multiple choice to matrix questions, we have everything you need",
-        "titleTow": "Logic Branching",
-        "descriptionTow": "Create dynamic surveys that adapt based on respondent answers.",
-        "titleThree": "Mobile Responsive",
-        "descriptionThree": "Surveys look great on any device, increasing completion rates."
       },
-      "section2": {
-        "title": "Ready to Create Your First Survey?",
-        "description": "Join thousands of professionals who trust SurveyPro for their research needs",
-        "btnStart": "Start Free Trial",
-        "btnContent": "Contact Sales"
+      "features": {
+        "title": "Features",
+        "sectionFeature": {
+          "mainTitle": "Create Engaging Surveys in Minutes",
+          "titleOne": "40+ Question Types",
+          "descriptionOne": "From multiple choice to matrix questions, we have everything you need",
+          "titleTow": "Logic Branching",
+          "descriptionTow": "Create dynamic surveys that adapt based on respondent answers.",
+          "titleThree": "Mobile Responsive",
+          "descriptionThree": "Surveys look great on any device, increasing completion rates."
+        },
+        "section2": {
+          "title": "Ready to Create Your First Survey?",
+          "description": "Join thousands of professionals who trust SurveyPro for their research needs",
+          "btnStart": "Start Free Trial",
+          "btnContent": "Contact Sales"
+        }
+      },
+      "faqs": {
+        "title": "Frequently Asked Questions"
+      },
+      "notFound": {
+        "title": "Page not found",
+        "backToHome": "Back to Home Page"
       }
-    },
-    "faqs": {
-      "title": "Frequently Asked Questions"
     },
     "pricing": {
       "ChoosePlan": {
@@ -205,7 +208,7 @@
         "Do you offer discounts for nonprofits?": "Do you offer discounts for nonprofits?",
         "What payment methods do you accept?": "What payment methods do you accept?",
         "Is there a limit on survey responses?": "Is there a limit on survey responses?",
-        "Still have questions? ": "Still have questions? ",
+        "Still have questions?": "Still have questions?",
         "Contact our support team": "Contact our support team",
         "Yes": "Yes, you can upgrade, downgrade, or cancel your plan at any time. If you upgrade, the new features will be available immediately. If you downgrade, the changes will take effect at the start of your next billing cycle."
       },
@@ -216,118 +219,110 @@
         "Contact sales": "Contact sales"
       }
     },
-    "contact": {
-      "title": "Contact Us"
+    "footer": {
+      "desc": "create, distribute and analyze surveys with ease, Get valuable insights from your audience.",
+      "products": "Products",
+      "productsSurveyBuilder": "Survey Builder",
+      "productsQuizMaker": "Quiz Maker",
+      "productsFormCreator": "Form Creator",
+      "productsPoolSystem": "Pool System",
+      "productsAnalyticsDashboard": "Analytics Dashboard",
+      "resources": "Resources",
+      "resourcesHelpCenter": "Help Center",
+      "resourcesBlog": "Blog",
+      "resourcesTutorials": "Tutorials",
+      "resourcesCaseStudies": "Case Studies",
+      "resourcesTemplates": "Templates",
+      "stayUpdated": "Stay Updated",
+      "stayUpdatedDesc": "Subscribe to our newsletter for tips and updates.",
+      "stayUpdatedEntreEmail": "Enter your Email",
+      "stayUpdatedSubscribe": "Subscribe",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "security": "Security",
+      "cookies": "Cookies",
+      "rights": "2025 SurveyPro. All rights reserved."
     },
-    "notFound": {
-      "title": "Page not found",
-      "backToHome": "Back to Home Page"
-    }
-  },
-  "footer": {
-    "desc": "create, distribute and analyze surveys with ease, Get valuable insights from your audience.",
-    "products": "Products",
-    "productsSurveyBuilder": "Survey Builder",
-    "productsQuizMaker": "Quiz Maker",
-    "productsFormCreator": "Form Creator",
-    "productsPoolSystem": "Pool System",
-    "productsAnalyticsDashboard": "Analytics Dashboard",
-    "resources": "Resources",
-    "resourcesHelpCenter": "Help Center",
-    "resourcesBlog": "Blog",
-    "resourcesTutorials": "Tutorials",
-    "resourcesCaseStudies": "Case Studies",
-    "resourcesTemplates": "Templates",
-    "stayUpdated": "Stay Updated",
-    "stayUpdatedDesc": "Subscribe to our newsletter for tips and updates.",
-    "stayUpdatedEntreEmail": "Enter your Email",
-    "stayUpdatedSubscribe": "Subscribe",
-    "terms": "Terms",
-    "privacy": "Privacy",
-    "security": "Security",
-    "cookies": "Cookies",
-    "rights": "2025 SurveyPro. All rights reserved."
-  },
-  "HeroSection": {
-    "title": {
-      "part1": "Create powerful surveys",
-      "part2": "in",
-      "part3": "minutes",
-      "part4": "not hours"
+    "HeroSection": {
+      "title": {
+        "part1": "Create powerful surveys",
+        "part2": "in",
+        "part3": "minutes",
+        "part4": "not hours"
+      },
+      "subtitle": "Survey Infinity helps you gather actionable insights through beautifully designed interactive surveys with advanced analytics and seamless integration.",
+      "buttonOne": " Get started",
+      "buttonTwo": "Templates"
     },
-    "subtitle": "Survey Infinity helps you gather actionable insights through beautifully designed interactive surveys with advanced analytics and seamless integration.",
-    "buttonOne": " Get started",
-    "buttonTwo": "Templates"
-  },
-  "featuresSection": {
-    "title": {
-      "part1": "Powerful",
-      "part2": " features to transform",
-      "part3": "your data",
-      "part4": "collection"
+    "featuresSection": {
+      "title": {
+        "part1": "Powerful",
+        "part2": " features to transform",
+        "part3": "your data",
+        "part4": "collection"
+      },
+      "subtitle": "Everything you need to create, distribute, and analyze surveys that deliver actionable insights."
     },
-    "subtitle": "Everything you need to create, distribute, and analyze surveys that deliver actionable insights."
-  },
-  "featuresList": [
-    {
-      "title": "Intuitive Survey Creation",
-      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
-    },
-    {
-      "title": "Advanced Analytics",
-      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
-    },
-    {
-      "title": "Multi-Device Support",
-      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
-    },
-    {
-      "title": "Custom Branding",
-      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
-    },
-    {
-      "title": "Easy Integration",
-      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
-    },
-    {
-      "title": "Real-Time Notifications",
-      "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
-    }
-  ],
-  "workSection": {
-    "title": {
-      "part1": "How",
-      "part2": "it works"
-    }
-  },
-  "steps": [
-    {
-      "title": "Build your Survey",
-      "description": "Choose a ready-made template or start from scratch."
-    },
-    {
-      "title": "Collect Responses",
-      "description": "Share your survey link and start getting responses in real time."
-    },
-    {
-      "title": "Analyze Results",
-      "description": "Use our dashboard to view insights and generate reports."
-    }
-  ],
-  "enterprise": {
-    "title": "Enterprise solutions for teams of all sizes",
-    "description": "Scale your research capabilities with advanced features designed for teams and organizations.",
-    "features": [
-      "Team collaboration with shared templates and assets",
-      "Custom branding and white-labeling options",
-      "Advanced integrations with CRM and marketing tools",
-      "Dedicated account manager and priority support",
-      "Custom development for specialized survey needs"
+    "featuresList": [
+      {
+        "title": "Intuitive Survey Creation",
+        "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+      },
+      {
+        "title": "Advanced Analytics",
+        "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+      },
+      {
+        "title": "Multi-Device Support",
+        "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+      },
+      {
+        "title": "Custom Branding",
+        "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+      },
+      {
+        "title": "Easy Integration",
+        "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+      },
+      {
+        "title": "Real-Time Notifications",
+        "description": "Drag-and-drop editor with customizable templates to create professional surveys in minutes without any technical skills."
+      }
     ],
-    "button": "Learn about Enterprise solutions"
+    "workSection": {
+      "title": {
+        "part1": "How",
+        "part2": "it works"
+      }
+    },
+    "steps": [
+      {
+        "title": "Build your Survey",
+        "description": "Choose a ready-made template or start from scratch."
+      },
+      {
+        "title": "Collect Responses",
+        "description": "Share your survey link and start getting responses in real time."
+      },
+      {
+        "title": "Analyze Results",
+        "description": "Use our dashboard to view insights and generate reports."
+      }
+    ],
+    "enterprise": {
+      "title": "Enterprise solutions for teams of all sizes",
+      "description": "Scale your research capabilities with advanced features designed for teams and organizations.",
+      "features": [
+        "Team collaboration with shared templates and assets",
+        "Custom branding and white-labeling options",
+        "Advanced integrations with CRM and marketing tools",
+        "Dedicated account manager and priority support",
+        "Custom development for specialized survey needs"
+      ],
+      "button": "Learn about Enterprise solutions"
+    },
+    "TestAbout": "ahmed"
   },
-  "TestAbout": "ahmed"
-},
   "featuresSectionSeeMore": {
     "seeMore": "See More"
   },
@@ -469,7 +464,7 @@
     "useTemplate": "Use Template",
     "loadMore": "Load More"
   },
-  "whyChooseUs": {
+  "featuresSection": {
     "title1": "Why Choose Our",
     "title2": "Templates?",
     "cardTitle1": "Professional Design",
@@ -520,4 +515,3 @@
     "signupWith": "or sign up with"
   }
 }
-

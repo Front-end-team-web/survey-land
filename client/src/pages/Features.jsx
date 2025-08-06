@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
+
+//import { useTranslation } from "../hooks/useTranslation";
+// iMPORT ANIMATION
 import Index from "../components/features/Index";
 
 
 const Features = () => {
-  const { currentLanguage } = useSelector((state) => state.language);
+  //const { currentLanguage } = useSelector((state) => state.language);
+  //const { t } = useTranslation();
   const { isDarkMode } = useSelector((state) => state.theme);
 
   return (
@@ -15,12 +19,10 @@ const Features = () => {
       style={{ backgroundColor: isDarkMode ? "#111827" : "white" }}
       className=" min-h-screen bg-gray-50 dark:bg-gray-800"
     >
-      <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
-        {currentLanguage === "en" ? "Features" : "المميزات"}
-      </h1>
       <Index />
-
     </motion.div>
+
+    // </motion.div>
   );
 };
 export default Features
