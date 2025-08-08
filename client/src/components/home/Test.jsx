@@ -9,18 +9,6 @@ const HomePage = () => {
         <p>Your gateway to amazing experiences</p>
         <button>Get Started</button>
       </section>
-
-      {/* Features Grid */}
-      <section className="features">
-        <div className="feature-card">
-          <h3>Fast</h3>
-          <p>Lightning-speed performance</p>
-        </div>
-        <div className="feature-card">
-          <h3>Secure</h3>
-          <p>Bank-grade encryption</p>
-        </div>
-      </section>
     </div>
   );
 };
