@@ -8,6 +8,7 @@ import SurveyTemplates from "./surveyTemplates/SurveyTemplates";
 import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
 import StatsSection from "./statsSection/StatsSection";
 import FAQSection from "./faqSection/FAQSection";
+import Test from "./Test";
 const Index = () => {
   return (
     <div>
@@ -82,6 +83,7 @@ const Index = () => {
       >
         <FAQSection />
       </motion.div>
+      <Test />
     </div>
   );
 };
