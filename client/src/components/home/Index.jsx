@@ -8,6 +8,9 @@ import SurveyTemplates from "./surveyTemplates/SurveyTemplates";
 import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
 import StatsSection from "./statsSection/StatsSection";
 import FAQSection from "./faqSection/FAQSection";
+import Testimonials from "./testimonials/Testimonials";
+import PricingPlans from "./pricingPlans/PricingPlans";
+import SuccessStories from "./successStories/SuccessStories";
 const Index = () => {
   return (
     <div>
@@ -82,6 +85,12 @@ const Index = () => {
       >
         <FAQSection />
       </motion.div>
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
+      <Testimonials />
+      <PricingPlans />
+      <SuccessStories />
+    </div>
+       
     </div>
   );
 };
