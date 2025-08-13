@@ -4,9 +4,10 @@ import avatar1 from "../../../assets/homeImages/avatar1.svg";
 import avatar2 from "../../../assets/homeImages/avatar2.svg";
 import avatar3 from "../../../assets/homeImages/avatar3.svg";
 import avatar4 from "../../../assets/homeImages/avatar4.svg";
-import avatar5 from "../../../assets/homeImages/avatar5.svg";
+import avatar5 from "../../../assets/homeImages/avatar1.svg";
 import avatar6 from "../../../assets/homeImages/avatar6.svg";
 import { useTranslation } from '../../../hooks/useTranslation';
+import statsBg from "../../../assets/homeImages/stats-bg.png";
 
 
 const StatsSection = () => {
@@ -69,7 +70,11 @@ const StatsSection = () => {
   return (
     <section className="py-48 relative">
       {/* Background decoration */}
-      <img src="../../assets/homeImages/stats-bg.png" alt="Background" className='absolute inset-0 top-1/2 -translate-y-1/2 object-cover object-center opacity-10 z-0 mx-auto size-[35rem]' />
+      <img
+        src={statsBg}
+        alt="Background"
+        className="absolute inset-0 top-1/2 -translate-y-1/2 object-cover object-center opacity-10 z-0 mx-auto size-[35rem]"
+      />
 
       <div className="relative z-10">
         <motion.div
@@ -78,7 +83,11 @@ const StatsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className={`text-5xl font-bold font-bold mb-8 max-w-5xl mx-auto leading-[4rem] ${isDarkMode ? " text-white" : "text-black"}`}>
+          <h2
+            className={`text-5xl font-bold font-bold mb-8 max-w-5xl mx-auto leading-[4rem] ${
+              isDarkMode ? " text-white" : "text-black"
+            }`}
+          >
             {t("statsSection.title1")}{" "}
             <span className="bg-gradient-to-r from-[#490F8F] to-[#7616EC] bg-clip-text text-transparent">
               {t("statsSection.title2")}
@@ -120,7 +129,7 @@ const StatsSection = () => {
                     duration: 0.6,
                     delay: index * 0.1,
                     type: "spring",
-                    bounce: 0.4
+                    bounce: 0.4,
                   }}
                   className="text-3xl md:text-4xl font-bold text-white"
                 >

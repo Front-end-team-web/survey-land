@@ -44,8 +44,7 @@ const SurveyTemplates = () => {
       id: 1,
       category: t("serveyTemplates.badge1"),
       title: t("serveyTemplates.templateCardTitle1"),
-      description:
-        t("serveyTemplates.templateCardDescription1"),
+      description: t("serveyTemplates.templateCardDescription1"),
       questions: `25 ${t("serveyTemplates.questions")}`,
       image:
         "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop",
@@ -56,8 +55,7 @@ const SurveyTemplates = () => {
       id: 2,
       category: t("serveyTemplates.badge2"),
       title: t("serveyTemplates.templateCardTitle2"),
-      description:
-        t("serveyTemplates.templateCardDescription2"),
+      description: t("serveyTemplates.templateCardDescription2"),
       questions: `20 ${t("serveyTemplates.questions")}`,
       image:
         "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop",
@@ -71,7 +69,7 @@ const SurveyTemplates = () => {
       description: t("serveyTemplates.templateCardDescription3"),
       questions: `30 ${t("serveyTemplates.questions")}`,
       image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
       categoryColor: "bg-purple-100",
       categoryText: "text-purple-700",
     },
