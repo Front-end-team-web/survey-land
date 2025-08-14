@@ -30,27 +30,28 @@ const SuccessStories = () => {
 
   return (
     <section className="py-20 px-6 lg:px-10 bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl lg:text-5xl font-bold text-center mb-4">
-          <span className="text-purple-700">{t('successTitle')}</span> <span className="text-black dark:text-white">{t('successHighlight')}</span>
+          <span className="text-purple-700">{t('successTitle')}</span>{" "}
+          <span className="text-black dark:text-white">{t('successHighlight')}</span>
         </h2>
 
         <p className="text-gray-600 dark:text-gray-300 text-center mb-16 text-lg">
           {t('successSubtitle')}
         </p>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-10 place-items-center">
           {stories.map((story, index) => (
             <motion.div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-gray-200 dark:border-gray-700"
+              className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-gray-200 dark:border-gray-700 w-full sm:max-w-[400px] min-h-[280px]"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               whileHover={{ scale: 1.03 }}
             >
-              <div className="h-48 relative overflow-hidden">
+              <div className="h-40 relative overflow-hidden">
                 <img 
                   src={`https://images.unsplash.com/${story.image}?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80`}
                   alt={story.title}
