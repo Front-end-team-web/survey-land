@@ -115,7 +115,7 @@ const Questions = () => {
       >
         <p className="text-lg mb-4">
           {t(`pages.pricing.Questions.Still have questions?`)}
-          <span className={`text-[--main-color]`}>
+          <span className={`text-[--main-color] mx-2`}>
             {t(`pages.pricing.Questions.Contact our support team`)}{" "}
           </span>
         </p>
