@@ -113,7 +113,7 @@ const ComparePlans = () => {
   return (
     <div
       ref={ref}
-      className="px-4 mx-auto max-w-7xl w-full transition-colors duration-300 mb-[120px]"
+      className="px-4 mx-auto  w-full transition-colors duration-300 mb-[120px] "
     >
       {/* Header Section */}
       <motion.div
@@ -152,46 +152,40 @@ const ComparePlans = () => {
       >
         <motion.table
           variants={container}
-          className={`min-w-full divide-y ${
-            isDarkMode ? "divide-gray-700" : "divide-gray-200"
-          } w-full border-b ${
-            isDarkMode ? "border-gray-700" : "border-gray-200"
-          }`}
+          className={`min-w-full divide-y ${isDarkMode ? "divide-gray-700" : "divide-gray-200"
+            } w-full border-b ${isDarkMode ? "border-gray-700" : "border-gray-200"
+            }`}
         >
           <motion.thead>
             <motion.tr variants={item}>
               <motion.th
                 variants={item}
-                className={`px-6 py-5 text-left text-xl font-bold ${
-                  isDarkMode ? "text-white" : "text-black"
-                }`}
+                className={`px-6 py-5 text-left text-xl font-bold ${isDarkMode ? "text-white" : "text-black"
+                  }`}
               >
                 {t("pages.pricing.ComparePlans.Features")}
               </motion.th>
               <motion.th
                 variants={item}
                 transition={{ delay: 0.1 }}
-                className={`px-6 py-5 text-center text-xl font-bold ${
-                  isDarkMode ? "text-white" : "text-black"
-                }`}
+                className={`px-6 py-5 text-center text-xl font-bold ${isDarkMode ? "text-white" : "text-black"
+                  }`}
               >
                 {t("pages.pricing.ComparePlans.Basic")}
               </motion.th>
               <motion.th
                 variants={item}
                 transition={{ delay: 0.15 }}
-                className={`px-6 py-5 text-center text-xl font-bold ${
-                  isDarkMode ? "text-white" : "text-black"
-                }`}
+                className={`px-6 py-5 text-center text-xl font-bold ${isDarkMode ? "text-white" : "text-black"
+                  }`}
               >
                 {t("pages.pricing.ComparePlans.Professional")}
               </motion.th>
               <motion.th
                 variants={item}
                 transition={{ delay: 0.2 }}
-                className={`px-6 py-5 text-center text-xl font-bold ${
-                  isDarkMode ? "text-white" : "text-black"
-                }`}
+                className={`px-6 py-5 text-center text-xl font-bold ${isDarkMode ? "text-white" : "text-black"
+                  }`}
               >
                 {t("pages.pricing.ComparePlans.Enterprise")}
               </motion.th>
@@ -202,9 +196,8 @@ const ComparePlans = () => {
             {/* Survey Creation Section */}
             <motion.tr
               variants={sectionHeader}
-              className={`bg-[--main-opacity-color] ${
-                isDarkMode ? "bg-opacity-20" : "bg-opacity-10"
-              }`}
+              className={`bg-[--main-opacity-color] ${isDarkMode ? "bg-opacity-20" : "bg-opacity-10"
+                }`}
             >
               <motion.td
                 variants={sectionHeader}
@@ -228,9 +221,8 @@ const ComparePlans = () => {
                 className="transition-colors duration-300"
               >
                 <motion.td
-                  className={`px-6 py-4 ${
-                    isDarkMode ? "text-white" : "text-gray-700"
-                  }`}
+                  className={`px-6 py-4 ${isDarkMode ? "text-white" : "text-gray-700"
+                    }`}
                   transition={{ delay: i * 0.05 }}
                 >
                   {t(`pages.pricing.ComparePlans.${item.features}`)}
@@ -259,9 +251,8 @@ const ComparePlans = () => {
             {/* Data Collection Section */}
             <motion.tr
               variants={sectionHeader}
-              className={`bg-[--main-opacity-color] ${
-                isDarkMode ? "bg-opacity-20" : "bg-opacity-10"
-              }`}
+              className={`bg-[--main-opacity-color] ${isDarkMode ? "bg-opacity-20" : "bg-opacity-10"
+                }`}
             >
               <motion.td
                 variants={sectionHeader}
@@ -285,9 +276,8 @@ const ComparePlans = () => {
                 className="transition-colors duration-300"
               >
                 <motion.td
-                  className={`px-6 py-4 ${
-                    isDarkMode ? "text-white" : "text-gray-700"
-                  }`}
+                  className={`px-6 py-4 ${isDarkMode ? "text-white" : "text-gray-700"
+                    }`}
                   transition={{ delay: i * 0.05 }}
                 >
                   {t(`pages.pricing.ComparePlans.${item.features}`)}
@@ -316,9 +306,8 @@ const ComparePlans = () => {
             {/* Analysis & Reporting Section */}
             <motion.tr
               variants={sectionHeader}
-              className={`bg-[--main-opacity-color] ${
-                isDarkMode ? "bg-opacity-20" : "bg-opacity-10"
-              }`}
+              className={`bg-[--main-opacity-color] ${isDarkMode ? "bg-opacity-20" : "bg-opacity-10"
+                }`}
             >
               <motion.td
                 variants={sectionHeader}
@@ -339,14 +328,12 @@ const ComparePlans = () => {
                     : "rgba(0, 0, 0, 0.02)",
                   transition: { duration: 0.3 },
                 }}
-                className={`transition-colors duration-300 border-b ${
-                  isDarkMode ? "border-gray-700" : "border-gray-200"
-                }`}
+                className={`transition-colors duration-300 border-b ${isDarkMode ? "border-gray-700" : "border-gray-200"
+                  }`}
               >
                 <motion.td
-                  className={`px-6 py-4 ${
-                    isDarkMode ? "text-white" : "text-gray-700"
-                  }`}
+                  className={`px-6 py-4 ${isDarkMode ? "text-white" : "text-gray-700"
+                    }`}
                   transition={{ delay: i * 0.05 }}
                 >
                   {t(`pages.pricing.ComparePlans.${item.features}`)}
