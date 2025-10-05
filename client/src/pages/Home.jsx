@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import Index from "../components/home/Index";
 
 const Home = () => {
-  // const { t } = useTranslation();
   const { isDarkMode } = useSelector((state) => state.theme);
 
   return (
@@ -15,9 +14,6 @@ const Home = () => {
         ${isDarkMode ? "bg-gray-900 text-white" : "bg-white text-gray-900"}
         `}
     >
-      {/* <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
-        {t("pages.home.title")}
-      </h1> */}
       <Index />
     </motion.div>
   );

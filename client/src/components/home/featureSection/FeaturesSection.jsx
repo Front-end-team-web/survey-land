@@ -7,7 +7,6 @@ export default function FeaturesSection() {
   const { currentLanguage } = useSelector((state) => state.language);
   const { isDarkMode } = useSelector((state) => state.theme);
 
-  // المسارات الصحيحة بـ pages.
   const featuresData = t("pages.featuresList") || [];
   const features = Array.isArray(featuresData) ? featuresData : [];
 
@@ -29,10 +28,18 @@ export default function FeaturesSection() {
     <div className={`py-16 ${isDarkMode ? "bg-gray-900" : "bg-gray-50"}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2
+            className={`text-3xl md:text-4xl font-bold mb-4 ${
+              isDarkMode ? "text-white" : "text-gray-900"
+            }`}
+          >
             {sectionTitle}
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <p
+            className={`text-lg max-w-3xl mx-auto ${
+              isDarkMode ? "text-gray-300" : "text-gray-600"
+            }`}
+          >
             {sectionSubtitle}
           </p>
         </div>
@@ -41,12 +48,14 @@ export default function FeaturesSection() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className={`p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow ${
+                isDarkMode ? "bg-gray-800" : "bg-white"
+              }`}
             >
               <h3 className="text-xl font-semibold mb-4 text-purple-600">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <p className={isDarkMode ? "text-gray-300" : "text-gray-600"}>
                 {feature.description}
               </p>
             </div>

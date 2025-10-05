@@ -12,37 +12,26 @@ import {
 } from "../../../design/SharedClasses";
 
 const CustomersSay = () => {
-  const testimonials = [
-    {
-      image: "src/assets/aboutImages/img1.jpg",
-      feedBack:
-        "Survey infinity has transformed how we collect customer feedback. The insights we've gained have directly led to product improvements that our customers love.",
-      rating: 4.1,
-      name: "Thomas party",
-      position: "product designer",
-    },
-    {
-      image: "src/assets/aboutImages/img2.jpg",
-      feedBack:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatum nemo neque sed modi ipsum voluptate hic, nisi omnis commodi, rem beatae architecto. Consequatur, libero?",
-      rating: 3.1,
-      name: "Noah Hunter",
-      position: "designer graphique",
-    },
-    {
-      image: "src/assets/aboutImages/img3.jpg",
-      feedBack:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, voluptatum nemo neque sed modi ipsum voluptate hic, nisi omnis commodi, rem beatae architecto. Consequatur, libero?",
-      rating: 2.1,
-      name: "Cairo Bilal",
-      position: "developpeur web",
-    },
-  ];
-
   const { t } = useTranslation();
   const { isDarkMode } = useSelector((state) => state.theme);
   const { currentLanguage } = useSelector((state) => state.language);
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const images = [
+    "src/assets/aboutImages/img1.jpg",
+    "src/assets/aboutImages/img2.jpg",
+    "src/assets/aboutImages/img3.jpg",
+  ];
+
+  const ratings = [4.1, 3.1, 2.1];
+
+  const testimonials = t("pages.about.customersSay.testimonials").map(
+    (testimonial, index) => ({
+      ...testimonial,
+      image: images[index],
+      rating: ratings[index],
+    })
+  );
 
   const handlePrev = () => {
     setCurrentIndex((prev) =>

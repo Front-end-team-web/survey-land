@@ -1,14 +1,13 @@
-import { motion } from 'framer-motion';
-import { useSelector } from 'react-redux';
+import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 import avatar1 from "../../../assets/homeImages/avatar1.svg";
 import avatar2 from "../../../assets/homeImages/avatar2.svg";
 import avatar3 from "../../../assets/homeImages/avatar3.svg";
 import avatar4 from "../../../assets/homeImages/avatar4.svg";
 import avatar5 from "../../../assets/homeImages/avatar1.svg";
 import avatar6 from "../../../assets/homeImages/avatar6.svg";
-import { useTranslation } from '../../../hooks/useTranslation';
+import { useTranslation } from "../../../hooks/useTranslation";
 import statsBg from "../../../assets/homeImages/stats-bg.png";
-
 
 const StatsSection = () => {
   const { isDarkMode } = useSelector((state) => state.theme);
@@ -17,30 +16,23 @@ const StatsSection = () => {
   const stats = [
     {
       value: "5M+",
-      label: t("statsSection.stats1")
+      label: t("statsSection.stats1"),
     },
     {
       value: "99.5%",
-      label: t("statsSection.stats2")
+      label: t("statsSection.stats2"),
     },
     {
       value: "42%",
-      label: t("statsSection.stats3")
+      label: t("statsSection.stats3"),
     },
     {
       value: "1.5M+",
-      label: t("statsSection.stats4")
-    }
+      label: t("statsSection.stats4"),
+    },
   ];
 
-  const avatars = [
-    avatar1,
-    avatar2,
-    avatar3,
-    avatar4,
-    avatar5,
-    avatar6,
-  ];
+  const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5, avatar6];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -48,27 +40,29 @@ const StatsSection = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: {
       opacity: 0,
-      y: 20
+      y: 20,
     },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.5
-      }
-    }
+        duration: 0.5,
+      },
+    },
   };
 
   return (
-    <section className="py-48 relative">
+    <section
+      className={`py-48 relative ${isDarkMode ? "bg-gray-900" : "bg-white"}`}
+    >
       {/* Background decoration */}
       <img
         src={statsBg}
@@ -85,7 +79,7 @@ const StatsSection = () => {
         >
           <h2
             className={`text-5xl font-bold font-bold mb-8 max-w-5xl mx-auto leading-[4rem] ${
-              isDarkMode ? " text-white" : "text-black"
+              isDarkMode ? "text-white" : "text-black"
             }`}
           >
             {t("statsSection.title1")}{" "}
@@ -97,12 +91,12 @@ const StatsSection = () => {
 
           <div className="flex justify-center mb-8">
             <div className="flex -space-x-4">
-              {avatars.map((i) => (
+              {avatars.map((avatar, index) => (
                 <div
-                  key={i}
+                  key={index}
                   className="w-12 h-12 rounded-full border-1 border-white shadow-lg flex items-center justify-center overflow-hidden"
                 >
-                  <img src={i} alt="Avatar" />
+                  <img src={avatar} alt="Avatar" />
                 </div>
               ))}
             </div>

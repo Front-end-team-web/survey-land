@@ -61,7 +61,7 @@
         "noah": {
           "name": "Noah Patel",
           "job": "Front End Developer",
-          "description": "Aisha leads our product strategy, focusing on creating intuitive user experiences."
+          "description": "noah leads our product strategy, focusing on creating intuitive user experiences."
         },
         "oliver": {
           "name": "Oliver",
@@ -93,7 +93,24 @@
       },
       "customersSay": {
         "title": "What Our Customers Say",
-        "desc": "Discover how organizations are using Survey Infinity to transform feedback into meaningful insights and action."
+        "desc": "Discover how organizations are using Survey Infinity to transform feedback into meaningful insights and action.",
+        "testimonials": [
+          {
+            "feedBack": "Survey infinity has transformed how we collect customer feedback. The insights we've gained have directly led to product improvements that our customers love.",
+            "name": "Thomas party",
+            "position": "product designer"
+          },
+          {
+            "feedBack": "Amazing platform for collecting and analyzing feedback. The advanced analytics tools helped us understand our customers' needs better.",
+            "name": "Noah Hunter",
+            "position": "graphic designer"
+          },
+          {
+            "feedBack": "The ease of use and detailed analytics made Survey Infinity the perfect choice for our company to gather feedback.",
+            "name": "Cairo Bilal",
+            "position": "web developer"
+          }
+        ]
       },
       "features": {
         "title": "Features",
@@ -118,6 +135,7 @@
       },
       "notFound": {
         "title": "Page not found",
+        "description": "Sorry, the page you are looking for does not exist",
         "backToHome": "Back to Home Page"
       }
     },
@@ -195,7 +213,7 @@
         "text1": "The Professional plan has everything we need to gather customer feedback effectively. The analytics tools have been invaluable for our product development.",
         "Michael Rodriguez": "Michael Rodriguez",
         "role1": "Research Director at Global Research Ltd.",
-        "Sarah Johnson": "Sarah Johnson",
+        "Ahmed Hassan": "Ahmed Hassan",
         "role2": "Product Manager at Tech Innovations Inc.",
         "David Kim": "David Kim",
         "role3": "Founder of Local Startup Co."

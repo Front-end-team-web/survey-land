@@ -6,6 +6,7 @@ import icon4 from "../../../assets/featureImages/icon4.png";
 import icon5 from "../../../assets/featureImages/icon5.png";
 import icon6 from "../../../assets/featureImages/icon6.png";
 import { useTranslation } from "../../../hooks/useTranslation";
+
 const FeatureDetails = () => {
   const { isDarkMode } = useSelector((state) => state.theme);
   const { t, currentLanguage } = useTranslation();
@@ -14,8 +15,8 @@ const FeatureDetails = () => {
   const features = t("featuresListDetails", { returnObjects: true }) || [];
 
   return (
-    <>
-      <section className="px-4 py-8 lg:px-20 lg:py-16 mt-5">
+    <div className="container mx-auto px-4">
+      <section className="py-8 lg:py-16 mt-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {features.map((feature, index) => (
             <div
@@ -52,10 +53,10 @@ const FeatureDetails = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="lucide lucide-arrow-left-icon lucide-arrow-left mr-1 mt-1"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-arrow-left-icon lucide-arrow-left mr-1 mt-1"
                     >
                       <path d="m12 19-7-7 7-7" />
                       <path d="M19 12H5" />
@@ -83,7 +84,7 @@ const FeatureDetails = () => {
           ))}
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

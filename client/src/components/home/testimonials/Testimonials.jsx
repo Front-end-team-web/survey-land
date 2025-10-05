@@ -1,53 +1,61 @@
 import { useLanguage } from "../contexts/LanguageContext";
+import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
 
 const Testimonials = () => {
   const { t } = useLanguage();
+  const { isDarkMode } = useSelector((state) => state.theme);
 
   const testimonials = [
     {
-      name: "Emily Rodriguez",
-      role: "Marketing Director",
-      company: "TechCorp",
+      name: t("testimonial1Name"),
+      role: t("testimonial1Role"),
+      company: t("testimonial1Company"),
       avatar:
-        "https://img.freepik.com/premium-photo/hijab-woman-business-executive_841014-8983.jpg",
-      content:
-        "We use this platform intensively and seriously recommend it. Customer optimize better than perfection. It's perfect for our needs.",
+        "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+      content: t("testimonial1Content"),
       rating: 5,
     },
     {
-      name: "David Chen",
-      role: "Product Manager",
-      company: "InnovateLab",
+      name: t("testimonial2Name"),
+      role: t("testimonial2Role"),
+      company: t("testimonial2Company"),
       avatar:
         "https://wallpapers.com/images/hd/people-pictures-l249k27mbdjw72lh.jpg",
-      content:
-        "The survey templates are incredible. We can create professional surveys in minutes instead of hours which has revolutionized how we handle user feedback.",
+      content: t("testimonial2Content"),
       rating: 5,
     },
     {
-      name: "Sarah Johnson",
-      role: "Research Analyst",
-      company: "DataDriven",
+      name: t("testimonial3Name"),
+      role: t("testimonial3Role"),
+      company: t("testimonial3Company"),
       avatar:
         "https://assets.andersonranch.org/uploads/2021/11/Salwan_Headshot-1152x1440.jpg",
-      content:
-        "The survey analytics are incredibly helpful and the interface is more intuitive. The advanced features and robust feedback help us make data-driven decisions.",
+      content: t("testimonial3Content"),
       rating: 5,
     },
   ];
 
   return (
-    <section className="py-20 px-6 lg:px-10 bg-white dark:bg-gray-900 transition-colors duration-200">
+    <section
+      className={`py-20 px-6 lg:px-10 transition-colors duration-200 ${
+        isDarkMode ? "bg-gray-900" : "bg-white"
+      }`}
+    >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-4 text-purple-700 dark:text-purple-400">
-          {t("testimonialsTitle")}{" "}
-          <span className="text-gray-900 dark:text-white">
-            {t("testimonialsHighlight")}
-          </span>{" "}
-          {t("testimonialsEnd")}
+        <h2
+          className={`text-4xl lg:text-5xl font-bold text-center mb-4 ${
+            isDarkMode ? "text-purple-400" : "text-purple-700"
+          }`}
+        >
+          {t("testimonialsTitle")}
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 text-center mb-16 text-lg">
+
+        <p
+          className={`text-center mb-16 text-lg ${
+            isDarkMode ? "text-gray-300" : "text-gray-600"
+          }`}
+        >
           {t("testimonialsSubtitle")}
         </p>
 
@@ -55,7 +63,11 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
-              className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md flex flex-col justify-between p-6 w-full sm:w-[350px] min-h-[280px] max-h-[320px]"
+              className={`rounded-xl shadow-md flex flex-col justify-between p-6 w-full sm:w-[350px] min-h-[280px] max-h-[320px] border ${
+                isDarkMode
+                  ? "bg-gray-800 border-gray-700"
+                  : "bg-white border-gray-200"
+              }`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
@@ -81,13 +93,25 @@ const Testimonials = () => {
                   className="w-16 h-16 rounded-full object-cover"
                 />
                 <div className="ml-4">
-                  <h4 className="font-bold text-gray-900 dark:text-white text-lg">
+                  <h4
+                    className={`font-bold text-lg ${
+                      isDarkMode ? "text-white" : "text-gray-900"
+                    }`}
+                  >
                     {testimonial.name}
                   </h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                  <p
+                    className={`text-sm ${
+                      isDarkMode ? "text-gray-400" : "text-gray-600"
+                    }`}
+                  >
                     {testimonial.role}
                   </p>
-                  <p className="text-sm text-purple-600 dark:text-purple-400 font-medium">
+                  <p
+                    className={`text-sm font-medium ${
+                      isDarkMode ? "text-purple-400" : "text-purple-600"
+                    }`}
+                  >
                     {testimonial.company}
                   </p>
                 </div>
@@ -99,7 +123,11 @@ const Testimonials = () => {
                   </span>
                 ))}
               </div>
-              <p className="text-gray-700 dark:text-gray-300 text-base leading-relaxed">
+              <p
+                className={`text-base leading-relaxed ${
+                  isDarkMode ? "text-gray-300" : "text-gray-700"
+                }`}
+              >
                 {testimonial.content}
               </p>
             </motion.div>

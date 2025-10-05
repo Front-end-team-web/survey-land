@@ -1,5 +1,4 @@
 import React from "react";
-//import { useTranslation } from "../hooks/useTranslation";
 import { useTranslation } from "../../hooks/useTranslation";
 import { useSelector } from "react-redux";
 

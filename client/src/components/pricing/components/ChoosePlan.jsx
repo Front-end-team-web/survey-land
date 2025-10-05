@@ -30,7 +30,7 @@ const ChoosePlan = () => {
   };
 
   return (
-    <div className="px-4 mx-auto ">
+    <div className="container px-4 mx-auto">
       {/* Header Section */}
       <motion.div
         initial="hidden"

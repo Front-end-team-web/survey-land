@@ -1,11 +1,10 @@
 import { useSelector } from "react-redux";
 import { useTranslation } from "../../../hooks/useTranslation";
-import SplitTextMotion from "../../aboutus/components/SplitTextMotion";
-import SlideUpSplitTextMotion from "../../aboutus/components/SlideUpSplitTextMotion";
-import GetX from "../../aboutus/components/GetX";
+import SplitTextMotion from "../../../shared/animation/SplitTextMotion";
+import SlideUpSplitTextMotion from "../../../shared/animation/SlideUpSplitTextMotion";
+import GetX from "../../../shared/animation/GetX";
 
 export default function Slider() {
-  const { isDarkMode } = useSelector((state) => state.theme);
   const { currentLanguage } = useSelector((state) => state.language);
   const { t } = useTranslation();
 

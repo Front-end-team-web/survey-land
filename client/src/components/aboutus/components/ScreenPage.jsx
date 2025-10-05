@@ -1,19 +1,13 @@
-import { useSelector } from "react-redux";
 import { useTranslation } from "../../../hooks/useTranslation";
-// IMPORT IMAGE
 import page from "../../../assets/aboutImages/page.jpg";
-// IMPORT ANIMATION
-import SlideUpSplitTextMotion from "./SlideUpSplitTextMotion";
-import SplitTextMotion from "./SplitTextMotion";
+import SlideUpSplitTextMotion from "../../../shared/animation/SlideUpSplitTextMotion";
+import SplitTextMotion from "../../../shared/animation/SplitTextMotion";
 
-// Parent Component
 export default function ScreenPage() {
-  const { currentLanguage } = useSelector((state) => state.language);
   const { t } = useTranslation();
 
   return (
     <>
-      {/*  first Section  */}
       <div className=" relative w-full  h-[100vh] md:h-[100vh] lg:h-screen ">
         <h1>{t("pages.about.title")}</h1>
 
@@ -38,7 +32,6 @@ export default function ScreenPage() {
               {t("pages.about.discretionEn")}
             </SlideUpSplitTextMotion>
           </p>
-          {/* Div Button */}
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
             <button className="bg-[#7616EC]  hover:border-2 border-solid border-purple-400  hover:bg-[#7616EC]  text-white font-bold py-3 px-6 rounded-lg">
               {t("pages.about.buttonStartEn")}

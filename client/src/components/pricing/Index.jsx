@@ -1,4 +1,4 @@
-import React, { lazy } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import ChoosePlan from "./components/ChoosePlan";
 import ComparePlans from "./components/ComparePlans";

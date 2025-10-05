@@ -1,49 +1,79 @@
 import { useLanguage } from "../contexts/LanguageContext";
+import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
 
 const PricingPlans = () => {
   const { t } = useLanguage();
+  const { isDarkMode } = useSelector((state) => state.theme);
 
   const plans = [
     {
-      name: "Standard",
-      subtitle: "Free",
+      name: t("planStandard"),
+      subtitle: t("planStandardSubtitle"),
       price: "0",
-      period: "forever",
-      features: ["Unlimited surveys", "Advanced security", "API access"],
-      buttonText: "Start with Standard",
+      period: t("planPeriodForever"),
+      features: [
+        t("featureUnlimitedSurveys"),
+        t("featureAdvancedSecurity"),
+        t("featureApiAccess"),
+      ],
+      buttonText: t("buttonStartStandard"),
       popular: false,
-      buttonStyle: "bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 text-white",
     },
     {
-      name: "Professional",
-      subtitle: "$35",
+      name: t("planProfessional"),
+      subtitle: t("planProfessionalSubtitle"),
       price: "35",
-      period: "per month",
-      features: ["Everything in Standard", "Advanced security", "API access", "Social media export", "Custom integrations"],
-      buttonText: "Start with Professional",
+      period: t("planPeriodMonth"),
+      features: [
+        t("featureEverythingStandard"),
+        t("featureAdvancedSecurity"),
+        t("featureApiAccess"),
+        t("featureSocialExport"),
+        t("featureCustomIntegrations"),
+      ],
+      buttonText: t("buttonStartProfessional"),
       popular: true,
-      buttonStyle: "bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 text-white",
     },
     {
-      name: "Enterprise",
-      subtitle: "$99",
+      name: t("planEnterprise"),
+      subtitle: t("planEnterpriseSubtitle"),
       price: "99",
-      period: "per month",
-      features: ["Everything in Professional", "Advanced security", "API access", "White label solution", "Custom integrations"],
-      buttonText: "Start with Enterprise",
+      period: t("planPeriodMonth"),
+      features: [
+        t("featureEverythingProfessional"),
+        t("featureAdvancedSecurity"),
+        t("featureApiAccess"),
+        t("featureWhiteLabel"),
+        t("featureCustomIntegrations"),
+      ],
+      buttonText: t("buttonStartEnterprise"),
       popular: false,
-      buttonStyle: "bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 text-white",
     },
   ];
 
   return (
-    <section className="py-20 px-6 lg:px-10 bg-gray-50 dark:bg-gray-800 transition-colors duration-200">
+    <section
+      className={`py-20 px-6 lg:px-10 transition-colors duration-200 ${
+        isDarkMode ? "bg-gray-800" : "bg-gray-50"
+      }`}
+    >
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl lg:text-5xl font-bold text-center mb-4 text-purple-700 dark:text-purple-400">
-          {t("pricingTitle")} <span className="text-gray-900 dark:text-white">{t("pricingHighlight")}</span>
+        <h2
+          className={`text-4xl lg:text-5xl font-bold text-center mb-4 ${
+            isDarkMode ? "text-purple-400" : "text-purple-700"
+          }`}
+        >
+          {t("pricingTitle")}{" "}
+          <span className={isDarkMode ? "text-white" : "text-gray-900"}>
+            {t("pricingHighlight")}
+          </span>
         </h2>
-        <p className="text-gray-600 dark:text-gray-300 text-center mb-16 text-lg">
+        <p
+          className={`text-center mb-16 text-lg ${
+            isDarkMode ? "text-gray-300" : "text-gray-600"
+          }`}
+        >
           {t("pricingSubtitle")}
         </p>
 
@@ -56,13 +86,17 @@ const PricingPlans = () => {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               whileHover={{ scale: 1.05, y: -5 }}
-              className={`bg-white dark:bg-gray-700 rounded-2xl p-8 relative border dark:border-gray-600
-                ${
-                  plan.popular
-                    ? "ring-2 ring-purple-600 dark:ring-purple-400 transform shadow-2xl glow-popular"
-                    : "hover:shadow-lg dark:hover:shadow-2xl"
-                }
-                transition-all duration-300`}
+              className={`rounded-2xl p-8 relative border transition-all duration-300 ${
+                isDarkMode ? "bg-gray-700 border-gray-600" : "bg-white"
+              } ${
+                plan.popular
+                  ? `ring-2 transform shadow-2xl glow-popular ${
+                      isDarkMode ? "ring-purple-400" : "ring-purple-600"
+                    }`
+                  : isDarkMode
+                  ? "hover:shadow-2xl"
+                  : "hover:shadow-lg"
+              }`}
             >
               {plan.popular && (
                 <motion.div
@@ -71,28 +105,69 @@ const PricingPlans = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.5, duration: 0.4 }}
                 >
-                  Popular
+                  {t("planPopular")}
                 </motion.div>
               )}
 
               <div className="text-center mb-8">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{plan.name}</h3>
-                <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2">{plan.subtitle}</div>
-                {plan.period && <p className="text-gray-500 dark:text-gray-400 text-sm">{plan.period}</p>}
+                <h3
+                  className={`text-xl font-bold mb-1 ${
+                    isDarkMode ? "text-white" : "text-gray-900"
+                  }`}
+                >
+                  {plan.name}
+                </h3>
+                <div
+                  className={`text-4xl font-bold mb-2 ${
+                    isDarkMode ? "text-white" : "text-gray-900"
+                  }`}
+                >
+                  {plan.subtitle}
+                </div>
+                {plan.period && (
+                  <p
+                    className={`text-sm ${
+                      isDarkMode ? "text-gray-400" : "text-gray-500"
+                    }`}
+                  >
+                    {plan.period}
+                  </p>
+                )}
               </div>
 
               <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-gray-700 dark:text-gray-300">
-                    <div className="w-5 h-5 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mr-3">
-                      <span className="text-green-600 dark:text-green-400 text-sm">✓</span>
+                  <li
+                    key={featureIndex}
+                    className={`flex items-center ${
+                      isDarkMode ? "text-gray-300" : "text-gray-700"
+                    }`}
+                  >
+                    <div
+                      className={`w-5 h-5 rounded-full flex items-center justify-center mr-3 ${
+                        isDarkMode ? "bg-green-900" : "bg-green-100"
+                      }`}
+                    >
+                      <span
+                        className={`text-sm ${
+                          isDarkMode ? "text-green-400" : "text-green-600"
+                        }`}
+                      >
+                        ✓
+                      </span>
                     </div>
                     <span className="text-sm">{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              <button className={`w-full py-4 rounded-xl font-semibold transition-colors ${plan.buttonStyle}`}>
+              <button
+                className={`w-full py-4 rounded-xl font-semibold transition-colors ${
+                  isDarkMode
+                    ? "bg-purple-500 hover:bg-purple-600 text-white"
+                    : "bg-purple-600 hover:bg-purple-700 text-white"
+                }`}
+              >
                 {plan.buttonText}
               </button>
             </motion.div>

@@ -1,14 +1,8 @@
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
-
-//import { useTranslation } from "../hooks/useTranslation";
-// iMPORT ANIMATION
 import Index from "../components/features/Index";
 
-
 const Features = () => {
-  //const { currentLanguage } = useSelector((state) => state.language);
-  //const { t } = useTranslation();
   const { isDarkMode } = useSelector((state) => state.theme);
 
   return (
@@ -21,8 +15,6 @@ const Features = () => {
     >
       <Index />
     </motion.div>
-
-    // </motion.div>
   );
 };
-export default Features
+export default Features;

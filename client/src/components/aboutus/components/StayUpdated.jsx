@@ -54,12 +54,14 @@ const StayUpdated = () => {
               type="text"
               id="name"
               placeholder={t("pages.about.stayUpdated.entreEmail")}
-              className={`bg-white text-black border-2 border focus:outline-none rounded-xl px-3 py-2 w-full md:w-5/6 ${
-                currentLanguage == "ar" ? "me-3" : ""
-              }`}
+              className={`border-2 focus:outline-none rounded-xl px-3 py-2 w-full md:w-5/6 transition-colors ${
+                isDarkMode
+                  ? "bg-gray-700 text-white border-gray-600 placeholder-gray-400"
+                  : "bg-white text-black border-gray-300 placeholder-gray-500"
+              } ${currentLanguage === "ar" ? "me-3" : ""}`}
             />
 
-            <button className="bg-[#7616EC] text-white rounded-md py-2 px-8">
+            <button className="bg-[#7616EC] hover:bg-[#6211CC] text-white rounded-md py-2 px-8 transition-colors">
               {t("pages.about.stayUpdated.subscribe")}
             </button>
           </div>

@@ -7,10 +7,9 @@ import {
 } from "react-icons/fa";
 import { useSelector } from "react-redux";
 import { useTranslation } from "../../../hooks/useTranslation";
-import CategoryCard from './components/CategoryCard';
-import SearchBar from './components/SearchBar';
-import TemplateCard from './components/TemplateCard';
-
+import CategoryCard from "./components/CategoryCard";
+import SearchBar from "./components/SearchBar";
+import TemplateCard from "./components/TemplateCard";
 
 const SurveyTemplates = () => {
   const { isDarkMode } = useSelector((state) => state.theme);
@@ -87,7 +86,7 @@ const SurveyTemplates = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className={`pt-20 pb-20 ${isDarkMode ? "bg-gray-900" : "bg-white"}`}>
       <div className="container mx-auto px-4">
         {/* Header Section */}
         <motion.div
@@ -96,13 +95,21 @@ const SurveyTemplates = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className={`text-5xl font-bold font-bold mb-6 ${isDarkMode ? "text-white" : "text-black"}`}>
+          <h2
+            className={`text-5xl font-bold font-bold mb-6 ${
+              isDarkMode ? "text-white" : "text-black"
+            }`}
+          >
             {t("serveyTemplates.title1")}{" "}
             <span className="bg-gradient-to-r from-[#490F8F] to-[#7616EC] bg-clip-text text-transparent">
               {t("serveyTemplates.title2")}
             </span>
           </h2>
-          <p className={`text-2xl font-normal mx-auto mb-10 ${isDarkMode ? "text-white/60" : "text-[#4B5563]"}`}>
+          <p
+            className={`text-2xl font-normal mx-auto mb-10 ${
+              isDarkMode ? "text-white/60" : "text-[#4B5563]"
+            }`}
+          >
             {t("serveyTemplates.subTitle")}
           </p>
 
@@ -117,10 +124,7 @@ const SurveyTemplates = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
         >
           {categories.map((category) => (
-            <CategoryCard
-              key={category.title}
-              category={category}
-            />
+            <CategoryCard key={category.title} category={category} />
           ))}
         </motion.div>
 
@@ -132,10 +136,7 @@ const SurveyTemplates = () => {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
         >
           {templates.map((template) => (
-            <TemplateCard
-              key={template.id}
-              template={template}
-            />
+            <TemplateCard key={template.id} template={template} />
           ))}
         </motion.div>
 
@@ -146,9 +147,7 @@ const SurveyTemplates = () => {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-center"
         >
-          <button
-            className="bg-gradient-to-r from-[#490F8F] to-[#7616EC] text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-          >
+          <button className="bg-gradient-to-r from-[#490F8F] to-[#7616EC] text-white px-8 py-3 rounded-lg font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300">
             {t("serveyTemplates.loadMore")}
           </button>
         </motion.div>
