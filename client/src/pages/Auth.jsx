@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
-import Index from "../components/auth";
-
+import Index from "../components/auth/Index";
 const Auth = () => {
   const { isDarkMode } = useSelector((state) => state.theme);
 
