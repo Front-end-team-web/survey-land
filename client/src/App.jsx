@@ -18,7 +18,8 @@ import { LanguageProvider } from "./components/home/contexts/LanguageContext";
 
 // Pages & Routes
 import AppRoutes from "./routes/AppRoutes";
-import Index from "./components/home/Index";
+//import Index from "./components/home/index";
+import Index from "./components/home/index";
 
 const queryClient = new QueryClient();
 
