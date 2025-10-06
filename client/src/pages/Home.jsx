@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
-import Index from "../components/home/Index";
+import Index from "../components/home/index";
 
 const Home = () => {
   const { isDarkMode } = useSelector((state) => state.theme);
