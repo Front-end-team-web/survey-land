@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Index from "../components/contactus/Index";
+import Index from "../components/contactus/index";
 
 const Contact = () => {
   return (

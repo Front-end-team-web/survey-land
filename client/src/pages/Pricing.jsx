@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Index from "../components/pricing/Index.jsx";
+import Index from "../components/pricing/index";
 
 const Pricing = () => {
   return (

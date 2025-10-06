@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Index from "../components/faqs/Index";
+import Index from "../components/faqs/index";
 
 const FAQs = () => {
   return (
