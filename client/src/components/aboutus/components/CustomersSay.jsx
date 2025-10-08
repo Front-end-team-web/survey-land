@@ -18,9 +18,9 @@ const CustomersSay = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    "src/assets/aboutImages/img1.jpg",
-    "src/assets/aboutImages/img2.jpg",
-    "src/assets/aboutImages/img3.jpg",
+    "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop",
+    "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop",
   ];
 
   const ratings = [4.1, 3.1, 2.1];
@@ -107,7 +107,7 @@ const CustomersSay = () => {
                 <motion.img
                   src={currentTestimonial.image}
                   alt={currentTestimonial.name}
-                  className="p-1 md:w-[200px] md:h-[200px] xl:w-[200px] xl:h-[200px] rounded-xl"
+                  className="p-1 md:w-[200px] md:h-[200px] xl:w-[200px] xl:h-[200px] rounded-xl object-cover"
                   initial={{ x: -20, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
                   transition={{ delay: 1.2 }}
